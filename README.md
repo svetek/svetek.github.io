@@ -2,8 +2,8 @@
 
 <img src="images/docker-docs.png" alt="Welcome to Docker Documentation" style="max-width: 50%;">
 
-Welcome to the Docker Documentation repository. This is the source for
-[https://docs.docker.com/](https://docs.docker.com/).
+Welcome to the Svetek Documentation repository. This is the source for
+[https://help.svetek.com/](https://help.svetek.com/).
 
 Feel free to send us pull requests and file issues. Our docs are completely
 open source and we deeply appreciate contributions from the Docker community!
@@ -45,4 +45,4 @@ contribute, see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Copyright and license
 
-Copyright 2013-2022 Docker, inc, released under the Apache 2.0 license.
+Copyright 2013-2022 Svetek, inc, released under the Apache 2.0 license.
