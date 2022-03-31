@@ -46,13 +46,29 @@ configuration:
     path: /docs/Configuration
   - sectiontitle: Azure
     section:
-      - title: "Part 1: Microsoft Intune Setup"
+      - title: "Microsoft Intune Setup"
         path: /docs/Configuration/Azure/Microsoft_intune/
-      - sectiontitle: "Part 2: Azure Virtual Desktop"
+      - title: "Script for enable TLS 1.2"
+        path: /docs/Configuration/Azure/EnableTLS/
+      - title: "Domain name registration transfer to Azure App Service domains"
+        path: /docs/Configuration/Azure/AzureDomain/
+      - title: "Zoho Desk SSO integratoin with Azure"
+        path: /docs/Configuration/Azure/ZohoSSO/
+      - title: "DUO MFA integration with Azure Active Directory"
+        path: /docs/Configuration/Azure/DUO_MFA_Azure/
+      - sectiontitle: "Azure Virtual Desktop"
         path: /docs/Configuration/Azure/AVD/
         section:
-          - title: "Part 1: Microsoft Intune Setup"
-            path: /docs/Configuration/Azure/Microsoft_intune/
+          - title: "Deploy Azure Virtual Desktop (WVD)"
+            path: /docs/Configuration/Azure/AVD/AVD_Deploy/
+          - title: "AVD Start and Stop VMs (WVD)"
+            path: /docs/Configuration/Azure/AVD/AvtoStartStopVM/
+          - title: "DUO MFA for RDP or AVD (WVD)"
+            path: /docs/Configuration/Azure/AVD/DUO_MFA/
+          - title: "DUO MFA Whitelist IP access policy"
+            path: /docs/Configuration/Azure/DUO_WhiteList/
+          - title: "Microsoft LAPS (Local Administrator Password Security)"
+            path: /docs/Configuration/Azure/AVD/LAPS/
   - sectiontitle: 3CX
     section:
       - title: "Part 1: 3CX Deploy on Azure"
@@ -68,6 +84,13 @@ configuration:
       - title: "Part 6: 3CX Emergency calls"
         path: /docs/Configuration/3CX/E911/
   - sectiontitle: Hyper-V
+    section:
+      - title: "HYPER-V VLAN TAGGED SETTINGS"
+        path: /docs/Configuration/Hyper-V/VLANs/
+  - sectiontitle: Cisco Meraki
+    section:
+      - title: "VPN with DUO MFA and Active Directory Auth"
+        path: /docs/Configuration/Cisco_Meraki/VPN_DUO_MFA/
 Service_disclaimers:
 - title: Service Disclaimers
   path: /docs/Service_disclaimers
