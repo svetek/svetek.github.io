@@ -43,10 +43,8 @@ guides:
       path: /docs/Guides/AVD/AVD_workspace/
 - sectiontitle: Markdown syntax
   section:
-    - title: "Part 1: Run docker containers project "
-      path: /docs/Guides/AVD/install_RDP_client/
-    - title: "Part 2: Markdown syntax"
-      path: /docs/Guides/AVD/AVD_workspace/
+    - title: "Run docker containers project "
+      path: /docs/Guides/Help/
 configuration:
   - title: Configuration
     path: /docs/Configuration
