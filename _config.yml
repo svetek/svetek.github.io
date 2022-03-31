@@ -3,7 +3,7 @@
 #
 # This file overrides options set in _config.yml for production / deploy
 ##
-name: Docker Documentation
+name: Svetek Documentation
 markdown: kramdown
 kramdown:
   input: GFM
