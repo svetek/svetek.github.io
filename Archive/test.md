@@ -7,7 +7,7 @@ toc_min: 1
 
 Welcome to the Docker documentation test page!
 
-This is a demo of components, tags, styles, tools, and strategies we use for the
+This is a demo of co mponents, tags, styles, tools, and strategies we use for the
 docs. We explain the code behind the published page and demo the effects. So, if
 you want to see, for example, how admonitions and notes are coded in markdown,
 read the section on [Admonitions (notes)](test.md#admonitions-notes) on the web
