@@ -57,7 +57,8 @@ host=127.0.0.1                          #Domain Controller Address
 service_account_username=merakiuser     #Domain Admin user
 service_account_password=*********      #Domain Admin password
 search_dn=DC=consto,DC=local            #Search DN patch 
-;security_group_dn=                     #Security group DN
+; Security Group Managment Access to VPN 
+security_group_dn=CN=VPNAccessOR,OU=Security Groups,OU=MyBusiness,DC=****,DC=***
 
 [radius_server_auto]
 ikey=DIWW*********                      #Integration key from DUO Admin Aplication. see up that docs
