@@ -69,7 +69,7 @@ RUN echo "Building docs for ${JEKYLL_ENV} environment"
 RUN set -eu; \
  if [ "${JEKYLL_ENV}" = "production" ]; then \
     jekyll build --profile -d ${TARGET} --config _config.yml,_config_production.yml; \
-    sed -i 's#<loc>/#<loc>https://docs.docker.com/#' "${TARGET}/sitemap.xml"; \
+    sed -i 's#<loc>/#<loc>https://help2.svetek.comf/#' "${TARGET}/sitemap.xml"; \
  else \
     jekyll build --profile -d ${TARGET}; \
     echo '[]' > ${TARGET}/js/metadata.json; \

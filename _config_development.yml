@@ -33,19 +33,9 @@ compose_switch_version:  "1.0.4"
 # List of plugins to enable for local development builds. Mostly the same as
 # for production, but without the "jekyll-sitemap" plugin, which is not needed
 # for previewing, and excluding saves some time to build
-
-# Google Analytics, etc.
-google_analytics: GTM-WL2QLG5
-polldaddy_id:     8453675
-
-# Enable search autocompletion (requires metadata.json to be generated)
-local_search: true
-
 plugins:
   - jekyll-redirect-from
   - jekyll-relative-links
-  - jekyll-sitemap
-
 
 # Assets
 #
@@ -74,7 +64,7 @@ defaults:
       type: "pages"
     values:
       layout: docs
-      sitemap: true
+      sitemap: false
       toc_min: 2
       toc_max: 3
 

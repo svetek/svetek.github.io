@@ -4,7 +4,7 @@
 
 # Override the exclusion list to include files that are excluded in "development",
 # such as the "enterprise" stubs, which are in place to facilitate redirects
-# to Mirantis.
+# to Svetek.
 exclude: ["_scripts", "404.html", "index.html"]
 
 # Google Analytics, etc.

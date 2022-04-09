@@ -25,4 +25,4 @@ Disallow: /ee/
 
 Disallow: /apidocs/v*
 
-# Sitemap: https://docs.docker.com/sitemap.xml
+# Sitemap: https://help2.svetek.com/sitemap.xml
