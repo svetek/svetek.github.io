@@ -74,7 +74,7 @@ RUN set -eu; \
     jekyll build --profile -d ${TARGET}; \
     echo '[]' > ${TARGET}/js/metadata.json; \
  fi; \
- find ${TARGET} -type f -name '*.html' | while read i; do sed -i 's#\(<a[^>]* href="\)https://docs.docker.com/#\1/#g' "$i"; done;
+ find ${TARGET} -type f -name '*.html' | while read i; do sed -i 's#\(<a[^>]* href="\)https://help2.svetek.com/#\1/#g' "$i"; done;
 
 
 # This stage only contains the generated files. It can be used to host the

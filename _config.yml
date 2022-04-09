@@ -35,11 +35,13 @@ compose_switch_version:  "1.0.4"
 # for previewing, and excluding saves some time to build
 
 # Google Analytics, etc.
-google_analytics: GTM-WL2QLG5
-polldaddy_id:     8453675
+#google_analytics: GTM-WL2QLG5
+#polldaddy_id:     8453675
 
 # Enable search autocompletion (requires metadata.json to be generated)
 local_search: true
+search_enabled: true
+
 
 plugins:
   - jekyll-redirect-from
@@ -57,6 +59,9 @@ sass:
   sass_dir: _scss
   style: expanded
 
+collections:
+  samples:
+    output: true
 # Set default options / metadata for some paths.
 #
 # Setting options here prevents having to repeat the same option in front-matter
