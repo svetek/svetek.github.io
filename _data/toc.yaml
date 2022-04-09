@@ -31,16 +31,20 @@ guides:
       path: /docs/Guides/3CX_User_Guide/3CX_User_Manager/
 - sectiontitle: Android enrolment
   section:
-    - title: "Part 1: Bring your own devices"
+    - title: "Bring your own devices"
       path: /docs/Guides/Android_enrolment/Brind_own_device/
-    - title: "Part 2: DUO MFA ENROLLMENT DEVICE"
+    - title: "DUO MFA ENROLLMENT DEVICE"
       path: /docs/Guides/Android_enrolment/DUO_enrolment/
 - sectiontitle: Windows Virtual Desktop
   section:
-    - title: "Part 1: Install Microsoft Remote Desktop (RDP Client)"
+    - title: "Install Microsoft Remote Desktop (RDP Client)"
       path: /docs/Guides/AVD/install_RDP_client/
-    - title: "Part 2: WEB Access to Azure Virtual Desktop (WVD) workspace (RDP Client)"
+    - title: "WEB Access to Azure Virtual Desktop (WVD) workspace (RDP Client)"
       path: /docs/Guides/AVD/AVD_workspace/
+- sectiontitle: Other User Guide
+  section:
+    - title: "Meraki VPN Client"
+      path: /docs/Guides/OtherGuides/ClientVPNMeraki/
 - sectiontitle: Markdown syntax
   section:
     - title: "Run docker containers project "
