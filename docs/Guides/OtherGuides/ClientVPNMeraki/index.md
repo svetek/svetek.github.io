@@ -65,8 +65,39 @@ Press Ok for save changes
 {% capture localwin-content %}
 
 #### Windows
+Cisco Meraki uses the integrated Windows client for VPN connection (no Cisco client at this time).
+  
+To be able to connect with simple AD user account credentials, along with a simple pre-shared key, the steps are very simple.
+  
+Click on Start and type in VPN, click on Change Virtual Private Networks (VPN)
+![](images/Merraki_VPN_Cient_Windows_01.png)  
 
-.....
+Click on Add a VPN connection
+![](images/Merraki_VPN_Cient_Windows_02.png)  
+  
+Pick VPN provider as Windows Name the connection Put in server name or IP Switch VPN type to L2TP/IPsec with pre-shared key Switch Type of sign in to User name and password Enter the username and password if you want to save it, or leave blank and user will have to enter it on connection Hit Save  
+![](images/Merraki_VPN_Cient_Windows_03.png)  
+  
+Once you hit Save, it will bring you back to the connection page Click on Change Adapter Options  
+![](images/Merraki_VPN_Cient_Windows_04.png)  
+  
+In the adapter window, click on the adapter with the name you created in the VPN window Click on Change settings of this connection  
+![](images/Merraki_VPN_Cient_Windows_05.png)  
+  
+Click on Security tab Make sure Type of VPN is still Layer 2 Tunneling Protocol with IPsec Set Data encryption to Require encryption (disconnect if server declines) Set Allow these protocols Check Unencrypted password (PAP) - will still be, so don't worry Click Advanced settings  
+![](images/Merraki_VPN_Cient_Windows_06.png)  
+   
+In the Advanced settings, click on Use preshared key Type in the key you want to use Hit OK to go back to the adapter settings Click OK to close the adapter settings and save. Close all other windows at this point.  
+![](images/Merraki_VPN_Cient_Windows_07.png)  
+  
+Connect ... Click on the network icon in the system tray Click on the VPN network connection name Click on Connect  
+![](images/Merraki_VPN_Cient_Windows_08.png)  
+  
+Verify you are connected Click on the network system tray icon again if the window closed or minimized You should now see the VPN network name listed and Connected underneath it (If you are done with your connection, click on it and click Disconnect)  
+![](images/Merraki_VPN_Cient_Windows_09.png)  
+
+
+
 
 {% endcapture %}
 {{ localwin-content | markdownify }}
