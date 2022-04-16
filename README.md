@@ -1,6 +1,4 @@
-# Help @ Docker
-
-<img src="images/docker-docs.png" alt="Welcome to Docker Documentation" style="max-width: 50%;">
+# Help @ Svetek Docs
 
 Welcome to the Svetek Documentation repository. This is the source for
 [https://help.svetek.com/](https://help.svetek.com/).
