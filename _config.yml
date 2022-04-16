@@ -35,9 +35,8 @@ compose_switch_version:  "1.0.4"
 # for previewing, and excluding saves some time to build
 
 # Google Analytics, etc.
-#google_analytics: GTM-WL2QLG5
-#polldaddy_id:     8453675
-
+google_analytics: G-V9CJQJRYMC
+polldaddy_id:     8453675
 # Enable search autocompletion (requires metadata.json to be generated)
 local_search: true
 search_enabled: true
