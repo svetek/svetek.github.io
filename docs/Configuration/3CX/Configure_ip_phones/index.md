@@ -15,7 +15,7 @@ MAC IP Phones you can get it white label on back side.
 ![img.png](images/3CX_PHONES_MAC.png)
 
 ## Add extension он 3CX:
-Open 3CX console: https://<<domain name or ip>>:5001/#/loading  
+Open 3CX console: https://(domain name or ip):5001/#/loading  
 User -> Add
 
 ![img.png](images/3CX_PHONES_ADD_EXT.png)
@@ -41,7 +41,8 @@ For save all changes on top page press «Ok» button
 **Turn on IP Phone and connect to the LAN, when boot is complete:**  
 ```Menu -> Status, take IP  ```
 
-Open WEB UI phones http://<ip adress>
+Open WEB UI phones http://(ip adress)
+Default Login / Password: admin / admin
 Goto to Auto provision tab
 
 **Update firmware:**
