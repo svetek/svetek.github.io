@@ -29,7 +29,7 @@ svn co "https://github.com/docker/compose-cli/${compose_cli_svn_branch}/docs"   
 svn co "https://github.com/distribution/distribution/${distribution_svn_branch}/docs/spec" ./registry/spec || (echo "Failed registry/spec download" && exit 1)
 
 # Fix up URls in swagger files
-find ./engine/api -type f -name '*.yaml' | while read i; do sed -i 's#https://docs.docker.com/#/#g' "$i"; done;
+find ./engine/api -type f -name '*.yaml' | while read i; do sed -i 's#https://help2.svetek.com/#/#g' "$i"; done;
 
 # Cleanup svn directories
 find . -name ".svn" -print0 | xargs -0 /bin/rm -rf

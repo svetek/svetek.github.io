@@ -110,16 +110,16 @@ culpa qui officia deserunt mollit anim id est laborum.
 [/engine/reference/builder/#env](/engine/reference/builder/#env).
 
   - If you can't find a reference page in the `docker.github.io`
-  GitHub repository, but see it out on `docs.docker.com`, you can
+  GitHub repository, but see it out on `help2.svetek.com`, you can
   surmise that it's probably auto-generated from the codebase.
   (FYI, to view the Markdown source for the file, just click
-  **Edit this page** on `docs.docker.com`. But don't use that URL in your docs.)
+  **Edit this page** on `help2.svetek.com`. But don't use that URL in your docs.)
 
   - Go to the file in a web browser, grab everything after the domain name
   from the URL, and use that as the link in your docs file.
 
   - Keep in mind that this link doesn't resolve until you merge the PR and
-  your docs are published on [docs.docker.com](/).
+  your docs are published on [help2.svetek.com](/).
 
 {: id="custom-target-id"}
 
@@ -266,7 +266,7 @@ only need to do it on the first one. If you have a `<th>`, set it there.
 The glossary source lives in the documentation repository
 [docker.github.io](https://github.com/docker/docker.github.io) in
 `_data/glossary.yaml`. The glossary publishes to
-[https://docs.docker.com/glossary/](/glossary/).
+[https://help2.svetek.com/glossary/](/glossary/).
 
 To update glossary content, edit `_data/glossary.yaml`.
 
@@ -487,7 +487,7 @@ Share images, automate workflows, and more with a free Docker ID:
  https://hub.docker.com/
 
 For more examples and ideas, visit:
- https://docs.docker.com/get-started/
+ https://help2.svetek.com/get-started/
 </code></pre>
     </div>
     <div class="panel-heading collapsed" data-toggle="collapse" data-target="#collapseSample2"  style="cursor: pointer"> Another Sample <i class="chevron fa fa-fw"></i></div>
@@ -822,7 +822,7 @@ In the future, native Dockerfile support is coming to Rouge.
 # syntax=docker/dockerfile:1
 
 #
-# example Dockerfile for https://docs.docker.com/examples/postgresql_service/
+# example Dockerfile for https://help2.svetek.com/examples/postgresql_service/
 #
 
 FROM ubuntu

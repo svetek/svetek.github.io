@@ -2,7 +2,7 @@
 <html lang="en-US">
   <meta charset="utf-8">
   <title>Redirecting&hellip;</title>
-  {%- assign redirect_to = page.redirect.to | remove_first: 'https://help2.svetek.com' | remove_first: 'http://docs.docker.com' %}
+  {%- assign redirect_to = page.redirect.to | remove_first: 'https://help2.svetek.com' | remove_first: 'http://help2.svetek.com' %}
   {%- if redirect_to contains "://" %}
   <link rel="canonical" href="{{ redirect_to }}">
   {%- else %}

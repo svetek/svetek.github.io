@@ -1,4 +1,4 @@
-# This Dockerfile builds the docs for https://docs.docker.com/
+# This Dockerfile builds the docs for https://help2.svetek.com/
 # from the master branch of https://github.com/docker/docker.github.io
 #
 # Here is the sequence:

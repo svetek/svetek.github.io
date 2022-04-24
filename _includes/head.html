@@ -24,7 +24,7 @@
         {%- assign page_description = content | strip_html | strip | truncatewords: 30 -%}
     {%- endif -%}
 {%- endif -%}
-{%- assign domain_name = 'https://docs.docker.com' -%}
+{%- assign domain_name = 'https://help2.svetek.com' -%}
 {%- if jekyll.environment == 'development' -%}
 {%- assign domain_name = 'https://localhost:4000' -%}
 {%- endif -%}
@@ -107,6 +107,6 @@
   <meta property="og:url" content="https://help2.svetek.com{{ page.url }}" />
   <meta property="og:site_name" content="Svetek Documentation" />
   <meta property="article:published_time" itemprop="datePublished" content="{% if page.date %}{{ page.date | date_to_xmlschema }}{% else %}{{ site.time | date_to_xmlschema }}{% endif %}"/>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","headline":{{ page.title | default: page_title | jsonify }},"description":{{ page.description | default: page_description | jsonify }},"url":"https://docs.docker.com{{ page.url }}"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","headline":{{ page.title | default: page_title | jsonify }},"description":{{ page.description | default: page_description | jsonify }},"url":"https://help2.svetek.com{{ page.url }}"}</script>
   <!-- END SEO STUFF -->
 </head>
