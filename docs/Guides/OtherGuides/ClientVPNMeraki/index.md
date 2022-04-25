@@ -96,7 +96,10 @@ Connect ... Click on the network icon in the system tray Click on the VPN networ
 Verify you are connected Click on the network system tray icon again if the window closed or minimized You should now see the VPN network name listed and Connected underneath it (If you are done with your connection, click on it and click Disconnect)  
 ![](images/Merraki_VPN_Cient_Windows_09.png)  
 
-
+> **VPN configuration settings you will get from IT**
+>
+> Configuration is done. You can now press connect button.   
+> If VPN server requered MFA, you will get MFA request on your phone.
 
 
 {% endcapture %}
