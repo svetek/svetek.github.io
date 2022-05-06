@@ -21,34 +21,34 @@ horizontalnav:
 home: {}
 
 guides:
-- title: User Guides
-  path: /docs/Guides
-- sectiontitle: 3CX User Guide
-  section:
-    - title: "Part 1: User Manual"
-      path: /docs/Guides/3CX_User_Guide/3CX_User_Manual/
-    - title: "Part 2: Manager Manual"
-      path: /docs/Guides/3CX_User_Guide/3CX_User_Manager/
-- sectiontitle: Android enrolment
-  section:
-    - title: "Bring your own devices"
-      path: /docs/Guides/Android_enrolment/Brind_own_device/
-    - title: "DUO MFA ENROLLMENT DEVICE"
-      path: /docs/Guides/Android_enrolment/DUO_enrolment/
-- sectiontitle: Windows Virtual Desktop
-  section:
-    - title: "Install Microsoft Remote Desktop (RDP Client)"
-      path: /docs/Guides/AVD/install_RDP_client/
-    - title: "WEB Access to Azure Virtual Desktop (WVD) workspace (RDP Client)"
-      path: /docs/Guides/AVD/AVD_workspace/
-- sectiontitle: Other User Guide
-  section:
-    - title: "Meraki VPN Client"
-      path: /docs/Guides/OtherGuides/ClientVPNMeraki/
-- sectiontitle: Markdown syntax
-  section:
-    - title: "Run docker containers project "
-      path: /docs/Guides/Help/
+  - title: User Guides
+    path: /docs/Guides
+  - sectiontitle: 3CX User Guide
+    section:
+      - title: "Part 1: User Manual"
+        path: /docs/Guides/3CX_User_Guide/3CX_User_Manual/
+      - title: "Part 2: Manager Manual"
+        path: /docs/Guides/3CX_User_Guide/3CX_User_Manager/
+  - sectiontitle: Android enrolment
+    section:
+      - title: "Bring your own devices"
+        path: /docs/Guides/Android_enrolment/Brind_own_device/
+      - title: "DUO MFA ENROLLMENT DEVICE"
+        path: /docs/Guides/Android_enrolment/DUO_enrolment/
+  - sectiontitle: Windows Virtual Desktop
+    section:
+      - title: "Install Microsoft Remote Desktop (RDP Client)"
+        path: /docs/Guides/AVD/install_RDP_client/
+      - title: "WEB Access to Azure Virtual Desktop (WVD) workspace (RDP Client)"
+        path: /docs/Guides/AVD/AVD_workspace/
+  - sectiontitle: Other User Guide
+    section:
+      - title: "Meraki VPN Client"
+        path: /docs/Guides/OtherGuides/ClientVPNMeraki/
+  - sectiontitle: Markdown syntax
+    section:
+      - title: "Run docker containers project "
+        path: /docs/Guides/Help/
 configuration:
   - title: Configuration
     path: /docs/Configuration
@@ -91,6 +91,8 @@ configuration:
         path: /docs/Configuration/3CX/Configure_ip_phones/
       - title: "Part 6: 3CX Emergency calls"
         path: /docs/Configuration/3CX/E911/
+      - title: "Part 7: 3CX Extension Management"
+        path: /docs/Configuration/3CX/Extension_management/
   - sectiontitle: Hyper-V
     section:
       - title: "HYPER-V VLAN TAGGED SETTINGS"
