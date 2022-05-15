@@ -1,4 +1,4 @@
-# This Dockerfile builds the docs for https://help2.svetek.com/
+# This Dockerfile builds the docs for https://help.svetek.com/
 # from the master branch of https://github.com/docker/docker.github.io
 #
 # Here is the sequence:
@@ -69,12 +69,12 @@ RUN echo "Building docs for ${JEKYLL_ENV} environment"
 RUN set -eu; \
  if [ "${JEKYLL_ENV}" = "production" ]; then \
     jekyll build --profile -d ${TARGET} --config _config.yml,_config_production.yml; \
-    sed -i 's#<loc>/#<loc>https://help2.svetek.comf/#' "${TARGET}/sitemap.xml"; \
+    sed -i 's#<loc>/#<loc>https://help.svetek.comf/#' "${TARGET}/sitemap.xml"; \
  else \
     jekyll build --profile -d ${TARGET}; \
     echo '[]' > ${TARGET}/js/metadata.json; \
  fi; \
- find ${TARGET} -type f -name '*.html' | while read i; do sed -i 's#\(<a[^>]* href="\)https://help2.svetek.com/#\1/#g' "$i"; done;
+ find ${TARGET} -type f -name '*.html' | while read i; do sed -i 's#\(<a[^>]* href="\)https://help.svetek.com/#\1/#g' "$i"; done;
 
 
 # This stage only contains the generated files. It can be used to host the

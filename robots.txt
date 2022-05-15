@@ -21,4 +21,4 @@ Crawl-delay: 10
 # Directories
 Disallow: /Archive/
 
-Sitemap: https://help2.svetek.com/sitemap.xml
+Sitemap: https://help.svetek.com/sitemap.xml

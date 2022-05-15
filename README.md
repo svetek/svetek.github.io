@@ -30,7 +30,7 @@ We've made it really easy for you to file new issues.
 
 - Click **New issue** on the docs repository and fill in the details, or
 - Click **Request docs changes** in the right column of every page on
-  help2.svetek.com and add the details.
+  help.svetek.com and add the details.
 
 ![Docs feedback on each page](/opensource/images/docs-site-feedback.png)
 

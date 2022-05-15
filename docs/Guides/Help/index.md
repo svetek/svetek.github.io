@@ -55,10 +55,10 @@ Open your browser to [Play with Docker](https://labs.play-with-docker.com/){:tar
 
 ### Images 
 ```
-![](https://help2.svetek.com/get-started/images/dashboard-open-cli-ubuntu.png)
+![](https://help.svetek.com/get-started/images/dashboard-open-cli-ubuntu.png)
 ```
 
-![](https://help2.svetek.com/get-started/images/dashboard-open-cli-ubuntu.png)
+![](https://help.svetek.com/get-started/images/dashboard-open-cli-ubuntu.png)
 
 
 ### Button 

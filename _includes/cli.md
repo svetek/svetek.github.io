@@ -56,7 +56,7 @@ your client and daemon API versions.
 >
 > To enable experimental features in the Docker CLI, edit the
 > [config.json](/engine/reference/commandline/cli/#configuration-files)
-> and set `experimental` to `enabled`. You can go [here](https://help2.svetek.com/engine/reference/commandline/cli/#experimental-features)
+> and set `experimental` to `enabled`. You can go [here](https://help.svetek.com/engine/reference/commandline/cli/#experimental-features)
 > for more information.
 {: .important }
 

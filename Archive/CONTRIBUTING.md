@@ -1,7 +1,7 @@
 # Contributing to Docker Documentation
 
 We deeply value documentation contributions from the Docker community. We'd like to make it as easy
-as possible for you to work in this repository. The documentation for Docker is published at [https://help2.svetek.com/](https://help2.svetek.com/). The following sections guide you through the process of contributing to Docker documentation.
+as possible for you to work in this repository. The documentation for Docker is published at [https://help.svetek.com/](https://help.svetek.com/). The following sections guide you through the process of contributing to Docker documentation.
 
 ## Table of Contents
 
@@ -33,7 +33,7 @@ The live docs are published from the `master` branch. Therefore, you must create
 
 There are two ways to contribute a pull request to the docs repository:
 
-1. You can click **Edit this page** option  in the right column of every page on [https://help2.svetek.com/](https://help2.svetek.com/).
+1. You can click **Edit this page** option  in the right column of every page on [https://help.svetek.com/](https://help.svetek.com/).
 
     This opens the GitHub editor, which means you don't need to know a lot about Git, or even about Markdown. When you save, Git prompts you to create a fork if you don't already have one, and to create a branch in your fork and submit the pull request.
 
@@ -41,7 +41,7 @@ There are two ways to contribute a pull request to the docs repository:
 
     This is the manual, more advanced version of clicking 'Edit this page' on a published docs page. Initiating a docs changes in a PR from your own branch gives you more flexibility, as you can submit changes to multiple pages or files under a single pull request, and even create new topics.
 
-    For a demo of the components, tags, Markdown syntax, styles, etc we use at [https://help2.svetek.com/](https://help2.svetek.com/), see [test.md](/test.md).
+    For a demo of the components, tags, Markdown syntax, styles, etc we use at [https://help.svetek.com/](https://help.svetek.com/), see [test.md](/test.md).
 
 ### Important files
 
@@ -129,7 +129,7 @@ A Netlify test runs for each PR created against the `master` branch and deploys 
 
 Feel free to link to `../foo.md` so that the docs are readable in GitHub, but keep in mind that Jekyll templating notation
 `{% such as this %}` renders in raw text and will not be processed. In general, it's best to assume the docs are being read
-directly on [https://help2.svetek.com/](https://help2.svetek.com/).
+directly on [https://help.svetek.com/](https://help.svetek.com/).
 
 ## Testing changes and practical guidance
 
@@ -139,7 +139,7 @@ a look at `test.md` (which renders in the site at `/test/`).
 
 ### Creating tabs
 
-The use of tabs, as on pages like [https://help2.svetek.com/engine/api/](/engine/api/), requires the use of HTML. The tabs use Bootstrap CSS/JS, so refer to those docs for more advanced usage. For a basic horizontal tab set, copy/paste starting from this code and implement from there. Keep an eye on those `href="#id"` and `id="id"` references as you rename, add, and remove tabs.
+The use of tabs, as on pages like [https://help.svetek.com/engine/api/](/engine/api/), requires the use of HTML. The tabs use Bootstrap CSS/JS, so refer to those docs for more advanced usage. For a basic horizontal tab set, copy/paste starting from this code and implement from there. Keep an eye on those `href="#id"` and `id="id"` references as you rename, add, and remove tabs.
 
 ```html
 <ul class="nav nav-tabs">
@@ -203,14 +203,14 @@ git clone --recursive https://github.com/docker/docker.github.io.git
 cd docker.github.io
 ```
 
-Then, build and run the documentation using [Docker Compose](https://help2.svetek.com/compose/)
+Then, build and run the documentation using [Docker Compose](https://help.svetek.com/compose/)
 
 ```bash
 docker compose up -d --build
 ```
 
-> You need Docker Compose to build and run the docs locally. Docker Compose is included with [Docker Desktop](https://help2.svetek.com/desktop/).
-> If you don't have Docker Desktop installed, follow the [instructions](https://help2.svetek.com/compose/install/) to install Docker Compose.
+> You need Docker Compose to build and run the docs locally. Docker Compose is included with [Docker Desktop](https://help.svetek.com/desktop/).
+> If you don't have Docker Desktop installed, follow the [instructions](https://help.svetek.com/compose/install/) to install Docker Compose.
 
 When the container is built and running, visit [http://localhost:4000](http://localhost:4000) in your web browser to view the docs.
 
@@ -231,7 +231,7 @@ docker compose down
 
 The default configuration for local builds of the documentation disables some
 features to allow for a shorter build-time. The following options differ between
-local builds, and builds that are deployed to [help2.svetek.com](https://help2.svetek.com/):
+local builds, and builds that are deployed to [help.svetek.com](https://help.svetek.com/):
 
 - search auto-completion, and generation of `js/metadata.json`
 - Google Analytics

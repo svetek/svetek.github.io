@@ -13,7 +13,7 @@
         "KeyPrefixEquals": "v1.4/"
       },
       "Redirect": {
-        "HostName": "help2.svetek.com",
+        "HostName": "help.svetek.com",
         "HttpRedirectCode": null,
         "Protocol": "https",
         "ReplaceKeyPrefixWith": "",
@@ -26,7 +26,7 @@
         "KeyPrefixEquals": "v1.5/"
       },
       "Redirect": {
-        "HostName": "help2.svetek.com",
+        "HostName": "help.svetek.com",
         "HttpRedirectCode": null,
         "Protocol": "https",
         "ReplaceKeyPrefixWith": "",
@@ -39,7 +39,7 @@
         "KeyPrefixEquals": "v1.6/"
       },
       "Redirect": {
-        "HostName": "help2.svetek.com",
+        "HostName": "help.svetek.com",
         "HttpRedirectCode": null,
         "Protocol": "https",
         "ReplaceKeyPrefixWith": "",
@@ -52,7 +52,7 @@
         "KeyPrefixEquals": "v1.7/"
       },
       "Redirect": {
-        "HostName": "help2.svetek.com",
+        "HostName": "help.svetek.com",
         "HttpRedirectCode": null,
         "Protocol": "https",
         "ReplaceKeyPrefixWith": "",
@@ -65,7 +65,7 @@
         "KeyPrefixEquals": "v1.8/"
       },
       "Redirect": {
-        "HostName": "help2.svetek.com",
+        "HostName": "help.svetek.com",
         "HttpRedirectCode": null,
         "Protocol": "https",
         "ReplaceKeyPrefixWith": "",
@@ -78,7 +78,7 @@
         "KeyPrefixEquals": "v1.9/"
       },
       "Redirect": {
-        "HostName": "help2.svetek.com",
+        "HostName": "help.svetek.com",
         "HttpRedirectCode": null,
         "Protocol": "https",
         "ReplaceKeyPrefixWith": "",
@@ -91,7 +91,7 @@
         "KeyPrefixEquals": "v1.10/"
       },
       "Redirect": {
-        "HostName": "help2.svetek.com",
+        "HostName": "help.svetek.com",
         "HttpRedirectCode": null,
         "Protocol": "https",
         "ReplaceKeyPrefixWith": "",
@@ -104,7 +104,7 @@
         "KeyPrefixEquals": "v1.11/"
       },
       "Redirect": {
-        "HostName": "help2.svetek.com",
+        "HostName": "help.svetek.com",
         "HttpRedirectCode": null,
         "Protocol": "https",
         "ReplaceKeyPrefixWith": "",
@@ -117,7 +117,7 @@
         "KeyPrefixEquals": "v1.12/"
       },
       "Redirect": {
-        "HostName": "help2.svetek.com",
+        "HostName": "help.svetek.com",
         "HttpRedirectCode": null,
         "Protocol": "https",
         "ReplaceKeyPrefixWith": "",
@@ -130,7 +130,7 @@
         "KeyPrefixEquals": "v1.13/"
       },
       "Redirect": {
-        "HostName": "help2.svetek.com",
+        "HostName": "help.svetek.com",
         "HttpRedirectCode": null,
         "Protocol": "https",
         "ReplaceKeyPrefixWith": "",
@@ -143,7 +143,7 @@
         "KeyPrefixEquals": "v17.03/"
       },
       "Redirect": {
-        "HostName": "help2.svetek.com",
+        "HostName": "help.svetek.com",
         "HttpRedirectCode": null,
         "Protocol": "https",
         "ReplaceKeyPrefixWith": "",
@@ -156,7 +156,7 @@
         "KeyPrefixEquals": "v17.09/"
       },
       "Redirect": {
-        "HostName": "help2.svetek.com",
+        "HostName": "help.svetek.com",
         "HttpRedirectCode": null,
         "Protocol": "https",
         "ReplaceKeyPrefixWith": "",
@@ -169,7 +169,7 @@
         "KeyPrefixEquals": "v17.12/"
       },
       "Redirect": {
-        "HostName": "help2.svetek.com",
+        "HostName": "help.svetek.com",
         "HttpRedirectCode": null,
         "Protocol": "https",
         "ReplaceKeyPrefixWith": "",
@@ -182,7 +182,7 @@
         "KeyPrefixEquals": "ee/licensing/"
       },
       "Redirect": {
-        "HostName": "help2.svetek.com",
+        "HostName": "help.svetek.com",
         "HttpRedirectCode": null,
         "Protocol": "https",
         "ReplaceKeyPrefixWith": null,
@@ -195,7 +195,7 @@
         "KeyPrefixEquals": "ee/get-support/"
       },
       "Redirect": {
-        "HostName": "help2.svetek.com",
+        "HostName": "help.svetek.com",
         "HttpRedirectCode": null,
         "Protocol": "https",
         "ReplaceKeyPrefixWith": null,
@@ -208,7 +208,7 @@
         "KeyPrefixEquals": "ee/cluster/"
       },
       "Redirect": {
-        "HostName": "help2.svetek.com",
+        "HostName": "help.svetek.com",
         "HttpRedirectCode": null,
         "Protocol": "https",
         "ReplaceKeyPrefixWith": null,
@@ -221,7 +221,7 @@
         "KeyPrefixEquals": "ee/supported-platforms/"
       },
       "Redirect": {
-        "HostName": "help2.svetek.com",
+        "HostName": "help.svetek.com",
         "HttpRedirectCode": null,
         "Protocol": "https",
         "ReplaceKeyPrefixWith": null,
@@ -234,7 +234,7 @@
         "KeyPrefixEquals": "ee/ucp/"
       },
       "Redirect": {
-        "HostName": "help2.svetek.com",
+        "HostName": "help.svetek.com",
         "HttpRedirectCode": null,
         "Protocol": "https",
         "ReplaceKeyPrefixWith": null,
@@ -247,7 +247,7 @@
         "KeyPrefixEquals": "ee/dtr/"
       },
       "Redirect": {
-        "HostName": "help2.svetek.com",
+        "HostName": "help.svetek.com",
         "HttpRedirectCode": null,
         "Protocol": "https",
         "ReplaceKeyPrefixWith": null,
@@ -260,7 +260,7 @@
         "KeyPrefixEquals": "compliance/"
       },
       "Redirect": {
-        "HostName": "help2.svetek.com",
+        "HostName": "help.svetek.com",
         "HttpRedirectCode": null,
         "Protocol": "https",
         "ReplaceKeyPrefixWith": null,
@@ -273,7 +273,7 @@
         "KeyPrefixEquals": "datacenter/"
       },
       "Redirect": {
-        "HostName": "help2.svetek.com",
+        "HostName": "help.svetek.com",
         "HttpRedirectCode": null,
         "Protocol": "https",
         "ReplaceKeyPrefixWith": null,
@@ -286,7 +286,7 @@
         "KeyPrefixEquals": "v18.09/ee/"
       },
       "Redirect": {
-        "HostName": "help2.svetek.com",
+        "HostName": "help.svetek.com",
         "HttpRedirectCode": null,
         "Protocol": "https",
         "ReplaceKeyPrefixWith": null,
@@ -299,7 +299,7 @@
         "KeyPrefixEquals": "v18.03/ee/"
       },
       "Redirect": {
-        "HostName": "help2.svetek.com",
+        "HostName": "help.svetek.com",
         "HttpRedirectCode": null,
         "Protocol": "https",
         "ReplaceKeyPrefixWith": null,
@@ -312,7 +312,7 @@
         "KeyPrefixEquals": "v17.06/enterprise/"
       },
       "Redirect": {
-        "HostName": "help2.svetek.com",
+        "HostName": "help.svetek.com",
         "HttpRedirectCode": null,
         "Protocol": "https",
         "ReplaceKeyPrefixWith": null,
@@ -325,7 +325,7 @@
         "KeyPrefixEquals": "ee/docker-ee/"
       },
       "Redirect": {
-        "HostName": "help2.svetek.com",
+        "HostName": "help.svetek.com",
         "HttpRedirectCode": null,
         "Protocol": "https",
         "ReplaceKeyPrefixWith": null,
@@ -338,7 +338,7 @@
         "KeyPrefixEquals": "ee/"
       },
       "Redirect": {
-        "HostName": "help2.svetek.com",
+        "HostName": "help.svetek.com",
         "HttpRedirectCode": null,
         "Protocol": "https",
         "ReplaceKeyPrefixWith": null,
@@ -351,7 +351,7 @@
         "KeyPrefixEquals": "v17.06/"
       },
       "Redirect": {
-        "HostName": "help2.svetek.com",
+        "HostName": "help.svetek.com",
         "HttpRedirectCode": null,
         "Protocol": "https",
         "ReplaceKeyPrefixWith": "",
@@ -364,7 +364,7 @@
         "KeyPrefixEquals": "v18.03/"
       },
       "Redirect": {
-        "HostName": "help2.svetek.com",
+        "HostName": "help.svetek.com",
         "HttpRedirectCode": null,
         "Protocol": "https",
         "ReplaceKeyPrefixWith": "",
@@ -377,7 +377,7 @@
         "KeyPrefixEquals": "v18.09/"
       },
       "Redirect": {
-        "HostName": "help2.svetek.com",
+        "HostName": "help.svetek.com",
         "HttpRedirectCode": null,
         "Protocol": "https",
         "ReplaceKeyPrefixWith": "",
