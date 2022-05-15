@@ -55,5 +55,4 @@ On Options tab:
 
 Press Ok button for save changes.
 
-## Porting PSTN number to Amazone AWS Chime
 
