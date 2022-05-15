@@ -33,5 +33,8 @@ Type Name: 911, Number (Emergency number): 911, and select Route 1 / Sip Trunk:
 ![](images/3CX_emergency_calls_03.png)
 For save information press "OK" button.
 
+## References
+[Bandwidth: Tips for a successful 911 test call](https://support.bandwidth.com/hc/en-us/articles/210291758-Tips-for-a-successful-911-test-call)
 
 
+  

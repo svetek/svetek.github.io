@@ -81,19 +81,21 @@ configuration:
             path: /docs/Configuration/Azure/AVD/LAPS/
   - sectiontitle: 3CX
     section:
-      - title: "Part 1: 3CX Deploy on Azure"
+      - title: "3CX Deploy on Azure"
         path: /docs/Configuration/3CX/Deploy_on_Azure/
-      - title: "Part 2: 3CX AWS Chime setup"
+      - title: "3CX AWS Chime SIP Trunking"
         path: /docs/Configuration/3CX/AWS_Chime/
-      - title: "Part 3: 3CX Time Based Scheduling"
+      - title: "3CX Bandwidth SIP Trunking"
+        path: /docs/Configuration/3CX/Bandwidth/
+      - title: "3CX Time Based Scheduling"
         path: /docs/Configuration/3CX/Time_schedule/
-      - title: "Part 4: 3CX Configure faxes"
+      - title: "3CX Configure faxes"
         path: /docs/Configuration/3CX/Faxes/
-      - title: "Part 5: 3CX Configure IP Phones"
+      - title: "3CX Configure IP Phones"
         path: /docs/Configuration/3CX/Configure_ip_phones/
-      - title: "Part 6: 3CX Emergency calls"
+      - title: "3CX Emergency calls"
         path: /docs/Configuration/3CX/E911/
-      - title: "Part 7: 3CX Extension Management"
+      - title: "3CX Extension Management"
         path: /docs/Configuration/3CX/Extension_management/
   - sectiontitle: Hyper-V
     section:
