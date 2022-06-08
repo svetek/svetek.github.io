@@ -3,10 +3,6 @@ title: "3CX Deploy on Azure"
 keywords: 3cx, voip, pbx, telephony, azure
 description: 3CX Deploy on Azure.
 ---
-## Create VM 3CX Phone System on Microsoft Azure Portal use terraform
-
-
-
 
 ## Create VM 3CX Phone System on Microsoft Azure Portal use 3CX template
 Open portal.azure.com, in search box type 3CX and create 3CX Phone System.  
