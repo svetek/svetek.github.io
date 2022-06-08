@@ -81,8 +81,10 @@ configuration:
             path: /docs/Configuration/Azure/AVD/LAPS/
   - sectiontitle: 3CX
     section:
-      - title: "3CX Deploy on Azure"
+      - title: "3CX Deploy"
         path: /docs/Configuration/3CX/Deploy_on_Azure/
+      - title: "3CX Backup and Restore"
+        path: /docs/Configuration/3CX/BackupAndRestore/
       - title: "3CX AWS Chime SIP Trunking"
         path: /docs/Configuration/3CX/AWS_Chime/
       - title: "3CX Bandwidth SIP Trunking"
