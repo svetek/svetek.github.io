@@ -107,6 +107,11 @@ configuration:
     section:
       - title: "VPN with DUO MFA and Active Directory Auth"
         path: /docs/Configuration/Cisco_Meraki/VPN_DUO_MFA/
+  - sectiontitle: Zoho
+    section:
+      - title: "Zoho Desk - Ticket Workflow"
+        path: /docs/Configuration/ZOHO/Ticket_Workflow/
+
 Service_disclaimers:
 - title: Service Disclaimers
   path: /docs/Service_disclaimers
