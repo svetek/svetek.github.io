@@ -43,7 +43,7 @@ Step 1: Basic Information
 Step 2: Criteria 
   
 - Status contains "Client Approval" AND  
-- Hours sinse agent responded is 48  
+- Hours sinse agent responded is Greater Than 48  
   ![](images/Ticket_workflow_06.png)
 
 Step 3: Actions 
@@ -55,6 +55,5 @@ Step 3: Actions
 
 Press Save button  
 
-
-
-
+## References
+[creating-time-based-automations](https://help.zoho.com/portal/en/kb/desk/for-administrators/help-desk-automation/articles/creating-time-based-automations)
