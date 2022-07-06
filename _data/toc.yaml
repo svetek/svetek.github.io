@@ -43,6 +43,10 @@ guides:
         path: /docs/Guides/AVD/install_RDP_client/
       - title: "WEB Access to Azure Virtual Desktop (WVD) workspace (RDP Client)"
         path: /docs/Guides/AVD/AVD_workspace/
+  - sectiontitle: ZOHO Services
+    section:
+      - title: "ZOHO: Vault Share Passwords"
+        path: /docs/Guides/ZOHO/Vault/
   - sectiontitle: Other User Guide
     section:
       - title: "Meraki VPN Client"
