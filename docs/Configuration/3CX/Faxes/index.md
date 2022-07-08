@@ -23,3 +23,30 @@ Set Route calls to Send fax to -> users who will recived fax to PDF
 For outboud faxes, need use ATA devices with fax machine.  
 Or use software for SipToFax, like:  
 http://www.t38faxvoip.com/  
+
+## FAX Devices 
+
+For configure SIP ATA Grandstream HT801 go to 3CX Web UI -> Advanced -> FXS/DCT and press Add FXS/DCT button and enter information (Name, Mac addr, etc).  
+  
+![](images/3CX_FAXES_05.png)  
+  
+Also need download config file from provisioning Link    
+  
+![](images/3CX_FAXES_06.png)  
+  
+Goto Web managment page Grandstream HT801  
+  
+![](images/3CX_FAXES_07.png)  
+  
+And open ADVANCED SETTINGS tab, press  Upload configuration.  
+  
+![](images/3CX_FAXES_08.png)
+
+Upload from local directory and chose saved xml configuration file. After 30 sec ATA device will be configured success.  
+
+![](images/3CX_FAXES_09.png)
+
+Password from Grandstream Web UI will be updated from 3CX and you can find in 3CX Web UI -> Advanced -> FXS/DCT -> ATA Settings page.  
+
+### References 
+https://www.3cx.com/voip-gateways/grandstream-ht-fxs/
