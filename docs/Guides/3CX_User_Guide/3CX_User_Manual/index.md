@@ -75,13 +75,13 @@ For use hot desking need User Number & Voicemail PIN to login (From Welcome Emai
 ### Login to device 
 
 ```
-For login to device press: *77*EXT*  
+To log in to device press: *77*EXT*  
 ```
 
 ### Logout 
 
 ```
-For Log Out press *77*5*  
+To log out press *77*5*  
   1st BLF provisioned as Logout Button  
 ```
   
