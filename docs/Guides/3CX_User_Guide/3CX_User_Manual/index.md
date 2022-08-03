@@ -67,3 +67,22 @@ Establish the first call.  Press Conference. Dial the 2nd number, Press send. Wa
     <iframe width="900" height="600" src="https://www.youtube.com/embed/PRGJCKcx8p8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </figure>
 <!-- blank line -->
+
+## 3CX Hot Desking
+
+For use hot desking need User Number & Voicemail PIN to login (From Welcome Email)
+
+### Login to device 
+
+For login to device press: *77*EXT*  
+
+### Logout 
+
+For Log Out press *77*5*  
+  1st BLF provisioned as Logout Button  
+  
+<!-- blank line -->
+<figure class="video_container">
+    <iframe width="900" height="600" src="https://www.youtube.com/embed/d2NBDjFFQlU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</figure>
+<!-- blank line -->
