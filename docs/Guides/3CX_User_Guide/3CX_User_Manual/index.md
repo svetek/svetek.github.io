@@ -23,21 +23,26 @@ To make a call outside of the organization, pick up the phone dial the 12, 11, 1
 ## Place an internal (desk to desk) call
 To make a call inside of the organization, pick up the phone dial the 3 digit extension you wish to call, and press the “send” button. This can also be done by dialing the extension first, then picking up the handset or press the speakerphone button
 
-## Set up your greeting for messages
-Press the Message button (looks like an envelope) or Dial 999
-Enter your Voicemail PIN (PIN was sent via email)
-
-Press 9 for options
-Press 8 to change the greeting message
-Press 0 to record a new greeting message
-Press 1 to restore the standard greeting
-Press 2 to listen to the current custom greeting message
-
 ## Get your voice mail
 Press the Message button or Dial 999
 
 ## Enter your Voicemail PIN
 Some have chosen to receive their voicemail via email attachment. If you have, you will get all voice messages in outlook.
+
+## How to Setup & Make Changes to Your Voicemail
+
+Your phone system is a software product from a vendor called 3cx. Here is a link to their website  www.3cx.com.  One of the first, important steps for all new users to do when they are added to the communication system is to setup their voicemail greeting and also create a simple recording of their name called a self ID.  This is needed for the “Dial by Name” function on the system for outside callers to locate your extension. If you don’t complete this step then outside callers will not be able to look you up in the Dial by Name directory.
+
+Follow these steps:  
+
+- Dial the voicemail extension listed on your welcome email. In most cases this will be 999. If you have a physical phone on your desktop, you can press the voicemail or message button.
+- When prompted, enter your PIN followed by #.
+- To set up voicemail and self ID, dial “9” then a new list of options will be announced.
+- Press “5” to change your self-identification message that will list your name in the Dial by Name directory. Say your First Name and Last name when prompted.
+- To record a new message for your voicemail dial 0, then follow the prompts and press # when done, then press 0 to save and exit. Press # to return to the voicemail menu.
+- To record a new greeting press 8, then 0 to record new greeting followed by # 0 to save and a # to exit the menu.
+- If you don’t like your PIN, you can change it by pressing 7 and follow the prompts to change it.
+- When done, press # to return to the main menu or simply hang up.
 
 ## Parking a Call
 To put a call into the park, press the SP1 or SP2 button at any time during the call (as long as the button is green). This will put the call in Shared Park. All Phones within the company will change from Green to Red to show that a call is waiting on SP1.
