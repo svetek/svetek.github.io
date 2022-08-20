@@ -64,3 +64,7 @@ After reboot, phone will be take ext.
 Dial from phone to local ext  
 Dial from phone to outside office  
 Dial from any phones to ip phone 
+
+
+## Fanvil VoIP phones Manual X3U
+

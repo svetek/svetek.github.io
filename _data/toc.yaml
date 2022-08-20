@@ -107,6 +107,8 @@ configuration:
         path: /docs/Configuration/3CX/E911/
       - title: "3CX Extension Management"
         path: /docs/Configuration/3CX/Extension_management/
+      - title: "3CX SBC (Session Border Controller)"
+        path: /docs/Configuration/3CX/SBC/
   - sectiontitle: Hyper-V
     section:
       - title: "HYPER-V VLAN TAGGED SETTINGS"
