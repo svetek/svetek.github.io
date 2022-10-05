@@ -85,13 +85,13 @@ Establish the first call.  Press Conference. Dial the 2nd number, Press send. Wa
 
 ## 3CX Managing your queue status
 ### Dial codes LOGGING IN & LOGGING OUT OF THE QUEUE
-Some IP Phones do not have BLF keys. In this case, agents will need to use dial codes, which are provided on the PBX to log in and out of queues. The dial codes are defined in the 3CX Management Console and configured by the PBX Administrator.
-
-By default, the dialing code to log IN to a queue is *62
-By default, the dialing code to log OUT of a queue is *63
-
-These can be modified by the PBX Administrator, so it is best to verify the dial codes with the Administrator before using these.
-
+Some IP Phones do not have BLF keys. In this case, agents will need to use dial codes, which are provided on the PBX to log in and out of queues. The dial codes are defined in the 3CX Management Console and configured by the PBX Administrator.  
+  
+By default, the dialing code to log IN to a queue is *62  
+By default, the dialing code to log OUT of a queue is *63  
+  
+These can be modified by the PBX Administrator, so it is best to verify the dial codes with the Administrator before using these.  
+  
 ## 3CX Hot Desking
 
 For use hot desking need User Number & Voicemail PIN to login (From Welcome Email)
