@@ -84,6 +84,23 @@ Establish the first call.  Press Conference. Dial the 2nd number, Press send. Wa
 <!-- blank line -->
 
 ## 3CX Managing your queue status
+### 3CX Web Client / Desktop App
+The user can select “Login to queue” and “Logout from queue” from the user profile photo. The option will be applied to all the queues the user is a member of.  
+![img.png](images/3CX_queue_login_webapp.png)  
+
+An agent can be a member of more than one queue and the agent can choose which queues they will be a member of. In this case, the panel can be used to select which individual queues an agent will be logged in to.  
+
+![img.png](images/3CX_queue_login_webapp_selective.png)
+
+Use the 3CX Web Client/ Desktop App to log in and out of individual queues:
+
+1. Go to “**Panel**”.
+2. Select one of the available queues.
+3. Click on the “**Logged in / Logged out**” indicator below the agent's name to login or logout the agent from this queue.
+
+**Queue managers  can login / logout On behalf of**
+The explicit login and logout can also be done on behalf of the agent, by the assigned queue manager(s). Agents who are not queue managers can only log themselves in and out of queues.
+
 ### Dial codes  
 Some IP Phones do not have BLF keys. In this case, agents will need to use dial codes, which are provided on the PBX to log in and out of queues. The dial codes are defined in the 3CX Management Console and configured by the PBX Administrator.  
 
