@@ -35,12 +35,12 @@ guides:
         path: /docs/Guides/3CX_User_Guide/3CX_User_Manager/
       - title: "Part 3: 3CX Web Client - One Stop for All Communications"
         path: /docs/Guides/3CX_User_Guide/3CX_Web_Client/
-  - sectiontitle: Android enrolment
+  - sectiontitle: Intnue
     section:
       - title: "Bring your own devices"
-        path: /docs/Guides/Android_enrolment/Brind_own_device/
+        path: /docs/Guides/Intune/Brind_own_device/
       - title: "DUO MFA ENROLLMENT DEVICE"
-        path: /docs/Guides/Android_enrolment/DUO_enrolment/
+        path: /docs/Guides/Intune/DUO_enrolment/
   - sectiontitle: Windows Virtual Desktop
     section:
       - title: "Install Microsoft Remote Desktop (RDP Client)"

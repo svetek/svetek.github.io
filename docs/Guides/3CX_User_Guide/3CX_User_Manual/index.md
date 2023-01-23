@@ -84,7 +84,7 @@ Establish the first call.  Press Conference. Dial the 2nd number, Press send. Wa
 <!-- blank line -->
 
 ## 3CX Managing your queue status
-### 3CX Web Client / Desktop App
+### 3CX Web Client / Desktop App 
 The user can select “Login to queue” and “Logout from queue” from the user profile photo. The option will be applied to all the queues the user is a member of.  
 ![img.png](images/3CX_queue_login_webapp.png)  
 
@@ -112,6 +112,16 @@ Some IP Phones do not have BLF keys. In this case, agents will need to use dial 
  
 These can be modified by the PBX Administrator, so it is best to verify the dial codes with the Administrator before using these.  
   
+### 3CX Mobile app
+
+Login and Logout from the Queue you can manage as Dial code (describe above) or switch avaliable statuses on 3CX app.
+
+> **LOGGING IN & LOGGING OUT OF THE QUEUE**
+>
+> By default, the dialing code to log IN to a queue is: *62  
+> By default, the dialing code to log OUT of a queue is: *63  
+{: .important}
+
 ## 3CX Hot Desking
 
 For use hot desking need User Number & Voicemail PIN to login (From Welcome Email)
