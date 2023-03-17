@@ -22,7 +22,9 @@ Need add IP address 3CX on Voice IP addresses / DNS host, Termination hosts
 
 ![](images/Bandwidth_01.png)
 
-Next step you will buy or porting numbers and assign to the location.  
+Next step you will buy or porting numbers and assign to the location.   
+Also need open ticket bandwith for add 3CX IP to allow make outbound calls.   
+
 
 ## Configuration BANDWIDTH SIP Connector on 3CX
 Open 3CX web ui admin panel and go to SIP Trunks, press "Add SIP Trunk" need select country "US" and Provider "Bandwidth"  
@@ -37,8 +39,8 @@ Fill important fields:
 > Authentication ID: Empty;  
 > Authentication Password: Empty;
 
-![](images/Bandwidth_06.png)
-
+![](images/Bandwidth_06.png)  
+   
 > Main Trunk No: type PSTN phone number start from +1;  
 > Set destination for calls during office hours;     
 > Set destination for calls outside office hours;
