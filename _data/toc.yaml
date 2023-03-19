@@ -109,6 +109,8 @@ configuration:
         path: /docs/Configuration/3CX/Extension_management/
       - title: "3CX SBC (Session Border Controller)"
         path: /docs/Configuration/3CX/SBC/
+      - title: "3CX Microsoft 365 integration"
+        path: /docs/Configuration/3CX/Integration_office_365/
   - sectiontitle: Hyper-V
     section:
       - title: "HYPER-V VLAN TAGGED SETTINGS"
