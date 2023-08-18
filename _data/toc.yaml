@@ -123,6 +123,10 @@ configuration:
     section:
       - title: "Zoho Desk - Ticket Workflow"
         path: /docs/Configuration/ZOHO/Ticket_Workflow/
+  - sectiontitle: Twilio
+    section:
+      - title: "Voice Integrity to Remediate Spam Labels"
+        path: /docs/Configuration/Twilio/Voice_Integrity/
 
 Service_disclaimers:
 - title: Service Disclaimers
