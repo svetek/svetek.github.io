@@ -23,6 +23,10 @@ home: {}
 guides:
   - title: User Guides
     path: /docs/Guides
+  - sectiontitle: Microsoft Azure portal
+    section:
+      - title: "Part 1: Privileged Identity Management (PIM)"
+        path: /docs/Guides/Azure/PIM/
   - sectiontitle: 3CX User Guide
     section:
       - title: "Part 1: User Manual"
