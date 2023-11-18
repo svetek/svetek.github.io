@@ -6,11 +6,11 @@ description: How to use 3CX.
 ## To change your avatar (or profile picture) on your 3CX account
 
 follow these steps:
-1. Log into the 3CX Web Client using the credentials in your welcome email
-2. Click on "Settings" (The wrench icon.)3CX Webclient Settings Button  
-   ![](images/3CX_use_profile.png)
-3. Upload a new avatar for your account
-4. You will be prompted to resize your Avatar. Press OK to confirm
+1.  Log into the 3CX Web Client using the credentials in your welcome email 
+2.  Click on "Settings" (The wrench icon.)3CX Webclient Settings Button  
+   ![user profile](images/3CX_use_profile.png)
+3.  Upload a new avatar for your account
+4.  You will be prompted to resize your Avatar. Press OK to confirm
 
 ## Place an external call
 
@@ -35,7 +35,7 @@ Some have chosen to receive their voicemail via email attachment. If you have, y
 
 ## How to Setup & Make Changes to Your Voicemail
 
-Your phone system is a software product from a vendor called 3cx. Here is a link to their website  www.3cx.com.  One of the first, important steps for all new users to do when they are added to the communication system is to setup their voicemail greeting and also create a simple recording of their name called a self ID.  This is needed for the “Dial by Name” function on the system for outside callers to locate your extension. If you don’t complete this step then outside callers will not be able to look you up in the Dial by Name directory.
+Your phone system is a software product from a vendor called 3cx. One of the first, important steps for all new users to do when they are added to the communication system is to setup their voicemail greeting and also create a simple recording of their name called a self ID.  This is needed for the “Dial by Name” function on the system for outside callers to locate your extension. If you don’t complete this step then outside callers will not be able to look you up in the Dial by Name directory.
 
 Follow these steps:  
 
@@ -109,7 +109,7 @@ Some IP Phones do not have BLF keys. In this case, agents will need to use dial 
 > By default, the dialing code to log IN to a queue is: *62  
 > By default, the dialing code to log OUT of a queue is: *63  
 {: .important}
- 
+
 These can be modified by the PBX Administrator, so it is best to verify the dial codes with the Administrator before using these.  
   
 ### 3CX Mobile app
@@ -126,17 +126,17 @@ Login and Logout from the Queue you can manage as Dial code (describe above) or 
 
 For use hot desking need User Number & Voicemail PIN to login (From Welcome Email)
 
-### Login to device 
+### Login to device
 
-```
+```txt
 To log in to device press: *77*EXT*  
 ```
 
-### Logout 
+### Logout
 
-```
+```txt
 To log out press *77*5*  
-  1st BLF provisioned as Logout Button  
+1st BLF provisioned as Logout Button  
 ```
   
 <!-- blank line -->
