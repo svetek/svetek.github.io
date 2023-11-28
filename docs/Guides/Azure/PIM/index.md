@@ -4,7 +4,7 @@ keywords: Azure, PIM, Privileged, Identity, Management
 description: Privileged Identity Management (PIM).
 ---
 
-## PIM is
+## PIM
 
 Privileged Identity Management provides time-based and approval-based role activation to mitigate the risks of excessive, unnecessary, or misused access permissions on resources that you care about. Here are some of the key features of Privileged Identity Management:
 
@@ -33,28 +33,27 @@ When a group membership or ownership is activated, Microsoft Entra PIM temporari
 
 ## Activate a role
 
-1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) or use this [short link](https://aka.ms/pim) to open the My roles page directly.
+1.  Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) or use this [short link](https://aka.ms/pim) to open the My roles page directly.
 ![pim_activate_role_00.png](images/pim_activate_role_00.png)
 ![pim_activate_role_02.png](images%2Fpim_activate_role_02.png)
-2. Browse to Identity governance > Privileged Identity Management > Groups.
+2.  Browse to Identity governance > Privileged Identity Management > Groups.
 ![pim_activate_role_03.png](images%2Fpim_activate_role_03.png)
-   
-3. Using Eligible assignments blade, review the list of groups that you have eligible membership or ownership for.
+3.  Using Eligible assignments blade, review the list of groups that you have eligible membership or ownership for.
 
-4. Select Activate for the eligible assignment you want to activate.
+4.  Select Activate for the eligible assignment you want to activate.
 ![pim_activate_role_04.png](images%2Fpim_activate_role_04.png)
-5. Depending on the group’s setting, you may be asked to provide multi-factor authentication or another form of credential.
+5.  Depending on the group’s setting, you may be asked to provide multi-factor authentication or another form of credential.
 
-6. If necessary, specify a custom activation start time. The membership or ownership is to be activated only after the selected time.
+6.  If necessary, specify a custom activation start time. The membership or ownership is to be activated only after the selected time.
 ![pim_activate_role_05.png](images%2Fpim_activate_role_05.png)
-7. Depending on the group’s setting, justification for activation may be required. If needed, provide the justification in the Reason box.
+7.  Depending on the group’s setting, justification for activation may be required. If needed, provide the justification in the Reason box.
 
 ## View active assigments
-1. Sign in use this [short link](https://aka.ms/pim) to open the My roles page directly.
 
-2. Browse to Groups > Active assignments tab.
+1.  Sign in use this [short link](https://aka.ms/pim) to open the My roles page directly.
+2.  Browse to Groups > Active assignments tab.
 ![pim_view_active assignments_01.png](images%2Fpim_view_active%20assignments_01.png)
 
+## References  
 
-## References 
-- https://learn.microsoft.com/en-us/entra/id-governance/privileged-identity-management/groups-activate-roles
+- [PIM/group-activate-roles](https://learn.microsoft.com/en-us/entra/id-governance/privileged-identity-management/groups-activate-roles)

@@ -14,7 +14,7 @@ The 3CX Web Client is easy to use and combines all the features you need to effi
 
 ## Let’s get started: Logging on
 
-![](images/start.png)
+![start](images/start.png)
 
 1. Go to the **“Your User Account on your New 3CX System”** email.
 2. Click on your web client URL, e.g. https://mycompany.3cx.com/webclient/
@@ -28,7 +28,7 @@ If you do not want to download the 3CX Desktop App, install the Progressive Web 
 
 Available on all operating systems (Windows, MacOS, ChromeOS and Linux). Installation can be completed in either of 2 ways when logged into the Web Client:
 
-![](images/pwa.png)
+![pwa](images/pwa.png)
 
 * Click on the OS icon below the user avatar and select “Install” from the pop-up.
 * Click on the Install button (circled red) located in the address bar and then confirm.
@@ -37,7 +37,7 @@ Available on all operating systems (Windows, MacOS, ChromeOS and Linux). Install
 
 On Google Chrome
 
-![](images/google_chrome.png)
+![chrome](images/google_chrome.png)
 
 1. Open your Chrome browser and type ‘chrome://apps’ into the address bar
 2. Right click on “3CX” and enable “Start app when you sign in”
@@ -46,7 +46,7 @@ Note: ChromeOS does not support this feature yet.
 
 On Microsoft Edge
 
-![](images/microsoft_edge.png)
+![edge](images/microsoft_edge.png)
 
 On Edge, select to Auto-start in the dialog that appears after installation.
 
@@ -67,11 +67,11 @@ The Desktop app for Windows and macOS includes all of the features of the web cl
 
 ## Start a call
 
-To call, click on the dial pad in the top right menu or click on the search icon. Enter the phone number or search by name, extension number or email address. 
+To call, click on the dial pad in the top right menu or click on the search icon. Enter the phone number or search by name, extension number or email address.
 
 ## Choose your device to place a call
 
-![](images/start_a_call.png)
+![start a call](images/start_a_call.png)
 
 You can seamlessly place calls from your IP phone, the iOS or Android app, web client or the desktop app - wherever you have provisioned your extension. From the phone selector in the web client’s dialer, you can select your preferred device and control calls from the web client interface.
 
@@ -79,31 +79,37 @@ You can seamlessly place calls from your IP phone, the iOS or Android app, web c
 
 Once you’re in a call, you can perform a number of actions with just a few mouse clicks.
 
-![](images/in-call-function.png)
+![in call function](images/in-call-function.png)
 
 #### Transferring a call
+
 Click on **“Transfer”** and enter the name or number of the person you want to transfer the call to. The call is transferred without you speaking to the receiver on the other end - this is known as a blind transfer.
 
 To speak to the receiver and get permission to transfer a call, click **“Att.transfer”**. This will allow you to put the caller on hold and speak to the receiver before passing the call through.
 
 #### Creating a conference call
+
 Click the **“Conference”** button and enter the name or number of the person/s you would like to add to the call. They will be dialled and upon answering, will be added to the existing call.
 
 #### Recording a call
+
 At any time during a call you may record the conversation. Simply click **“Record”** to begin and click again to end the recording. Recordings can be accessed in the Web Client > **“Recordings”**.
 
 **Note:** The ability to record and to view/edit recordings depends on the permissions given to you by your administrator.
 
 #### Initiating a new call
+
 During an ongoing call, you may initiate a new call on a separate line without hanging up on the current call. To do this, click “New Call” and enter the name or number of the callee.
 
 #### Switch to video call
+
 During an ongoing call, you may elevate to a video call by clicking the **“Video”** icon in the dialpad, without hanging up on the current call.
 
 ## Manage your status & queues
+
 The **“Status”** feature allows you to see which colleagues are available to take calls. Avoid distractions and set your own status to let others know when you’re away or you don’t want to be disturbed.
 
-![](images/manage_your_status.png)
+![status](images/manage_your_status.png)
 
 * Click your avatar in the top left and choose from Available, Away, Do Not Disturb, Lunch, Business Trip.
 * Your status changes to yellow when your line is busy.
@@ -112,7 +118,7 @@ The **“Status”** feature allows you to see which colleagues are available to
 
 Customize status message and behaviour by clicking on **“Avatar > Your Name > Status”**.
 
-![](images/status_page.png)
+![status page](images/status_page.png)
 
 Here you can:
 
@@ -125,7 +131,7 @@ Here you can:
 
 ## Choose your People view
 
-![](images/chose_your_view.png)
+![view](images/chose_your_view.png)
 
 By default, the **“People”** view will show all the members of the groups you are part of. To make it more manageable, you can choose a different **“View”** from the top right drop down list. Choose between the **“Groups”** available (e.g. marketing or sales) or assign team members to your own **“Favorite”** list by pressing the star icon on the desired contact.
 
@@ -139,7 +145,7 @@ Find out more about composing chats and SMS, and the various chat functions avai
 
 ## Start a video conference  
 
-In the **“Web Client > Meet”**, you can start a video conference or schedule a conference. Find out more about video conferencing and its features in the [Video Conferencing manual](https://www.3cx.com/user-manual/video-conferencing/). 
+In the **“Web Client > Meet”**, you can start a video conference or schedule a conference. Find out more about video conferencing and its features in the [Video Conferencing manual](https://www.3cx.com/user-manual/video-conferencing/).
 
 ## Set up Hotkeys
 
@@ -156,8 +162,7 @@ Hotkeys enable you to set up a bespoke combination of keystrokes to execute a nu
 
 The 3CX Click2Call Browser extensions for [Google Chrome](https://chrome.google.com/webstore/detail/3cx-click2call/baipgmmeifmofkcilhccccoipmjccehn) and [Microsoft Edge](https://microsoftedge.microsoft.com/addons/detail/3cx-click2call/kcijpkomlnpfpjmkbghnnmflfebimpfg) enables calls to be initiated from any website or CRM system. Telephone numbers appear as being “hyperlinked”, for you to simply click to ‘send’ the number to the 3CX Web Client or Desktop App to make the call.
 
-Once installed go to **“Configuration Settings”** and choose between Desktop App and the Web Client for the browser extension to use by default when placing the call. 
+Once installed go to **“Configuration Settings”** and choose between Desktop App and the Web Client for the browser extension to use by default when placing the call.
 Note: Users on Chrome OS will need to set the extension to use the Web Client as the Desktop client is not available on this platform.
 
 From the **“Configuration Settings”** you can also set specific website URLs that should not have their numbers **“hyperlinked”**. For example, you can exclude a website with accounting information, in order to prevent it from creating clickable numbers.
-
