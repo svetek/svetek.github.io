@@ -6,7 +6,8 @@ description: How to use 3CX.
 ## To change your avatar (or profile picture) on your 3CX account
 
 follow these steps:
-1.  Log into the 3CX Web Client using the credentials in your welcome email 
+
+1.  Log into the 3CX Web Client using the credentials in your welcome email  
 2.  Click on "Settings" (The wrench icon.)3CX Webclient Settings Button  
    ![user profile](images/3CX_use_profile.png)
 3.  Upload a new avatar for your account
@@ -50,7 +51,7 @@ Follow these steps:
 
 ## Parking a Call
 
-To put a call into the park, press the SP1 or SP2 button at any time during the call (as long as the button is green). This will put the call in Shared Park. All Phones within the company will change from Green to Red to show that a call is waiting on SP1.
+To put a call into the park, press the SP1 or SP2 button at any time during the call (as long as the button is green. NOTE: SP buttons need to be configured first). This will put the call in Shared Park. All Phones within the company will change from Green to Red to show that a call is waiting on SP1.
 To pull a call from the park, press the SP1 or SP2 button.
 
 ## Transfer a call
@@ -84,13 +85,15 @@ Establish the first call.  Press Conference. Dial the 2nd number, Press send. Wa
 <!-- blank line -->
 
 ## 3CX Managing your queue status
-### 3CX Web Client / Desktop App 
+
+### 3CX Web Client / Desktop App
+
 The user can select “Login to queue” and “Logout from queue” from the user profile photo. The option will be applied to all the queues the user is a member of.  
-![img.png](images/3CX_queue_login_webapp.png)  
+![queue login](images/3CX_queue_login_webapp.png)  
 
 An agent can be a member of more than one queue and the agent can choose which queues they will be a member of. In this case, the panel can be used to select which individual queues an agent will be logged in to.  
 
-![img.png](images/3CX_queue_login_webapp_selective.png)
+![queue login](images/3CX_queue_login_webapp_selective.png)
 
 Use the 3CX Web Client/ Desktop App to log in and out of individual queues:
 
@@ -102,6 +105,7 @@ Use the 3CX Web Client/ Desktop App to log in and out of individual queues:
 The explicit login and logout can also be done on behalf of the agent, by the assigned queue manager(s). Agents who are not queue managers can only log themselves in and out of queues.
 
 ### Dial codes  
+
 Some IP Phones do not have BLF keys. In this case, agents will need to use dial codes, which are provided on the PBX to log in and out of queues. The dial codes are defined in the 3CX Management Console and configured by the PBX Administrator.  
 
 > **LOGGING IN & LOGGING OUT OF THE QUEUE**
