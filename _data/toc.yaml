@@ -39,6 +39,8 @@ guides:
         path: /docs/Guides/3CX_User_Guide/3CX_User_Manager/
       - title: "Part 3: 3CX Web Client - One Stop for All Communications"
         path: /docs/Guides/3CX_User_Guide/3CX_Web_Client/
+      - title: "Part 4: Audio Recording"
+        path: /docs/Guides/3CX_User_Guide/3CX_Record_Audio/
   - sectiontitle: Intnue
     section:
       - title: "Bring your own devices"
