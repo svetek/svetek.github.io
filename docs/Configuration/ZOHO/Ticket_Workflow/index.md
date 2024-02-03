@@ -43,7 +43,7 @@ Step 1: Basic Information
 Step 2: Criteria 
   
 - Status contains "Client Approval" AND  
-- Hours sinse agent responded is Greater Than 48  
+- Hours sinse status updated is Greater Than 48  
   ![](images/Ticket_workflow_06.png)
 
 Step 3: Actions 
