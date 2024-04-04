@@ -45,7 +45,7 @@ guides:
         path: /docs/Guides/3CX_User_Guide/3CX_Web_Client/
       - title: "Part 4: Audio Recording"
         path: /docs/Guides/3CX_User_Guide/3CX_Record_Audio/
-  - sectiontitle: Intnue
+  - sectiontitle: Intune
     section:
       - title: "Bring your own devices"
         path: /docs/Guides/Intune/Brind_own_device/
