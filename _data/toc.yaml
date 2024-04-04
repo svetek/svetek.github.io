@@ -27,6 +27,10 @@ guides:
     section:
       - title: "Part 1: Privileged Identity Management (PIM)"
         path: /docs/Guides/Azure/PIM/
+  - sectiontitle: 3CX Admin Guide
+    section:
+      - title: "Adding M365 User"
+        path: /docs/Guides/3CX_Admin_Guide/3CX_Add_M365_User/
   - sectiontitle: 3CX User Guide
     section:
       - title: "Part 1: User Manual"
