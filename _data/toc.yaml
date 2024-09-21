@@ -145,6 +145,14 @@ Service_disclaimers:
   section:
     - title: "Part 1: VOIP 911 and E911 Service Disclaimer"
       path: /docs/Service_disclaimers/VoIP_E911
+
+Standards:
+- title: Standards
+  path: /docs/Standards
+- sectiontitle: SNMP
+  section:
+    - title: "SNMP Community Naming Standards"
+      path: /docs/Standards/SNMP
 #reference:
 #- path: /reference/
 #  title: Reference documentation
