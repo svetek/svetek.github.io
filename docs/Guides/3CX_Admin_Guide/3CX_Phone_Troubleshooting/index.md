@@ -26,7 +26,7 @@ Sometimes the "OK" button method does not work. Try the following:
 
 ## Checking VLAN (Advanced)
 
-1. Make sure the phone is configured for the right MAC address. 
+1. Confirm the correct VLAN is assigned. You might need to assigned it manually via 3CX interface, unless the DHCP server is configured with options 132 and a phone picks up the VLAN. 
 
 ## Resetting via a Browser Connection (Advanced)
 
