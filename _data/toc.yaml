@@ -12,6 +12,9 @@ horizontalnav:
 - title: Service Disclaimers
   path: /docs/Service_disclaimers/
   node: Service_disclaimers
+- title: Templates
+  path: /docs/Templates/
+  node: Templates
 #- title: Knowleage
 #  path: /knowleage/
 #  node: knowleage
@@ -155,6 +158,15 @@ Standards:
   section:
     - title: "SNMP Community Naming Standards"
       path: /docs/Standards/SNMP
+
+Templates:
+- title: Templates
+  path: /docs/Templates
+- sectiontitle: 10DLC
+  section:
+    - title: "SMS Policy Example"
+      path: /docs/Templates/10DLC/sms_policy_example
+
 #reference:
 #- path: /reference/
 #  title: Reference documentation
