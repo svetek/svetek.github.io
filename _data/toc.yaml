@@ -165,7 +165,7 @@ Templates:
 - sectiontitle: 10DLC
   section:
     - title: "SMS Policy Example"
-      path: /docs/Templates/10DLC/sms_policy_example
+      path: /docs/Templates/10DLC/SMS_Policy_Example
 
 #reference:
 #- path: /reference/
