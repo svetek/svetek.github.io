@@ -1,5 +1,5 @@
 ---
-title: "Service Disclaimer"
+title: "Service Disclaimers"
 keywords: service, disclaimer
-description: Service Disclaimer.
+description: Service Disclaimers.
 ---
