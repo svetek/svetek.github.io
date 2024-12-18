@@ -130,13 +130,16 @@ Services will be delivered as described in the Quote/Proposal. Ongoing services 
 ## **Additional Policies**
 
 ### **Fair Usage Policy (FUP)**
+
 - Unlimited services are subject to reasonable use and technician availability.  
 - **Prohibited**: Excessive requests inconsistent with industry standards.
 
 ### **Acceptable Use Policy (AUP)**
+
 - **Prohibited Uses**: SPAM, cryptomining, unauthorized access, or misuse of hosted services.  
 
 ### **Patch Management**
+
 - Patches will be deployed regularly. Downtime caused by vendor patches is outside our control.
 
 ---
