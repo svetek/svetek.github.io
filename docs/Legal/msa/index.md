@@ -7,9 +7,11 @@
 ## SCOPE
 
 ### Context
+
 Throughout this Agreement, references to **“Client,” “you,”** or **“your”** mean the entity that has accepted a quote, proposal, service order, or similar document (electronic or otherwise) from Svetek.
 
 > **Important**: This Agreement contains:
+>
 > - An arbitration provision that requires disputes to be settled by arbitration.
 > - Payment obligations, automatic renewal terms, limitations of liability, and other significant provisions.
 
@@ -29,12 +31,15 @@ This is a **“master” agreement**; specific services will be detailed in a **
 ---
 
 ### Version
+
 Each Quote/Proposal is governed under the version of this Agreement as of the “last updated” date indicated at the bottom of the document. Retain a copy for your records.
 
 ---
 
 ### Conflicts
+
 The hierarchy of precedence is as follows:
+
 1. **Quote/Proposal**
 2. **Services Guide**
 3. **This Agreement**
@@ -54,6 +59,7 @@ The hierarchy of precedence is as follows:
 ---
 
 ### Pass-Through Increases
+
 We reserve the right to pass through **increases in third-party provider costs** to you.
 
 ---
@@ -61,34 +67,41 @@ We reserve the right to pass through **increases in third-party provider costs**
 ## IMPLEMENTATION
 
 ### Advice and Instructions
+
 - Promptly follow our advice (e.g., upgrading hardware or software).
 - **Non-compliance**: Failure to follow advice may result in termination **For Cause** or adjustments to your Quote/Proposal.
 
 ---
 
 ### Co-Management
+
 In co-managed environments:
+
 - Svetek is not liable for issues caused by Co-Managed Providers.
 - You indemnify Svetek against any environment-related issues caused by Co-Managed Providers.
 
 ---
 
 ### Prioritization
+
 Services will be implemented on a schedule we deem reasonable and necessary.
 
 ---
 
 ### Modifications
+
 Unauthorized modifications to the environment void Svetek’s responsibilities.
 
 ---
 
 ### Third-Party Support
+
 We may engage third-party vendors/OEMs for issue resolution. **Fees** (if applicable) will be invoiced.
 
 ---
 
 ### Authorized Contacts
+
 | **Notice Method**          | **Processing Time**       |
 |-----------------------------|--------------------------|
 | **Email or Document**       | 2 business days         |
@@ -97,6 +110,7 @@ We may engage third-party vendors/OEMs for issue resolution. **Fees** (if applic
 ---
 
 ### Ongoing Requirements
+
 - All hardware/software must be genuine and licensed.
 - Maintain **Minimum Requirements** as specified.
 
@@ -116,6 +130,7 @@ We may engage third-party vendors/OEMs for issue resolution. **Fees** (if applic
 ## FEES; PAYMENT
 
 ### Fees
+
 | **Fee Type**              | **Details**                                                                                                |
 |---------------------------|----------------------------------------------------------------------------------------------------------|
 | **Recurring Fees**         | Minimum monthly fees (MMF) charged during the term.                                                     |
@@ -125,6 +140,7 @@ We may engage third-party vendors/OEMs for issue resolution. **Fees** (if applic
 ---
 
 ### Payment Schedule
+
 - **Preferred Method**: Automatic ACH payment (credit card as fallback).
 - **ACH Fees**: $20 for insufficient funds.
 - **Credit Card Fees**: Convenience fee added (reflecting processing costs).
@@ -132,12 +148,14 @@ We may engage third-party vendors/OEMs for issue resolution. **Fees** (if applic
 ---
 
 ### Nonpayment
+
 - Late fees accrue at **1% per month** or the maximum allowable by law.
 - Services may be suspended for nonpayment (charges continue during suspension).
 
 ---
 
 ### Increases
+
 - Annual increases capped at **5%**, with a 60-day notice and termination option.
 
 ---
@@ -154,6 +172,7 @@ We may engage third-party vendors/OEMs for issue resolution. **Fees** (if applic
 ---
 
 ## INDEMNIFICATION
+
 - Each party indemnifies the other for damages arising from breaches of this Agreement.
 - Indemnified party controls defense strategy; indemnifying party bears costs for its chosen counsel.
 
@@ -169,11 +188,13 @@ We may engage third-party vendors/OEMs for issue resolution. **Fees** (if applic
 ---
 
 ### Auto-Renewal
+
 Managed Services renew automatically unless a **30-day prior notice** is provided.
 
 ---
 
 ## CONFIDENTIALITY
+
 | **Type**              | **Details**                                                                                             |
 |-----------------------|----------------------------------------------------------------------------------------------------------|
 | **Confidential Info** | Non-public, proprietary information shared between parties.                                             |
@@ -182,6 +203,7 @@ Managed Services renew automatically unless a **30-day prior notice** is provide
 ---
 
 ## ARBITRATION
+
 Disputes (except Collections) will be resolved through arbitration under the **American Arbitration Association** or similar forum.
 
 ---
