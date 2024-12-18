@@ -20,5 +20,6 @@ User-agent: *
 # Crawl-delay: 10
 # Directories
 Disallow: /Archive/
+Disallow: /docs/Legal/
 
 Sitemap: https://help.svetek.com/sitemap.xml
