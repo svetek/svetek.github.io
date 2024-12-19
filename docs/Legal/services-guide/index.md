@@ -454,6 +454,7 @@ Exposure to environmental factors, such as water, heat, cold, or varying lightin
 # Fair Usage Policy
 
 Our Fair Usage Policy (“FUP”) applies to all services that are described or designated as “unlimited” or which are not expressly capped in the number of available usage hours per month. An “unlimited” service designation means that, subject to the terms of this FUP, you may use the applicable service as reasonably necessary for you to enjoy the use and benefit of the service without incurring additional time-based or usage-based costs. However, unless expressly stated otherwise in the Quote, all unlimited services are provided during our normal business hours only and are subject to our technicians’ availabilities, which cannot always be guaranteed. In addition, we reserve the right to assign our technicians as we deem necessary to handle issues that are more urgent, critical, or pressing than the request(s) or issue(s) reported by you. Consistent with this FUP, you agree to refrain from:
+
 - Creating urgent support tickets for non-urgent or non-critical issues.
 - Requesting excessive support services that are inconsistent with normal usage patterns in the industry (e.g., requesting support in lieu of training).
 - Requesting support or services that are intended to interfere, or may likely interfere, with our ability to provide our services to our other customers.
@@ -502,7 +503,6 @@ If at any time any portion of the managed environment becomes outdated, obsolete
 2. Eliminate the Obsolete Element from the scope of the Services by providing written notice to you (email is sufficient for this purpose).
 
 In any event, we make no representation or warranty whatsoever regarding any Obsolete Element or the deployment, service level guarantees, or remediation activities for any Obsolete Element.
-
 
 # Licenses
 
