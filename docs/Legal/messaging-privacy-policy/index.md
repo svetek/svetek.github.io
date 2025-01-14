@@ -2,6 +2,7 @@
 # Svetek LLC SMS/Text Messaging Privacy Policy
 
 ## Introduction
+
 At Svetek LLC (“we,” “us,” or “our“), your privacy is important to us. This SMS/Text Messaging Privacy Policy (“Privacy Policy“) describes how we collect, use, disclose, and safeguard your information when you opt-in to receive SMS/text messages from us. We are committed to complying with all applicable laws and regulations, including The Campaign Registry (TCR), the Telephone Consumer Protection Act (TCPA), and the Cellular Telecommunications Industry Association (CTIA) guidelines.
 
 By opting in to our SMS/text messaging services, you acknowledge and agree to the terms of this Privacy Policy.
@@ -9,6 +10,7 @@ By opting in to our SMS/text messaging services, you acknowledge and agree to th
 ---
 
 ## Information We Collect
+
 When you sign up for our SMS/text messaging services, we may collect the following information:
 
 | Information Type       | Purpose                                                                 |
@@ -21,6 +23,7 @@ When you sign up for our SMS/text messaging services, we may collect the followi
 ---
 
 ## How We Use Your Information
+
 We use the information we collect to:
 
 - **Send Communications**: Deliver transactional messages, updates, promotional offers, and other content via SMS/text messages.
@@ -32,6 +35,7 @@ We use the information we collect to:
 ---
 
 ## Consent and Opt-In
+
 By providing your mobile phone number and opting in, you:
 
 1. **Consent to Receive Messages**: Agree to receive SMS/text messages from us, which may include promotional content.
@@ -42,6 +46,7 @@ By providing your mobile phone number and opting in, you:
 ---
 
 ## Opt-Out Instructions
+
 You may opt out of receiving SMS/text messages from us at any time:
 
 - **Text "STOP"**: Reply with the word "STOP" to any message you receive from us.
@@ -53,6 +58,7 @@ Please allow up to 48 hours for your opt-out request to be processed. After opti
 ---
 
 ## Data Sharing and Disclosure
+
 We do not sell, trade, or rent your personal information to third parties. We may share your information with:
 
 - **Service Providers**: Trusted third-party vendors who facilitate our SMS/text messaging services (e.g., messaging platforms, analytics providers), bound by confidentiality agreements.
@@ -62,6 +68,7 @@ We do not sell, trade, or rent your personal information to third parties. We ma
 ---
 
 ## Data Security
+
 We implement a variety of security measures to protect your personal information:
 
 | Security Measure         | Description                                                                 |
@@ -75,11 +82,13 @@ While we strive to protect your information, no method of transmission over the 
 ---
 
 ## Data Retention
+
 We retain your personal information only as long as necessary to fulfill the purposes outlined in this Privacy Policy, unless a longer retention period is required or permitted by law.
 
 ---
 
 ## Your Rights
+
 Depending on your jurisdiction, you may have the right to:
 
 - **Access**: Request a copy of the personal information we hold about you.
@@ -93,22 +102,26 @@ To exercise any of these rights, please contact us at **info@svetek.com** or **3
 ---
 
 ## International Users
+
 Our services are intended for users within the United States. If you are accessing our services from outside this jurisdiction, please be aware that your information may be transferred to, stored, and processed in our facilities located in the United States.
 
 ---
 
 ## Children’s Privacy
+
 Our SMS/text messaging services are not directed to individuals under the age of 13. We do not knowingly collect personal information from children under 13. If we become aware that we have inadvertently gathered such information, we will take prompt steps to delete it.
 
 ---
 
 ## Message Frequency and Charges
+
 - **Frequency**: The number of SMS/text messages you receive will depend on your interactions with us and the services you have subscribed to. These may include reminders, account updates, promotional offers, and other related communications. Note that delivery of SMS/text messages may be subject to delays beyond our control, such as those caused by carrier or technical issues.
 - **Charges**: Standard messaging and data rates may apply. Please consult your mobile carrier for details on your messaging plan.
 
 ---
 
 ## Changes to This Privacy Policy
+
 We may update this Privacy Policy periodically to reflect changes in our practices or for other operational, legal, or regulatory reasons. We will notify you of any significant changes by:
 
 1. **Posting the Updated Policy**: The revised Privacy Policy will be available on our website with a new effective date.
