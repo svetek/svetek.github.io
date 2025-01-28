@@ -36,6 +36,8 @@ guides:
         path: /docs/Guides/3CX_Admin_Guide/3CX_Add_M365_User/
       - title: "3CX Phone Troubleshooting"
         path: /docs/Guides/3CX_Admin_Guide/3CX_Phone_Troubleshooting/
+      - title: "3CX Reset User Pasword"
+        path: /docs/Guides/3CX_Admin_Guide/3CX_Reset_User_password/
   - sectiontitle: 3CX User Guide
     section:
       - title: "Part 1: User Manual"
