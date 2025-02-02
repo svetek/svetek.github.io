@@ -52,6 +52,10 @@ guides:
         path: /docs/Guides/3CX_User_Guide/3CX_Web_Client/
       - title: "Part 4: Audio Recording"
         path: /docs/Guides/3CX_User_Guide/3CX_Record_Audio/
+  - sectiontitle: Unifi Admin Guide
+    section:
+      - title: "Unifi WiFi Password Reset"
+        path: /docs/Guides/Unifi_Admin_Guide/Unifi_WiFi_Password_Reset/
   - sectiontitle: Intune
     section:
       - title: "Bring your own devices"
