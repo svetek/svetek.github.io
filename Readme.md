@@ -3,8 +3,7 @@
 Welcome to the Svetek Documentation repository. This is the source for
 [https://help.svetek.com/](https://help.svetek.com/).
 
-Feel free to send us pull requests and file issues. Our docs are completely
-open source and we deeply appreciate contributions from the Docker community!
+Feel free to send us pull requests and file issues.
 
 ## Provide feedback
 
@@ -17,15 +16,6 @@ reported. You can join the discussion using an emoji, or by adding a comment to
 an existing issue. If possible, we recommend that you suggest a fix to the issue
 by creating a pull request.
 
-You can ask general questions and get community support through the [Docker
-Community Slack](http://dockr.ly/slack). Personalized support is available
-through the Docker Pro, Team, and Business subscriptions. See [Docker
-Pricing](https://www.docker.com/pricing) for details.
-
-If you have an idea for a new feature or behavior change in a specific aspect of
-Docker, or have found a product bug, file that issue in the project's code
-repository.
-
 We've made it really easy for you to file new issues.
 
 - Click **New issue** on the docs repository and fill in the details, or
@@ -34,14 +24,13 @@ We've made it really easy for you to file new issues.
 
 ![Docs feedback on each page](/opensource/images/docs-site-feedback.png)
 
-## Contribute to Docker docs
+## Contribute to Svetek docs
 
 We value your contribution. We'd like to make it as easy as possible to submit
-your contributions to the Docker docs repository. Changes to the docs are
-handled through pull requests against the `master` branch. To learn how to
-contribute, see [CONTRIBUTING.md](CONTRIBUTING.md).
+your contributions to the Svetek docs repository. Changes to the docs are
+handled through pull requests against the `master` branch. 
 
 ## Copyright and license
 
-Copyright 2013-2024 Svetek IT Experts, released under the Apache 2.0 license.
+Copyright 2025 Svetek IT Experts, released under the Apache 2.0 license.
 
