@@ -72,8 +72,10 @@ guides:
     section:
       - title: "ZOHO: Vault Share Passwords"
         path: /docs/Guides/ZOHO/Vault/
-  - sectiontitle: Other User Guide
+  - sectiontitle: Other User Guides
     section:
+      - title: "Connecting to Wi-Fi"
+        path: /docs/Guides/OtherGuides/Connecting_To_WiFi/
       - title: "Meraki VPN Client"
         path: /docs/Guides/OtherGuides/ClientVPNMeraki/
   - sectiontitle: Markdown syntax

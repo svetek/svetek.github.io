@@ -1,7 +1,7 @@
 ---
 title: "Unifi WI-FI Password Reset"
 keywords: Unifi, Ubiquiti, wifi, wi-fi, SSID
-description: How to add a Microsoft 365 User. V20+
+description: How to reset Unifi Wi-Fi password
 ---
 
 ## Prerequisites
