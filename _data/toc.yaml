@@ -24,7 +24,7 @@ horizontalnav:
 home: {}
 
 guides:
-  - title: User Guides
+  - title: Guides
     path: /docs/Guides
   - sectiontitle: Microsoft Azure portal
     section:
