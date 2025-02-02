@@ -6,7 +6,7 @@ description: How to add a Microsoft 365 User. V20+
 
 ## Prerequisites
 
-1. An admin performing a change needs to be assigned the "Hotsop Operator" role or above. 
+1. An admin performing a change needs to be assigned the "Hotspot Operator" role or above. 
 
 ## Resetting Wi-Fi Password
 
