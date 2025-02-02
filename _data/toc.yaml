@@ -59,7 +59,7 @@ guides:
   - sectiontitle: Intune
     section:
       - title: "Bring your own devices"
-        path: /docs/Guides/Intune/Bring_own_device/
+        path: /docs/Guides/Intune/Bring_your_own_device/
       - title: "DUO MFA ENROLLMENT DEVICE"
         path: /docs/Guides/Intune/DUO_enrolment/
   - sectiontitle: Windows Virtual Desktop
