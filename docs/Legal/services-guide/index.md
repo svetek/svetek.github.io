@@ -274,7 +274,7 @@ Services that are not expressly described in the Quote will be out of scope and 
 
 ## Service Levels
 
-Automated monitoring is provided on an ongoing (i.e., 24x7x365) basis. Response, repair, and/or remediation services (as applicable) will be provided only during our business hours (currently M-F, 9 AM – 6 PM Eastern Time, excluding legal holidays and Svetek-observed holidays as listed below), unless otherwise specifically stated in the Quote or as otherwise described below.
+Automated monitoring is provided on an ongoing (i.e., 24x7x365) basis. Response, repair, and/or remediation services (as applicable) will be provided only during our business hours (currently M-F, 9 AM – 6 PM Pacific Time, excluding legal holidays and Svetek-observed holidays as listed below), unless otherwise specifically stated in the Quote or as otherwise described below.
 
 We will respond to problems, errors, or interruptions in the provision of the Services during business hours in the timeframe(s) described below. Severity levels will be determined by Svetek in our discretion after consulting with the Client. All remediation services will initially be attempted remotely; Svetek will provide onsite service only if remote remediation is ineffective and, under all circumstances, only if covered under the Service plan selected by Client.
 
