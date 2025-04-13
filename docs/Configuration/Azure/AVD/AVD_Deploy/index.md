@@ -4,10 +4,15 @@ keywords: azure, avd, wvd, deploy
 description: Deploy Azure Virtual Desktop (WVD).
 ---
 ## Deploy Azure Virtual Desktop (WVD) HOSTPOOL
+
 --- on moderation ---
+
 ### Auto Start Virtual Machine on Connect
+
 The Start Virtual Machine (VM) on Connect feature lets you save costs by allowing end users to turn on their VMs only when they need them. You can then turn off VMs when they're not needed.
+
 #### Create a custom role for Start VM on Connect
+
 Before you can configure the Start VM on Connect feature, you'll need to assign your VM a custom RBAC (role-based access control) role. This role will let Azure Virtual Desktop manage the VMs in your subscription.
 
 1. Open the Azure portal and go to Subscriptions.
@@ -48,10 +53,10 @@ To use the Azure portal to configure Start VM on Connect:
 [Microsoft Start Virtual Machine on Connect](https://docs.microsoft.com/en-us/azure/virtual-desktop/start-virtual-machine-connect)
 
 ## Prepare AVD VM (WVD)
-### ENABLE Acelerator Network on VM D2sV4
+### ENABLE Acelerated Network on VM D2sV4
 
-For enable Acelerated network for AVD VMs, on Azure VM Domain controler need run next powershell script for each AVD VM.    
-Don't forget changes $VMWVDNAME when you run script.
+To enable Acelerated network for AVD VMs, run the below powershell script on an Azure VM Domain controler for every AVD VM.    
+Don't forget to change $VMWVDNAME before you run the script.
 ```bash
 $VMResGroup="RG-US-WVD-VM-WEST"
 $VMWVDNAME="vm-wvd-west-2111" 
@@ -63,20 +68,21 @@ $nic | Set-AzNetworkInterface
 ```
 
 ### JOIN VMs AVD (WVD) TO AD
+
 ```bash
 add-computer –domainname "mia****.local"  -restart
 ```
 
 ### Create storage account on Azure for FSLogix user profile
 
-That script connecting to your Azure subscription,
+Below is the script connecting AD to your Azure subscription, creating storage account and configuring Fslogix
 ```bash
 #Create temp folder
 New-Item -Path 'C:\temp' -ItemType Directory -Force | Out-Null
 
 # Download AzFilesHybrid files for connect to Azure and extract them  
 $wc = New-Object System.Net.WebClient
-Write-Output $wc.DownloadFileTaskAsync("https://github.com/Azure-Samples/azure-files-samples/releases/download/v0.2.3/AzFilesHybrid.zip", "C:\temp\AzFilesHybrid.zip")
+Write-Output $wc.DownloadFileTaskAsync("https://github.com/Azure-Samples/azure-files-samples/releases/download/v0.3.2/AzFilesHybrid.zip", "C:\temp\AzFilesHybrid.zip")
 
 Expand-Archive -LiteralPath 'C:\temp\AzFilesHybrid.zip' -DestinationPath C:\temp\AzFilesHybrid
 cd C:\temp\AzFilesHybrid 
@@ -89,9 +95,9 @@ Import-Module -Name .\AzFilesHybrid.psd1
 Connect-AzAccount
 
 # Need edit params
-$location = "westus2"
-$SubscriptionId = "Microsoft Azure Sponsorship"
-$ResourceGroupName = "RG-US-WVD-INFRA-WEST"
+$location = "eastus"
+$SubscriptionId = "Subscription ID"
+$ResourceGroupName = "RG-US-WVD-INFRA-EAST"
 $StorageAccountName = "ch*****"
 $DomainAccountType = "ServiceLogonAccount" # ComputerAccount or ServiceLogonAccount
 $OrganizationalUnitDistinguishedName = "OU=azure,DC=ch******,DC=local"
@@ -114,7 +120,9 @@ $storageaccount = Get-AzStorageAccount -ResourceGroupName $resourceGroupName -Na
 $storageaccount.AzureFilesIdentityBasedAuth.DirectoryServiceOptions
 $storageaccount.AzureFilesIdentityBasedAuth.ActiveDirectoryProperties
 ```
-### Create SMB file share for store FSLogix profiles
+
+### Create SMB file share to store FSLogix profiles
+
 Open portal.azure.com and goto storage account.  
 Press New fileshare and type name: fslogixpe    
 ![](./images/AVD_storage_account_01.png)
@@ -124,30 +132,35 @@ Press New fileshare and type name: fslogixpe
     FSLogix Share Contributor
 
 You can use only one Security Group "FSLogix Share Contributor" for provide access to FSLogix profiles.  
-If you want make changes NTFS permissions, need second group "FSLogix Share Elevated Contributor" for admin staff.
+If you want make changes NTFS permissions, create another group "FSLogix Share Elevated Contributor" for your admins.
 
-Add members AVD Users to the FSLogix Share Contributor Group and need make sync use Azure Connect!!!
+Add AVD Users to the FSLogix Share Contributor Group and run a sync in Azure Connect!!!
 
-### Grand access for security groups access to fileshare fslogixpe
+### Grant security groups access to fileshare fslogixpe
+
 Open portal.azure.com and goto storage account.  
 Goto "Access Control (IAM)" -> "Role assignments"  
-Add groups FSLogix Share Elevated Contributor as role Storage File Data SMB Share Elevated Contributor  
-and FSLogix Share Contributor as role Storage File Data SMB Share Contributor   
+Add groups FSLogix Share Elevated Contributor with the "Storage File Data SMB Share Elevated Contributor" role
+and FSLogix Share Contributor with the "Storage File Data SMB Share Contributor" role 
+
 ![](./images/AVD_storage_account_02.png)
 
+### Mount a share on a DC and AVD VMs
 
-### Try mount share on DC and AVD VMs
-Try mount share on DC and AVD VMs and make sure users have access to the share without type login and passwords.
+Try mounting a share on a DC and AVD VMs and make sure users have access to the share without typing a username and a password.
+
 ```bash
-net use W: \\ch*****.file.core.windows.net\fslogixpe /user:Azure\churchwvd
+net use W: \\ch*****.file.core.windows.net\fslogixpe /user:Azure\wvdusername
 ```
 
 ### Install DUO MFA Agent, AVD Agent, FSLogix Agent on AVD (WVD) VMs
-That script will be download msi packages DUO MFA agent, FSLogix Agent, AVD Agent. When download done, all software will be installed automaticaly with settings in variables. Also script setup RDP session timers.   
-Before run that script please edit all variables.
+
+Below script will download msi packages DUO MFA agent, FSLogix Agent, AVD Agent. When downloading is done, all software will be installed automaticaly with settings found in variables. Also this script will setup RDP session settings.  
+Before running the script be sure to edit all variables.
+
 ```bash
 $registryPath = "HKLM:\SOFTWARE\FSLogix\Profiles"
-$FslogixSharePath =  "\\churchwvd.file.core.windows.net\fslogixpe"
+$FslogixSharePath =  "\\storageaccountwvd.file.core.windows.net\fslogixpe"
 
 $DouIKEY = "DIXXXXXXXXXXXXXXXXXXXX"
 $DuoSKEY = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
