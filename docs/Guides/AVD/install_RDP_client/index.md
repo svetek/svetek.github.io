@@ -1,14 +1,15 @@
 ---
-title: "Install Microsoft Remote Desktop (RDP Client)"
+title: "Install Microsoft Windows App (Formerly Remote Desktop App)"
 keywords: RDP, AVD
-description: Install Microsoft Remote Desktop (RDP Client).
+description: Install Microsoft Windows App (Former Microsoft Remote Desktop (RDP Client)).
 ---
-## Install Microsoft Remote Desktop Windows 10 (RDP Client) from an MSI package (Recommended!!!)
 
-Download MSI on your PC use that URL:  
-[Windows 64-bit](https://go.microsoft.com/fwlink/?linkid=2068602)  
-[Windows 32-bit](https://go.microsoft.com/fwlink/?linkid=2098960)  
-[Windows ARM64](https://go.microsoft.com/fwlink/?linkid=2098961)
+## Install Microsoft Windows App from an MSI package
+
+Download MSI to your PC using one of the below URLs:  
+[Windows 64-bit](https://go.microsoft.com/fwlink/?linkid=2262633)  
+[Windows 32-bit](https://go.microsoft.com/fwlink/?linkid=2262634)  
+[Windows ARM64](https://go.microsoft.com/fwlink/?linkid=2262635)
 
 When downloading is done, run the installation MSI by double-clicking on the file:  
 ![MSI](../images/rdclient_install_from_msi_01.png)  
@@ -29,12 +30,14 @@ Installation is done. Press "Finish" for close the window and run the app.
 
 The installation is done. Go to “ADD WORKSPACE” for configuring Microsoft Remote Desktop.
 
-## Install Microsoft Remote Desktop Windows 10 (RDP Client) from Microsoft store
+## Install Microsoft Windows App from the Microsoft Store (Recommended)
 
-If you use Windows 10 run Microsoft Store just type in search "store" and press on Microsoft Store  
+Download the Windows App from the [Microsoft Store](https://apps.microsoft.com/detail/9N1F85V9T8BN)
+
+From your Windows Desktop type "store" in the search field and click Microsoft Store when found
 ![Remote Desktop](../images/step_01.png)  
-On new windows Microsoft Store in search input type "Remote Desktop" and select "Microsoft Remote Desktop"  
-![Remote Desktop](../images/step_02.png)  
+While in the Microsoft Store, search for "Windows App" and select "Windows App" to open it 
+![Remote Desktop](../images/step_02.jpeg)  
 Next step we need press "Get" button for for start downloading app  
 ![Remote Desktop](../images/step_03.png)  
 On popup window "Use across your devices" press "No, thanks" button  
