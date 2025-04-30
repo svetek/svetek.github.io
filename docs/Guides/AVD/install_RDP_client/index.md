@@ -11,6 +11,8 @@ Download MSI to your PC using one of the below URLs:
 [Windows 32-bit](https://go.microsoft.com/fwlink/?linkid=2262634)  
 [Windows ARM64](https://go.microsoft.com/fwlink/?linkid=2262635)
 
+See [this page](https://learn.microsoft.com/en-gb/windows-app/whats-new?tabs=windows#latest-release) for the latest releases. 
+
 When downloading is done, run the installation MSI by double-clicking on the file:  
 ![MSI](../images/rdclient_install_from_msi_01.png)  
 Press "Run"  
