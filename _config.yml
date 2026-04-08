@@ -47,7 +47,6 @@ plugins:
   - jekyll-relative-links
   - jekyll-sitemap
 
-
 # Assets
 #
 # We specify the directory for Jekyll so we can use @imports.
