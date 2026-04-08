@@ -17,8 +17,6 @@ slug: "keeper-sso-scim-entra-id-setup-msp-vancouver-portland-seattle"
   No changes needed to _layouts/docs.html.
 -->
 
-# Keeper SSO + SCIM Setup Guide for Microsoft Entra ID
-
 *A field guide for MSPs deploying Keeper Password Manager with Entra ID SSO and SCIM provisioning — with lessons learned from real-world implementations serving businesses in Vancouver, WA, Portland, OR, and Seattle, WA.*
 
 ---
