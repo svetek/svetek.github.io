@@ -138,6 +138,10 @@ configuration:
     section:
       - title: "HYPER-V VLAN TAGGED SETTINGS"
         path: /docs/Configuration/Hyper-V/VLANs/
+  - sectiontitle: Keeper
+    section:
+      - title: "Keeper SSO and SCIM Provisioning"
+        path: /docs/Configuration/Keeper/sso_scim_guide/
   - sectiontitle: Cisco Meraki
     section:
       - title: "VPN with DUO MFA and Active Directory Auth"
