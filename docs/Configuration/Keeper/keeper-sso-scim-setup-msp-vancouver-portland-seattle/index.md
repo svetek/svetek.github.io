@@ -1,8 +1,21 @@
 ---
-title: "Keeper SSO + SCIM Setup Guide for Microsoft Entra ID | MSP Guide for Vancouver WA, Portland OR, Seattle WA"
+title: "Keeper SSO + SCIM Setup Guide for Microsoft Entra ID"
+seo_title: "Keeper SSO + SCIM Setup Guide for Microsoft Entra ID | MSP Guide for Vancouver WA, Portland OR, Seattle WA"
 description: "A practical MSP guide to configuring Keeper Password Manager with Microsoft Entra ID SSO and SCIM provisioning. Covers prerequisites, common pitfalls, and troubleshooting for businesses in Vancouver WA, Portland OR, and Seattle WA."
 keywords: "Keeper Password Manager setup, Keeper SCIM Entra ID, Keeper SSO Azure AD, MSP password management Vancouver WA, managed IT services Portland OR, Keeper enterprise setup Seattle, SCIM provisioning guide, Keeper SSO Connect Cloud"
+slug: "keeper-sso-scim-entra-id-setup-msp-vancouver-portland-seattle"
 ---
+
+<!--
+  ONE-TIME TEMPLATE FIX REQUIRED (_includes/head.html):
+  Find the <title> tag and change it from:
+    <title>{{ page.title }}</title>
+  to:
+    <title>{{ page.seo_title | default: page.title }}</title>
+  This renders seo_title in the browser tab / search engine results,
+  while the clean title field is used as the visible H1 on the page.
+  No changes needed to _layouts/docs.html.
+-->
 
 # Keeper SSO + SCIM Setup Guide for Microsoft Entra ID
 
