@@ -1,0 +1,29 @@
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+
+# Jekyll build output
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Ruby / Bundler
+vendor/
+.bundle/
+
+# Editor cruft
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs and env
+*.log
+.env
+.env.local
