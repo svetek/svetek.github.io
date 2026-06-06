@@ -145,6 +145,19 @@ body.night {
           filter: grayscale(100%) brightness(2);
         }
     }
+    .article-contact-footer {
+        background-color: $bg-component-night;
+        border-color: #374656;
+        border-left-color: $primary-links;
+
+        &__body {
+            color: $body-text-night;
+        }
+
+        &__links a {
+            color: $primary-links-night;
+        }
+    }
     .transparent-btn {
         background-color: rgb(0, 135, 200);
         box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1);

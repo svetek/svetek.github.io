@@ -68,6 +68,10 @@ guides:
         path: /docs/Guides/AVD/install_RDP_client/
       - title: "WEB Access to Azure Virtual Desktop (WVD) workspace (RDP Client)"
         path: /docs/Guides/AVD/AVD_workspace/
+  - sectiontitle: NetSuite
+    section:
+      - title: "Sign In to NetSuite Using Microsoft Entra ID SSO"
+        path: /docs/Guides/NetSuite/Sign_in_with_SSO/
   - sectiontitle: ZOHO Services
     section:
       - title: "ZOHO: Vault Share Passwords"
@@ -184,4 +188,3 @@ Templates:
 #  title: Reference documentation
 #- sectiontitle: Command-line reference
 #  section:
-

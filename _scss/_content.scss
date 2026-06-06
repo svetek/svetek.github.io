@@ -128,8 +128,7 @@ a.accept-eula {
   border: 1px solid $grey-20;
   border-left: 4px solid $blue-60;
   border-radius: 4px;
-  background-color: $bg-component;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+  background-color: $bg-sidebar;
 
   &__inner > :first-child {
     margin-top: 0;
@@ -168,19 +167,15 @@ a.accept-eula {
     display: inline-flex;
     align-items: center;
     gap: 0.4rem;
-    padding: 0.55rem 0.85rem;
-    border: 1px solid $grey-20;
-    border-radius: 999px;
-    background-color: $white;
+    padding: 0.35rem 0;
     color: $primary-links;
     text-decoration: none;
     font-weight: 500;
-    transition: background-color 0.15s ease, border-color 0.15s ease;
+    transition: color 0.15s ease, opacity 0.15s ease;
 
     &:hover {
       text-decoration: underline;
-      background-color: $white-10;
-      border-color: $blue-20;
+      opacity: 0.85;
     }
   }
 
@@ -204,7 +199,7 @@ a.accept-eula {
     }
 
     &__links a {
-      justify-content: center;
+      justify-content: flex-start;
     }
   }
 }
