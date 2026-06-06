@@ -1,3 +1,6 @@
+---
+hide_article_contact_footer: true
+---
 
 # Svetek LLC SMS/Text Messaging Privacy Policy
 

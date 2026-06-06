@@ -1,4 +1,6 @@
-
+---
+hide_article_contact_footer: true
+---
 
 - [Master Services Agreement](https://ourterms.live/svetek/MSA)
 - [Service Attachment for Managed Services](https://ourterms.live/svetek/Managed-IT-Attachment)

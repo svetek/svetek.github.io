@@ -76,7 +76,3 @@ After reboot, the phone will register on its assigned extension.
 - Dial from the phone to a local extension.
 - Dial from the phone to an outside number.
 - Dial from another phone to the IP phone.
-
-## Need help with 3CX deployments?
-
-Svetek IT Experts provides 3CX deployment, provisioning, and ongoing VoIP support for businesses in Vancouver WA, Portland OR, and Seattle WA. Visit [help.svetek.com](https://help.svetek.com) or contact our team for assistance.

@@ -148,5 +148,3 @@ SCIM-provisioned teams and user-team assignments go into a **Pending Queue** in 
 - **Keeper Commander CLI:** https://docs.keeper.io/en/enterprise-guide/commander-cli
 
 ---
-
-*This guide was developed from hands-on Keeper deployments supporting businesses in Vancouver, WA, Portland, OR, and the greater Seattle, WA area. If you're a business in the Pacific Northwest looking for managed IT services or help deploying Keeper enterprise password management, contact us.*

@@ -121,3 +121,90 @@ a.glossary {
 a.accept-eula {
   font-weight: bold;
 }
+
+.article-contact-footer {
+  margin-top: 2.5rem;
+  padding: 1.5rem 2rem;
+  border: 1px solid $grey-20;
+  border-left: 4px solid $blue-60;
+  border-radius: 4px;
+  background-color: $bg-component;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+
+  &__inner > :first-child {
+    margin-top: 0;
+  }
+
+  &__inner > :last-child {
+    margin-bottom: 0;
+  }
+
+  &__heading {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+
+  &__body {
+    color: $body-text;
+    max-width: 48rem;
+    margin-bottom: 1rem;
+  }
+
+  &__links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  &__links li {
+    margin: 0;
+  }
+
+  &__links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.55rem 0.85rem;
+    border: 1px solid $grey-20;
+    border-radius: 999px;
+    background-color: $white;
+    color: $primary-links;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.15s ease, border-color 0.15s ease;
+
+    &:hover {
+      text-decoration: underline;
+      background-color: $white-10;
+      border-color: $blue-20;
+    }
+  }
+
+  .fa {
+    font-size: 0.9em;
+    opacity: 0.8;
+  }
+}
+
+@media (max-width: 767px) {
+  .article-contact-footer {
+    padding: 1.25rem;
+
+    &__links {
+      gap: 0.75rem;
+    }
+
+    &__links li,
+    &__links a {
+      width: 100%;
+    }
+
+    &__links a {
+      justify-content: center;
+    }
+  }
+}

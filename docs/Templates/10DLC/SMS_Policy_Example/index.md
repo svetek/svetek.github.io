@@ -1,3 +1,7 @@
+---
+hide_article_contact_footer: true
+---
+
 # [Your Company Name] SMS/Text Messaging Privacy Policy
 
 **Effective Date: [Insert Date]**

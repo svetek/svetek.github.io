@@ -1,3 +1,7 @@
+---
+hide_article_contact_footer: true
+---
+
 # Master Services Agreement
 
 Hello and thank you for trusting Svetek LLC (“Svetek” “we,” “us,” or “our”) to provide you with professional information technology services. This Master Services Agreement (this “Agreement”) governs our business relationship with you, so please read this document carefully and keep a copy for your records.

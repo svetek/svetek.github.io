@@ -30,6 +30,7 @@
                             {%- endif -%}
                             {%- endunless -%}
                             {{ content }}
+                            {% include article-contact-footer.html %}
                             {%- unless page.notags == true -%}
                             {%- assign keywords = page.keywords | split:"," -%}
                             {%- if keywords.size > 0 -%}

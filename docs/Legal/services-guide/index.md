@@ -1,3 +1,6 @@
+---
+hide_article_contact_footer: true
+---
 
 # Svetek Services Guide
 
