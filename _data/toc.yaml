@@ -145,7 +145,7 @@ configuration:
   - sectiontitle: Keeper
     section:
       - title: "Keeper SSO and SCIM Provisioning"
-        path: /docs/Configuration/Keeper/keeper-sso-scim-setup-msp-vancouver-portland-seattle/
+        path: /docs/Configuration/Keeper/keeper-sso-scim-setup/
   - sectiontitle: Cisco Meraki
     section:
       - title: "VPN with DUO MFA and Active Directory Auth"

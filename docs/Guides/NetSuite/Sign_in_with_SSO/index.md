@@ -93,8 +93,6 @@ layout: docs
 }
 </script>
 
-# Sign In to NetSuite Using Microsoft Entra ID SSO
-
 NetSuite is configured to use **Microsoft Entra ID Single Sign-On (SSO)**, which means you
 sign in with your existing Microsoft work or school account — no separate NetSuite password
 required.

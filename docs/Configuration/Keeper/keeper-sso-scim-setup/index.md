@@ -1,10 +1,144 @@
 ---
-title: "Keeper SSO + SCIM Setup Guide for Microsoft Entra ID"
-seo_title: "Keeper SSO + SCIM Setup Guide for Microsoft Entra ID | MSP Guide for Vancouver WA, Portland OR, Seattle WA"
-description: "A practical MSP guide to configuring Keeper Password Manager with Microsoft Entra ID SSO and SCIM provisioning. Covers prerequisites, common pitfalls, and troubleshooting for businesses in Vancouver WA, Portland OR, and Seattle WA."
-keywords: "Keeper Password Manager setup, Keeper SCIM Entra ID, Keeper SSO Azure AD, MSP password management Vancouver WA, managed IT services Portland OR, Keeper enterprise setup Seattle, SCIM provisioning guide, Keeper SSO Connect Cloud"
-slug: "keeper-sso-scim-entra-id-setup-msp-vancouver-portland-seattle"
+title: Keeper SSO + SCIM Setup with Microsoft Entra ID
+seo_title: Keeper Password Manager SSO + SCIM Setup with Microsoft Entra ID
+description: A practical MSP guide to configuring Keeper Password Manager with Microsoft Entra ID SSO and SCIM provisioning. Covers prerequisites, common pitfalls, and troubleshooting.
+keywords: keeper password manager, keeper scim, keeper sso, entra id, azure ad, scim provisioning, sso connect cloud, keeper enterprise, msp password management
+canonical: https://help.svetek.com/docs/Configuration/Keeper/keeper-sso-scim-setup/
+og_title: Keeper SSO + SCIM Setup with Microsoft Entra ID
+og_description: A practical MSP guide to configuring Keeper Password Manager with Microsoft Entra ID SSO and SCIM provisioning. Covers prerequisites, common pitfalls, and troubleshooting.
+og_type: article
+og_image: https://help.svetek.com/images/svetek-favicon.png
+og_locale: en_US
+og_site_name: Svetek Documentation
+og_url: https://help.svetek.com/docs/Configuration/Keeper/keeper-sso-scim-setup/
+og_updated_time: 2026-06-06T00:00:00+00:00
+published_time: 2026-06-06T00:00:00+00:00
+twitter_card: summary_large_image
+twitter_domain: help.svetek.com
+twitter_site: "@svetekITexperts"
+twitter_title: Keeper SSO + SCIM Setup with Microsoft Entra ID
+twitter_description: A practical MSP guide to configuring Keeper Password Manager with Microsoft Entra ID SSO and SCIM provisioning.
+twitter_image: https://help.svetek.com/images/svetek-favicon.png
+twitter_image_alt: Svetek Documentation
+twitter_url: https://x.com/svetekITexperts
+redirect_from:
+  - /docs/Configuration/Keeper/keeper-sso-scim-setup-msp-vancouver-portland-seattle/
+layout: docs
 ---
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "Configure Keeper Password Manager with Microsoft Entra ID SSO and SCIM",
+  "description": "A practical MSP guide to configuring Keeper Password Manager with Microsoft Entra ID SSO and SCIM provisioning. Covers prerequisites, common pitfalls, and troubleshooting.",
+  "step": [
+    {
+      "@type": "HowToSection",
+      "name": "Before You Start",
+      "step": [
+        { "@type": "HowToStep", "text": "Reserve the client's email domain with Keeper support before any other step." },
+        { "@type": "HowToStep", "text": "Confirm SCIM and SSO Connect Cloud will be configured on a subnode, not the root node." }
+      ]
+    },
+    {
+      "@type": "HowToSection",
+      "name": "SSO Setup",
+      "step": [
+        { "@type": "HowToStep", "text": "In Entra ID, create a new Enterprise Application for Keeper Password Manager and Digital Vault." },
+        { "@type": "HowToStep", "text": "In the Keeper Admin Console, navigate to the target subnode and add SSO Connect Cloud as a provisioning method." },
+        { "@type": "HowToStep", "text": "Export SAML metadata from Keeper and upload it to Entra ID." },
+        { "@type": "HowToStep", "text": "Test SSO with a non-admin test user before rolling out." }
+      ]
+    },
+    {
+      "@type": "HowToSection",
+      "name": "SCIM Setup",
+      "step": [
+        { "@type": "HowToStep", "text": "In the Keeper Admin Console, add SCIM as a provisioning method on the same subnode as SSO." },
+        { "@type": "HowToStep", "text": "Generate a provisioning token and copy the Tenant URL and Secret Token." },
+        { "@type": "HowToStep", "text": "In Entra ID, go to the Keeper Enterprise App, set provisioning to Automatic, paste the Tenant URL and Secret Token, save, then test the connection." },
+        { "@type": "HowToStep", "text": "Assign both groups and individual users to the Keeper app in Entra ID." },
+        { "@type": "HowToStep", "text": "Ensure no assigned users have the Default Access role." },
+        { "@type": "HowToStep", "text": "Start provisioning and wait 5–40 minutes for the first sync." }
+      ]
+    },
+    {
+      "@type": "HowToSection",
+      "name": "Post-Provisioning",
+      "step": [
+        { "@type": "HowToStep", "text": "Disable JIT provisioning on the SSO Connect Cloud config to avoid conflict with SCIM." },
+        { "@type": "HowToStep", "text": "Approve pending teams via Full Sync in Keeper Admin Console, or deploy Keeper Automator for automatic approval." }
+      ]
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Team was created in Keeper but has no users. What is the cause?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The client's email domain has not been reserved with Keeper. Submit a support ticket at keepersecurity.servicenowservices.com to request domain reservation before proceeding."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Entra ID provisioning logs show a 412 PreconditionFailed error.",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "This error means the client's email domain has not been reserved with Keeper. Submit a support ticket to Keeper to reserve the domain."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Users are being skipped in the Entra ID provisioning logs.",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The affected users likely have the Default Access role in Entra ID. Assign a valid app role to each user in Entra ID."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Users are being prompted for a Master Password instead of SSO.",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The user is assigned to the root node rather than the SSO-enabled subnode. Move the user to the correct subnode."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "The Test Connection button fails before the provisioning token is saved.",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Always save the Tenant URL and Secret Token before clicking Test Connection. Testing before saving will always fail."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Teams are stuck in Pending state after SCIM provisioning.",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Keeper requires an authenticated user to approve team assignments due to its zero-knowledge model. Run Full Sync in the Keeper Admin Console, or deploy Keeper Automator v3.2+ for automatic approval."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "JIT and SCIM are both active and provisioning is behaving inconsistently.",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "JIT and SCIM conflict when both are enabled. Disable JIT on the SSO Connect Cloud configuration so SCIM is the sole provisioning method."
+      }
+    }
+  ]
+}
+</script>
 
 <!--
   ONE-TIME TEMPLATE FIX REQUIRED (_includes/head.html):
