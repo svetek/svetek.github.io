@@ -32,8 +32,8 @@ guides:
         path: /docs/Guides/Azure/PIM/
   - sectiontitle: 3CX Admin Guide
     section:
-      - title: "Adding M365 User"
-        path: /docs/Guides/3CX_Admin_Guide/3CX_Add_M365_User/
+      - title: "3CX M365 User Provisioning with Entra ID SSO"
+        path: /docs/Configuration/3CX/3cx-m365-user-provisioning-entra-sso/
       - title: "3CX Phone Troubleshooting"
         path: /docs/Guides/3CX_Admin_Guide/3CX_Phone_Troubleshooting/
       - title: "3CX Reset User Password"
@@ -128,8 +128,8 @@ configuration:
         path: /docs/Configuration/3CX/Time_schedule/
       - title: "3CX Configure faxes"
         path: /docs/Configuration/3CX/Faxes/
-      - title: "3CX Configure IP Phones"
-        path: /docs/Configuration/3CX/Configure_ip_phones/
+      - title: "3CX Configure IP Phones with Fanvil Provisioning"
+        path: /docs/Configuration/3CX/configure-3cx-ip-phones-fanvil-provisioning/
       - title: "3CX Emergency calls"
         path: /docs/Configuration/3CX/E911/
       - title: "3CX Extension Management"
@@ -138,6 +138,8 @@ configuration:
         path: /docs/Configuration/3CX/SBC/
       - title: "3CX Microsoft 365 integration"
         path: /docs/Configuration/3CX/Integration_office_365/
+      - title: "3CX M365 User Provisioning with Entra ID SSO"
+        path: /docs/Configuration/3CX/3cx-m365-user-provisioning-entra-sso/
   - sectiontitle: Hyper-V
     section:
       - title: "HYPER-V VLAN TAGGED SETTINGS"
