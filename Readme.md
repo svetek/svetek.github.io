@@ -30,7 +30,10 @@ We value your contribution. We'd like to make it as easy as possible to submit
 your contributions to the Svetek docs repository. Changes to the docs are
 handled through pull requests against the `master` branch. 
 
+Before adding or renaming documentation pages, review the
+[SEO guidelines](SEO_GUIDELINES.md) for front matter, canonical URLs, redirects,
+images, and pre-publish checks.
+
 ## Copyright and license
 
 Copyright 2025 Svetek IT Experts, released under the Apache 2.0 license.
-

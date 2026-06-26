@@ -5,7 +5,7 @@
 # Override the exclusion list to include files that are excluded in "development",
 # such as the "enterprise" stubs, which are in place to facilitate redirects
 # to Svetek.
-exclude: ["_scripts", "404.html", "index.html"]
+exclude: ["_scripts", "404.html", "index.html", "Readme.md", "SEO_GUIDELINES.md"]
 
 # Google Analytics, etc.
 google_analytics: G-V9CJQJRYMC
