@@ -1,157 +1,53 @@
 ---
-title: "Bring your own devices"
-keywords: Android, Windows, OSX, mac enrolment, byod
-description: Bring your own devices.
+title: "Bring Your Own Device Enrollment"
+seo_title: "Bring Your Own Device Enrollment with Intune | BYOD User Guides"
+description: "Start here for Intune bring-your-own-device enrollment guides for personal Mac and Android devices, including work profile and Company Portal enrollment paths."
+keywords: "Intune BYOD enrollment, bring your own device Intune, enroll personal Mac Intune, enroll Android work profile, Company Portal BYOD, IT support Vancouver WA, IT support Portland OR, IT support Seattle WA"
+canonical: https://help.svetek.com/docs/Guides/Intune/Bring_your_own_device/
+og_title: "Bring Your Own Device Enrollment"
+og_description: "Choose the right Intune enrollment guide for a personal Mac or Android phone."
+og_type: article
+og_image: https://help.svetek.com/images/logo_horizontal_whitetext.svg
+og_url: https://help.svetek.com/docs/Guides/Intune/Bring_your_own_device/
+published_time: 2026-06-29T00:00:00+00:00
+twitter_title: "Bring Your Own Device Enrollment"
+twitter_description: "Choose the right Intune enrollment guide for a personal Mac or Android phone."
+twitter_image: https://help.svetek.com/images/logo_horizontal_whitetext.svg
+twitter_image_alt: "Svetek logo"
+layout: docs
 ---
 
-<ul class="nav nav-tabs">
-  <li class="active"><a data-toggle="tab" href="#kubeosx">Mac OS X</a></li>
-  <li><a data-toggle="tab" href="#androidtab">Android</a></li>
-</ul>
-<div class="tab-content">
-  <div id="kubeosx" class="tab-pane fade in active">
-{% capture local-content %}
+# Bring Your Own Device Enrollment
 
-## Install Company Portal app
+Use this page to choose the correct Intune enrollment guide for a personal device.
 
-> **Install info**
->
-> Go to [Enroll My Mac](https://go.microsoft.com/fwlink/?linkid=853070)  
-The Company Portal installer .pkg file will download. Open the installer and continue through the steps. Agree to the software license agreement.
+BYOD enrollment allows a user to access company resources from a personal device while keeping company data managed by Intune. The exact enrollment flow depends on the device platform.
 
-![osx](images/byod_osx_01.png)  
-![osx](images/byod_osx_02.png)  
+## Choose a Guide
 
-> **Install info**
->
-> Enter your device password or registered fingerprint to install the software  
-  
-![osx](images/byod_osx_03.png)  
+| Device type | Use this guide | Best for |
+| --- | --- | --- |
+| Personal Mac | [Enroll a Mac in Intune](/docs/Guides/Intune/enroll-mac-intune/) | Users enrolling a personal macOS device with Company Portal |
+| Personal Android phone | [Enroll an Android Phone with a Work Profile](/docs/Guides/Intune/enroll-android-work-profile/) | Users enrolling an Android BYOD device with an Android Enterprise work profile |
 
-> **Install info**
->
-> Open Company Portal  
-  
-![osx](images/byod_osx_04.png)  
+## For IT Administrators
 
-> **Install info**
->
-> Sign in to Company Portal with your work or school account  
-  
-![osx](images/byod_osx_05.png)  
+If you are setting up Android BYOD enrollment for a new client, use the [Roll Out Android Enterprise Work Profiles in Intune](/docs/Guides/Intune/android-enterprise-work-profile-rollout/) guide.
 
-> **Install info**
->
-> Enter your work or school account email address. 
+## What Intune Can Manage
 
-![osx](images/byod_osx_06.png)  
+| Platform | Managed area | Personal data |
+| --- | --- | --- |
+| macOS BYOD | Device enrollment, compliance, Company Portal apps, and assigned policies | Personal files and apps remain the user's responsibility |
+| Android BYOD | Work profile apps and work data | Personal apps, photos, text messages, and personal data stay outside the work profile |
 
-> **Install info**
->
-> Press "Begin" button.  
-  
-![osx](images/byod_osx_07.png)  
+## Before You Start
 
-> **Install info**
->
-> Press "Continue" button.
-  
-![osx](images/byod_osx_08.png)  
-![osx](images/byod_osx_09.png)
+- Confirm the user has an Intune license.
+- Confirm the user knows their company email address and password.
+- Confirm MFA is set up before enrollment.
+- Use the platform-specific guide for the actual enrollment steps.
 
-> **Install info**
->
-> Press "Download profile" to proceed.  
-  
-![osx](images/byod_osx_10.png)  
+## Need Help
 
-> **Install info**
->
-> Press "Install" button.  
-  
-![osx](images/byod_osx_11.png)
-
-> **Install info**
->
-> Press "Install" button.
-
-![osx](images/byod_osx_12.png)
-
-> **Install info**
->
-> You can close that window. 
-  
-![osx](images/byod_osx_13.png)  
-
-![osx](images/byod_osx_14.png)  
-
-> **Install info**
->
-> Press "Done" to finish setup. You may close all windows.
-  
-![osx](images/byod_osx_15.png)  
-
-> **Install info**
->
-> Now, your PC is connected to company portal
-
-{% endcapture %}
-{{ local-content | markdownify }}
-
-</div>
-<div id="androidtab" class="tab-pane fade" markdown="1">
-{% capture localwin-content %}
-
-## Install Intune Portal
-
-![byod](images/BYOD_01.png){:height="600px" width="400px"}  
-Open Play Market on your own Android Devices
-
-![byod](images/BYOD_02.png){:height="600px" width="400px"}  
-Type in search field "Microsoft Portal" and select "Intune Company Portal" app
-
-![byod](images/BYOD_03.png){:height="600px" width="400px"}  
-Press "Install"
-
-![bydo](images/BYOD_04.png){:height="600px" width="400px"}  
-When install is done, press "Open"
-
-![byod](images/BYOD_05.png){:height="600px" width="400px"}  
-When Microsoft Portal is up, press "Sign in" button
-
-![byod](images/BYOD_06.png){:height="600px" width="400px"}  
-Enter you corporate user name and password
-
-![byod](images/BYOD_07.png){:height="600px" width="400px"}  
-Tap "Skip for now"
-
-![byod](images/BYOD_08.png){:height="600px" width="400px"}  
-Tap "Begin" button
-
-![byod](images/BYOD_09.png){:height="600px" width="400px"}  
-Tap "Continue"
-
-![byod](images/BYOD_10.png){:height="600px" width="400px"}  
-Tap "Accept & Continue"
-
-![byod](images/BYOD_11.png){:height="600px" width="400px"}  
-Tap "Continue"
-
-![byod](images/BYOD_12.png){:height="600px" width="400px"}  
-Tap "Done"
-
-![byod](images/BYOD_13.png){:height="600px" width="400px"}  
-Tap "Got it"
-
-![byod](images/BYOD_14.png){:height="600px" width="400px"}  
-After all steps, your own devices will be install on work profile all apps
-
-Now, you can use corporate apps for secure work communications.
-
-To be continued....
-
-{% endcapture %}
-{{ localwin-content | markdownify }}
-</div>
-<hr>
-</div>
+Svetek can help organizations in Vancouver WA, Portland OR, and Seattle WA plan BYOD enrollment, publish user-facing instructions, and configure Intune policies for Microsoft 365 access.
