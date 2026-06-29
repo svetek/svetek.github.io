@@ -64,8 +64,6 @@ guides:
         path: /docs/Guides/Intune/enroll-mac-intune/
       - title: "Enroll an Android phone with a work profile"
         path: /docs/Guides/Intune/enroll-android-work-profile/
-      - title: "Roll out Android Enterprise work profiles"
-        path: /docs/Guides/Intune/android-enterprise-work-profile-rollout/
       - title: "Add a user to a shared Mac with Platform SSO"
         path: /docs/Guides/Intune/add-user-shared-mac-platform-sso/
       - title: "DUO MFA ENROLLMENT DEVICE"
@@ -101,6 +99,10 @@ configuration:
     section:
       - title: "Microsoft Intune Setup"
         path: /docs/Configuration/Azure/Microsoft_intune/
+      - title: "Roll out Android Enterprise work profiles"
+        path: /docs/Configuration/Azure/android-enterprise-work-profile-rollout/
+      - title: "Roll out corporate-owned Android Enterprise devices"
+        path: /docs/Configuration/Azure/android-enterprise-corporate-owned-rollout/
       - title: "Script for enable TLS 1.2"
         path: /docs/Configuration/Azure/EnableTLS/
       - title: "Domain name registration transfer to Azure App Service domains"
