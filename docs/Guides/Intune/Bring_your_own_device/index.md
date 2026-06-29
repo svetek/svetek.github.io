@@ -32,7 +32,7 @@ BYOD enrollment allows a user to access company resources from a personal device
 
 ## For IT Administrators
 
-If you are setting up Android BYOD enrollment for a new client, use the [Roll Out Android Enterprise Work Profiles in Intune](/docs/Guides/Intune/android-enterprise-work-profile-rollout/) guide.
+If you are setting up Android BYOD enrollment for a new client, use the [Roll Out Android Enterprise Work Profiles in Intune](/docs/Configuration/Azure/android-enterprise-work-profile-rollout/) configuration guide.
 
 ## What Intune Can Manage
 
