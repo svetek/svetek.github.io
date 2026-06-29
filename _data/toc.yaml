@@ -60,6 +60,10 @@ guides:
     section:
       - title: "Bring your own devices"
         path: /docs/Guides/Intune/Bring_your_own_device/
+      - title: "Roll out Android Enterprise work profiles"
+        path: /docs/Guides/Intune/android-enterprise-work-profile-rollout/
+      - title: "Enroll an Android phone with a work profile"
+        path: /docs/Guides/Intune/enroll-android-work-profile/
       - title: "Add a user to a shared Mac with Platform SSO"
         path: /docs/Guides/Intune/add-user-shared-mac-platform-sso/
       - title: "DUO MFA ENROLLMENT DEVICE"
