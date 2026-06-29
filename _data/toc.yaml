@@ -58,12 +58,14 @@ guides:
         path: /docs/Guides/Unifi_Admin_Guide/Unifi_WiFi_Password_Reset/
   - sectiontitle: Intune
     section:
-      - title: "Bring your own devices"
+      - title: "Bring your own device enrollment"
         path: /docs/Guides/Intune/Bring_your_own_device/
-      - title: "Roll out Android Enterprise work profiles"
-        path: /docs/Guides/Intune/android-enterprise-work-profile-rollout/
+      - title: "Enroll a Mac in Intune"
+        path: /docs/Guides/Intune/enroll-mac-intune/
       - title: "Enroll an Android phone with a work profile"
         path: /docs/Guides/Intune/enroll-android-work-profile/
+      - title: "Roll out Android Enterprise work profiles"
+        path: /docs/Guides/Intune/android-enterprise-work-profile-rollout/
       - title: "Add a user to a shared Mac with Platform SSO"
         path: /docs/Guides/Intune/add-user-shared-mac-platform-sso/
       - title: "DUO MFA ENROLLMENT DEVICE"
