@@ -17,8 +17,6 @@ twitter_image_alt: "Svetek logo"
 layout: docs
 ---
 
-# Bring Your Own Device Enrollment
-
 Use this page to choose the correct Intune enrollment guide for a personal device.
 
 BYOD enrollment allows a user to access company resources from a personal device while keeping company data managed by Intune. The exact enrollment flow depends on the device platform.

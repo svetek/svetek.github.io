@@ -11,8 +11,6 @@ published_time: 2026-06-06T00:00:00+00:00
 layout: docs
 ---
 
-# NetSuite
-
 Guides for accessing and using NetSuite with your organization's account.
 
 - [Sign In to NetSuite Using Microsoft Entra ID SSO](Sign_in_with_SSO/)

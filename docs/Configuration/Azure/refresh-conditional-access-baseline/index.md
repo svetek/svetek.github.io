@@ -24,8 +24,6 @@ twitter_image_alt: "Svetek logo"
 layout: docs
 ---
 
-# Refresh and Diff a Deployed Conditional Access Baseline
-
 This guide is for the second pass and every pass after that. You already deployed the [j0eyv ConditionalAccessBaseline](https://github.com/j0eyv/ConditionalAccessBaseline), adjusted it for a tenant, and now upstream has changed.
 
 If you are deploying the baseline for the first time, start with [Deploy a Conditional Access Baseline in Microsoft Entra](/docs/Configuration/Azure/deploy-conditional-access-baseline/). Do not use this article as first-deploy instructions.

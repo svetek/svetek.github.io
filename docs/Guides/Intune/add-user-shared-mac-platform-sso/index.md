@@ -17,8 +17,6 @@ twitter_image_alt: "Svetek logo"
 layout: docs
 ---
 
-# Add a User to a Shared Mac with Platform SSO
-
 Use the **pre-stage local account** method for Intune-managed shared Macs where Platform SSO is enabled.
 
 This guide is for Macs where login-window Entra provisioning is not working reliably. In that scenario, pre-staging the local macOS account first is the practical path. Each local user still needs to complete their own Platform SSO registration after reaching the desktop.

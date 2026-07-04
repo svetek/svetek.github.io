@@ -17,8 +17,6 @@ twitter_image_alt: "Svetek logo"
 layout: docs
 ---
 
-# Roll Out Android Enterprise Work Profiles in Intune
-
 Use this guide to set up Android Enterprise personally owned devices with a work profile for a **new Intune client**. This is for BYOD Android phones where the company manages work apps and work data, while personal apps and personal data remain outside Intune management.
 
 This guide is adapted for a new-client rollout. Do not configure the **Move to Android Management API** migration policy unless the client already has Intune-managed Android work profile devices that need migration.

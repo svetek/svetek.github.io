@@ -17,8 +17,6 @@ twitter_image_alt: "Company Portal installer on macOS"
 layout: docs
 ---
 
-# Enroll a Mac in Intune
-
 Use this guide to enroll a personal Mac in Microsoft Intune with the Company Portal app.
 
 Enrollment lets your organization verify the Mac meets company requirements before granting access to company resources.

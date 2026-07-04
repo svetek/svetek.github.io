@@ -24,8 +24,6 @@ twitter_image_alt: "Svetek logo"
 layout: docs
 ---
 
-# Deploy a Conditional Access Baseline in Microsoft Entra
-
 The [j0eyv ConditionalAccessBaseline](https://github.com/j0eyv/ConditionalAccessBaseline) is a practical starting point for Microsoft Entra Conditional Access. It gives you a numbered policy set, supporting groups, named locations, and a persona model that helps you reason about who each policy protects.
 
 This guide is for the first deployment into a Microsoft 365 tenant. You can deploy the same baseline three ways:

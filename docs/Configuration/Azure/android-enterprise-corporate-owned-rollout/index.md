@@ -17,8 +17,6 @@ twitter_image_alt: "Svetek logo"
 layout: docs
 ---
 
-# Roll Out Corporate-Owned Android Enterprise Devices in Intune
-
 Use this guide to configure corporate-owned Android Enterprise enrollment in Microsoft Intune for a new client.
 
 This guide is for company-owned Android devices. For personal Android phones, use the [Android Enterprise work profile rollout guide](/docs/Configuration/Azure/android-enterprise-work-profile-rollout/) and the [Android user enrollment guide](/docs/Guides/Intune/enroll-android-work-profile/).

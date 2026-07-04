@@ -17,8 +17,6 @@ twitter_image_alt: "Svetek logo"
 layout: docs
 ---
 
-# Enroll an Android Phone with a Work Profile
-
 Use this guide to enroll a personal Android phone for company access. Enrollment creates a separate **Work** profile on your phone. Company apps and company data stay in the Work profile. Your personal apps, photos, text messages, and personal data remain separate.
 
 ## Before You Start
