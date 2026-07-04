@@ -99,6 +99,10 @@ configuration:
     section:
       - title: "Microsoft Intune Setup"
         path: /docs/Configuration/Azure/Microsoft_intune/
+      - title: "Deploy a Conditional Access baseline"
+        path: /docs/Configuration/Azure/deploy-conditional-access-baseline/
+      - title: "Refresh and diff a Conditional Access baseline"
+        path: /docs/Configuration/Azure/refresh-conditional-access-baseline/
       - title: "Roll out Android Enterprise work profiles"
         path: /docs/Configuration/Azure/android-enterprise-work-profile-rollout/
       - title: "Roll out corporate-owned Android Enterprise devices"
