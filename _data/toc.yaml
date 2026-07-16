@@ -99,6 +99,8 @@ configuration:
     section:
       - title: "Microsoft Intune Setup"
         path: /docs/Configuration/Azure/Microsoft_intune/
+      - title: "Add another Global Administrator in Entra ID"
+        path: /docs/Configuration/Azure/add-global-administrator-entra-id/
       - title: "Deploy a Conditional Access baseline"
         path: /docs/Configuration/Azure/deploy-conditional-access-baseline/
       - title: "Refresh and diff a Conditional Access baseline"
@@ -134,6 +136,10 @@ configuration:
     section:
       - title: "Fix Google Drive external sharing blocked by stale tenant"
         path: /docs/Configuration/Google/google-drive-external-share-stale-tenant/
+  - sectiontitle: Cloudflare
+    section:
+      - title: "Invite a user and assign administrator access"
+        path: /docs/Configuration/Cloudflare/invite-user-administrator/
   - sectiontitle: 3CX
     section:
       - title: "3CX Deploy"
