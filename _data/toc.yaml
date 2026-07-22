@@ -101,6 +101,8 @@ configuration:
         path: /docs/Configuration/Azure/Microsoft_intune/
       - title: "Add another Global Administrator in Entra ID"
         path: /docs/Configuration/Azure/add-global-administrator-entra-id/
+      - title: "Audit Entra ID tenant access"
+        path: /docs/Configuration/Azure/entra-id-tenant-access-audit/
       - title: "Deploy a Conditional Access baseline"
         path: /docs/Configuration/Azure/deploy-conditional-access-baseline/
       - title: "Refresh and diff a Conditional Access baseline"
