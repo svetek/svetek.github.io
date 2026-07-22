@@ -85,8 +85,8 @@
 
 .dropdown-menu>li>a:focus,
 .dropdown-menu>li>a:hover {
-    color: #ffffff;
-    background-color: #0c5176;
+    color: $svetek-heading;
+    background-color: $svetek-yellow;
 }
 
 /*
@@ -117,12 +117,12 @@
 }
 
 a.gs-title {
-    color: #2089C4!important;
+    color: $primary-links!important;
     text-decoration: none;
 }
 
 .gs-webResult.gs-result a.gs-title:visited, .gs-webResult.gs-result a.gs-title:visited b, .gs-imageResult a.gs-title:visited, .gs-imageResult a.gs-title:visited b {
-    color: #F993A6!important;
+    color: $svetek-orange-dark!important;
 }
 .gs-webResult div.gs-visibleUrl, .gs-imageResult div.gs-visibleUrl {
     color: #82949E!important;

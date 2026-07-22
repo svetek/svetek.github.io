@@ -20,8 +20,8 @@
  * Code formatting *************************************************************
  */
 pre, code {
-  background-color: #f5f8fa!important;
-  color: #0c5176 !important;
+  background-color: $svetek-bg-secondary!important;
+  color: $svetek-heading !important;
 }
 
 pre {
@@ -126,7 +126,7 @@ a.accept-eula {
   margin-top: 2.5rem;
   padding: 1.5rem 2rem;
   border: 1px solid $grey-20;
-  border-left: 4px solid $blue-60;
+  border-left: 4px solid $svetek-red;
   border-radius: 4px;
   background-color: $bg-sidebar;
 

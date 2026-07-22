@@ -24,14 +24,19 @@
  * Breadcrumbs  ****************************************************************
  */
 .breadcrumb {
-  background-color: $bg-sidebar-active;
+  background-color: $svetek-menu-bg-active;
   border-radius: 0;
   margin-bottom: 0;
   padding-left:  22px; // left-align with logo
-  border-bottom: 0.1px solid rgba($primary-links, .5);
+  border-bottom: 0.1px solid rgba($svetek-menu-accent, .55);
+
+  a {
+    color: $svetek-menu-accent;
+  }
 
   a:not([href]) {
     cursor: default;
+    color: rgba($white, .75);
   }
 }
 
@@ -42,6 +47,7 @@
 // Some links don't have 'href' attr, hence no mouse pointer
 .nav-sidebar li a {
     cursor: pointer;
+    color: rgba($white, .84);
 }
 
 .nav-sidebar>li>a {
@@ -52,8 +58,8 @@
 .nav-sidebar>.active>a,
 .nav-sidebar>.active>a:focus,
 .nav-sidebar>.active>a:hover {
-    color: #2089C4;
-    background-color: #428bca;
+    color: $svetek-menu-highlight;
+    background-color: $svetek-menu-bg-active;
 }
 
 .nav-sidebar ul {
@@ -78,7 +84,7 @@
 .nav-sidebar ul li a,
 .nav-sidebar ul li a:focus {
     border-bottom: none;
-    border-left:   1px solid $primary-links;
+    border-left:   1px solid rgba($svetek-menu-accent, .55);
 }
 
 .nav-sidebar .nav > li > a {
@@ -93,8 +99,9 @@
 
 .nav-sidebar ul li a.active,
 .nav-sidebar.nav > li > a:focus {
-    background:  $bg-sidebar-active;
-    border-left: 4px solid $primary-links;
+    background:  $svetek-menu-bg-active;
+    border-left: 4px solid $svetek-menu-accent;
+    color: $svetek-menu-highlight;
     font-weight: 600;
 }
 
@@ -205,7 +212,7 @@ div#side-toc-title {
     right: 0;
     bottom: 0;
     background-color: $slider-bg;
-    border: 1px solid #c3e4f7;
+    border: 1px solid $svetek-border;
 }
 
 .slider:before {

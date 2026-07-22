@@ -15,49 +15,67 @@ $black:                 #000;
 $top-navigation-height: 92px; // top navigation height is: nav (55px) + breadcrumbs (37px)
 
 /*
+ * Svetek brand palette from svetek.com
+ */
+$svetek-orange:          #ef9a3f;
+$svetek-orange-dark:     #cc8336;
+$svetek-red:             #ee1c25;
+$svetek-red-dark:        #c9141b;
+$svetek-yellow:          #f5ec45;
+$svetek-heading:         #161e20;
+$svetek-copy:            #32484d;
+$svetek-bg-primary:      #f9f9f9;
+$svetek-bg-secondary:    #f6f7f9;
+$svetek-border:          #d9d9d9;
+$svetek-menu-bg:         #161e20;
+$svetek-menu-bg-active:  #252525;
+$svetek-menu-accent:     #ef9a3f;
+$svetek-menu-highlight:  #f5ec45;
+
+/*
  * standard mode
  */
-$body-text:              $black-0;
-$primary-links:          $blue-70;
+$body-text:              $svetek-copy;
+$primary-links:          $svetek-red-dark;
 //
 $bg-body:                $white-0;
-$bg-body-landing:        $white-10;
-$bg-header:              $blue-60;
-$bg-secondary:           $blue-60;
-$bg-sidebar:             $white-10;
-$bg-sidebar-active:      $white-15;
+$bg-body-landing:        $svetek-bg-primary;
+$bg-header:              $svetek-heading;
+$bg-secondary:           $svetek-heading;
+$bg-sidebar:             $svetek-bg-primary;
+$bg-sidebar-active:      $svetek-bg-secondary;
 $bg-footer:              $white-0;
-$bg-footer-landing:      $marine-90;
-$bg-component:           $white-5;
+$bg-footer-landing:      $svetek-heading;
+$bg-component:           $svetek-bg-primary;
 $bg-card:                $white-0;
 
 // notes, warnings//
-$note-color:             $blue-80;
-$important-color:        $orange-90;
-$warning-color:          $red-90;
+$note-color:             $svetek-copy;
+$important-color:        $svetek-orange-dark;
+$warning-color:          $svetek-red;
 
-$slider-bg:              $marine-10;
-$slider-btn:             $blue-60;
-$table-head:             $grey-10;
+$slider-bg:              $svetek-border;
+$slider-btn:             $svetek-orange;
+$table-head:             $svetek-bg-secondary;
 
 /*
  * night mode
  */
 $body-text-night:         hsl(180,   1%,  83%);
-$primary-links-night:     hsl(203,  85%,  79%);
+$primary-links-night:     $svetek-orange;
 
 $bg-body-night:           hsl(203,  90%,  10%);
 $bg-body-landing-night:   hsl(203,  90%,  10%);
-$bg-header-night:         hsl(203,  40%,  10%);
-$bg-secondary-night:      hsl(203,  40%,  10%);
+$bg-header-night:         hsl(192,  19%,  11%);
+$bg-secondary-night:      hsl(192,  19%,  11%);
 $bg-sidebar-night:        hsl(203,  40%,  10%);
 $bg-sidebar-night-active: hsl(203,  40%,   7%);
 $bg-footer-night:         hsl(203,   0%,   0%);
-$bg-footer-landing-night: hsl(214, 100%,  20%);
+$bg-footer-landing-night: hsl(192,  19%,  11%);
 
 $bg-component-night:      hsl(203,  44%,  10%);
 $bg-card-night:           #0e161b;
 
-$active-sidebar-night:    hsl(203,  85%,   79%);
+$active-sidebar-night:    $svetek-orange;
 
 $bg-search-results-night: hsla(0,    0%,    4%, 0.95);
