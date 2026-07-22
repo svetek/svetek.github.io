@@ -1,7 +1,25 @@
 ---
 title: "Privileged Identity Management (PIM)"
-keywords: Azure, PIM, Privileged, Identity, Management
-description: Privileged Identity Management (PIM).
+seo_title: "Activate Privileged Identity Management PIM Roles | Azure User Guide"
+description: "User guide for activating eligible Microsoft Entra Privileged Identity Management group membership or ownership, including MFA, justification, and active assignment review."
+keywords: "Privileged Identity Management, Microsoft Entra PIM, activate PIM role, eligible group membership, Azure PIM, Microsoft Entra ID Governance, IT support Vancouver WA, IT support Portland OR, IT support Seattle WA"
+canonical: https://help.svetek.com/docs/Guides/Azure/PIM/
+og_title: "Activate Privileged Identity Management Roles"
+og_description: "Activate eligible PIM group membership or ownership in Microsoft Entra ID."
+og_type: article
+og_image: https://help.svetek.com/docs/Guides/Azure/PIM/images/pim_activate_role_00.png
+og_url: https://help.svetek.com/docs/Guides/Azure/PIM/
+published_time: 2023-11-07T00:00:00+00:00
+date: 2023-11-07
+tags:
+  - Microsoft Entra
+  - Azure
+  - PIM
+twitter_title: "Activate PIM Roles"
+twitter_description: "Activate eligible Privileged Identity Management group membership or ownership."
+twitter_image: https://help.svetek.com/docs/Guides/Azure/PIM/images/pim_activate_role_00.png
+twitter_image_alt: "Microsoft Entra Privileged Identity Management role activation screen"
+layout: docs
 ---
 
 ## PIM
@@ -48,7 +66,7 @@ When a group membership or ownership is activated, Microsoft Entra PIM temporari
 ![pim_activate_role_05.png](images%2Fpim_activate_role_05.png)
 7.  Depending on the group’s setting, justification for activation may be required. If needed, provide the justification in the Reason box.
 
-## View active assigments
+## View Active Assignments
 
 1.  Sign in use this [short link](https://aka.ms/pim) to open the My roles page directly.
 2.  Browse to Groups > Active assignments tab.

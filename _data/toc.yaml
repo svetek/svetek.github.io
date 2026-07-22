@@ -30,6 +30,8 @@ guides:
     section:
       - title: "Part 1: Privileged Identity Management (PIM)"
         path: /docs/Guides/Azure/PIM/
+      - title: "Part 2: Assign eligible Azure resource roles with PIM"
+        path: /docs/Guides/Azure/pim-azure-resource-role-eligibility/
   - sectiontitle: 3CX Admin Guide
     section:
       - title: "3CX M365 User Provisioning with Entra ID SSO"
