@@ -210,6 +210,14 @@ Standards:
 Templates:
 - title: Templates
   path: /docs/Templates
+- sectiontitle: UniFi
+  section:
+    - title: "UniFi template library"
+      path: /docs/Templates/UniFi/
+    - sectiontitle: "UniFi Access"
+      section:
+        - title: "Access control rollout templates"
+          path: /docs/Templates/UniFi/Access/access-control-rollout-templates/
 - sectiontitle: 10DLC
   section:
     - title: "SMS Policy Example"
