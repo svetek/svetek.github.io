@@ -67,23 +67,24 @@ Older imported policies with no prefix (`Default AV Policy`, `LAPS`, `ASR Defaul
 
 | Code | Meaning |
 | --- | --- |
-| `DEV` | Entra device security group that Svetek creates and controls |
+| `DVG` | Entra device security group that Svetek creates and controls |
+| `USG` | Entra user security group that Svetek may create later for user-targeted Intune assignments |
 | `APG` | Autopatch group (the container created in Tenant administration) |
 | `UPD` | Hand-built Windows update policy created outside Autopatch (hotpatch policy, exceptions) |
 
 ### 3.3 Device groups (test and prod)
 
-Pattern: `MSP-WIN-DEV-<RING>-<QUALIFIER>`
+Pattern: `MSP-WIN-DVG-<RING>-<QUALIFIER>`
 
 | Group name | Membership | Role |
 | --- | --- | --- |
-| `MSP-WIN-DEV-POOL-CORP` | Dynamic: Windows + corporate-owned | Distribution pool only. Never assigned directly to a ring. |
-| `MSP-WIN-DEV-RING0-TEST` | Assigned, manual | Test ring. IT device plus 1 or 2 volunteer users. |
-| `MSP-WIN-DEV-RING1-PILOT` | Assigned (small tenants) or dynamic share of pool (100+) | Early adopters, one per department where possible. |
-| `MSP-WIN-DEV-RING2-PROD` | Dynamic share of pool, or assigned | General production fleet. |
-| `MSP-WIN-DEV-RING3-PRODB` | Dynamic share of pool | Second production wave. Only used at 100+ devices. |
-| `MSP-WIN-DEV-RING9-LAST` | Assigned, manual | Reboot-sensitive and business-critical endpoints: front desk, POS, scheduling station, principal's laptop. |
-| `MSP-WIN-DEV-EXCL-AUTOPATCH` | Assigned, manual | Devices deliberately outside Autopatch. Never assigned to any ring. Document the reason per device. |
+| `MSP-WIN-DVG-POOL-CORP` | Dynamic: Windows + corporate-owned | Distribution pool only. Never assigned directly to a ring. |
+| `MSP-WIN-DVG-RING0-TEST` | Assigned, manual | Test ring. IT device plus 1 or 2 volunteer users. |
+| `MSP-WIN-DVG-RING1-PILOT` | Assigned (small tenants) or dynamic share of pool (100+) | Early adopters, one per department where possible. |
+| `MSP-WIN-DVG-RING2-PROD` | Dynamic share of pool, or assigned | General production fleet. |
+| `MSP-WIN-DVG-RING3-PRODB` | Dynamic share of pool | Second production wave. Only used at 100+ devices. |
+| `MSP-WIN-DVG-RING9-LAST` | Assigned, manual | Reboot-sensitive and business-critical endpoints: front desk, POS, scheduling station, principal's laptop. |
+| `MSP-WIN-DVG-EXCL-AUTOPATCH` | Assigned, manual | Devices deliberately outside Autopatch. Never assigned to any ring. Document the reason per device. |
 
 Why the digits: `RING0`, `RING1`, `RING2`, `RING3`, `RING9` sort in the Entra and Intune portals in the same order as the rollout, which makes membership mistakes visible at a glance. `RING9-LAST` is deliberately left as the highest number so extra middle rings can be inserted later without renumbering.
 
@@ -133,9 +134,9 @@ Three rings, all assigned membership. No percentage distribution.
 
 | Ring | Source group | Typical size |
 | --- | --- | --- |
-| Test | `MSP-WIN-DEV-RING0-TEST` | 1 to 3 |
-| Ring1 | `MSP-WIN-DEV-RING2-PROD` (assigned) | remainder |
-| Last | `MSP-WIN-DEV-RING9-LAST` | 1 to 4 critical devices |
+| Test | `MSP-WIN-DVG-RING0-TEST` | 1 to 3 |
+| Ring1 | `MSP-WIN-DVG-RING2-PROD` (assigned) | remainder |
+| Last | `MSP-WIN-DVG-RING9-LAST` | 1 to 4 critical devices |
 
 Notes: at this size, one Autopatch group (`MSP-WIN-APG-CORP`). If the tenant has fewer than 5 devices total, Test plus Last is acceptable, but tell the customer in writing that a two-ring model means very little validation time.
 
@@ -145,10 +146,10 @@ Four rings. Still assigned membership for Test and Last; Pilot can be assigned (
 
 | Ring | Source | Target share |
 | --- | --- | --- |
-| Test | `MSP-WIN-DEV-RING0-TEST`, assigned | 2 to 4 devices |
-| Ring1 (Pilot) | `MSP-WIN-DEV-RING1-PILOT`, assigned | roughly 10 to 15 percent |
-| Ring2 (Prod) | `MSP-WIN-DEV-POOL-CORP`, dynamic 100 percent | remainder |
-| Last | `MSP-WIN-DEV-RING9-LAST`, assigned | critical devices |
+| Test | `MSP-WIN-DVG-RING0-TEST`, assigned | 2 to 4 devices |
+| Ring1 (Pilot) | `MSP-WIN-DVG-RING1-PILOT`, assigned | roughly 10 to 15 percent |
+| Ring2 (Prod) | `MSP-WIN-DVG-POOL-CORP`, dynamic 100 percent | remainder |
+| Last | `MSP-WIN-DVG-RING9-LAST`, assigned | critical devices |
 
 ### Tier 3: 101 to 300 devices
 
@@ -156,11 +157,11 @@ Five rings. Percentages are now reliable, so use dynamic distribution for the mi
 
 | Ring | Source | Target share |
 | --- | --- | --- |
-| Test | `MSP-WIN-DEV-RING0-TEST`, assigned | 3 to 5 devices |
-| Ring1 (Pilot) | `MSP-WIN-DEV-POOL-CORP`, dynamic | 5 percent |
-| Ring2 (Prod A) | `MSP-WIN-DEV-POOL-CORP`, dynamic | 35 percent |
-| Ring3 (Prod B) | `MSP-WIN-DEV-POOL-CORP`, dynamic | 60 percent |
-| Last | `MSP-WIN-DEV-RING9-LAST`, assigned | critical devices |
+| Test | `MSP-WIN-DVG-RING0-TEST`, assigned | 3 to 5 devices |
+| Ring1 (Pilot) | `MSP-WIN-DVG-POOL-CORP`, dynamic | 5 percent |
+| Ring2 (Prod A) | `MSP-WIN-DVG-POOL-CORP`, dynamic | 35 percent |
+| Ring3 (Prod B) | `MSP-WIN-DVG-POOL-CORP`, dynamic | 60 percent |
+| Last | `MSP-WIN-DVG-RING9-LAST`, assigned | critical devices |
 
 Dynamic percentages must total exactly 100 across the dynamically distributed rings.
 
