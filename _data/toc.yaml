@@ -97,10 +97,19 @@ guides:
 configuration:
   - title: Configuration
     path: /docs/Configuration
-  - sectiontitle: Azure
+  - sectiontitle: Intune
+    path: /docs/Configuration/Intune/
     section:
       - title: "Microsoft Intune Setup"
-        path: /docs/Configuration/Azure/Microsoft_intune/
+        path: /docs/Configuration/Intune/microsoft-intune-setup/
+      - title: "Windows Autopatch design for small business tenants"
+        path: /docs/Configuration/Intune/windows-autopatch-small-business-design/
+      - title: "Roll out Android Enterprise work profiles"
+        path: /docs/Configuration/Intune/android-enterprise-work-profile-rollout/
+      - title: "Roll out corporate-owned Android Enterprise devices"
+        path: /docs/Configuration/Intune/android-enterprise-corporate-owned-rollout/
+  - sectiontitle: Azure
+    section:
       - title: "Add another Global Administrator in Entra ID"
         path: /docs/Configuration/Azure/add-global-administrator-entra-id/
       - title: "Audit Entra ID tenant access"
@@ -111,10 +120,6 @@ configuration:
         path: /docs/Configuration/Azure/refresh-conditional-access-baseline/
       - title: "Fix Windows time sync on Entra ID joined devices"
         path: /docs/Configuration/Azure/fix-windows-time-sync-entra-id/
-      - title: "Roll out Android Enterprise work profiles"
-        path: /docs/Configuration/Azure/android-enterprise-work-profile-rollout/
-      - title: "Roll out corporate-owned Android Enterprise devices"
-        path: /docs/Configuration/Azure/android-enterprise-corporate-owned-rollout/
       - title: "Script for enable TLS 1.2"
         path: /docs/Configuration/Azure/EnableTLS/
       - title: "Domain name registration transfer to Azure App Service domains"
