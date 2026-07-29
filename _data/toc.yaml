@@ -86,6 +86,8 @@ guides:
         path: /docs/Guides/ZOHO/Vault/
   - sectiontitle: Other User Guides
     section:
+      - title: "NCR Passport Remote Deposit Web Client for macOS"
+        path: /docs/Guides/OtherGuides/ncr-passport-remote-deposit-macos/
       - title: "Connecting to Wi-Fi"
         path: /docs/Guides/OtherGuides/Connecting_To_WiFi/
       - title: "Meraki VPN Client"
