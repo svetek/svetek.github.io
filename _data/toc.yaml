@@ -147,6 +147,10 @@ configuration:
     section:
       - title: "Fix Google Drive external sharing blocked by stale tenant"
         path: /docs/Configuration/Google/google-drive-external-share-stale-tenant/
+  - sectiontitle: UniFi Access
+    section:
+      - title: "Manage tenants and visitor access"
+        path: /docs/Configuration/UniFi/Access/tenant-enrollment-management/
   - sectiontitle: Cloudflare
     section:
       - title: "Invite a user and assign administrator access"
