@@ -16,3 +16,4 @@ Guides for accessing and using NetSuite with your organization's account.
 - [Sign In to NetSuite Using Microsoft Entra ID SSO](Sign_in_with_SSO/)
 - [Set Preferences in NetSuite: Show Internal IDs](set-preferences/)
 - [Set Up Reseller Tax Exemptions in NetSuite](reseller-tax-exemptions/)
+- [Block New Sales for Delinquent Customers in NetSuite](credit-holds/)

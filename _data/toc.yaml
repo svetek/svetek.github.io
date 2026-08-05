@@ -84,6 +84,8 @@ guides:
         path: /docs/Guides/NetSuite/set-preferences/
       - title: "Set Up Reseller Tax Exemptions"
         path: /docs/Guides/NetSuite/reseller-tax-exemptions/
+      - title: "Block Sales for Delinquent Customers"
+        path: /docs/Guides/NetSuite/credit-holds/
   - sectiontitle: ZOHO Services
     section:
       - title: "ZOHO: Vault Share Passwords"
