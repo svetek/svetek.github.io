@@ -80,6 +80,8 @@ guides:
     section:
       - title: "Sign In to NetSuite Using Microsoft Entra ID SSO"
         path: /docs/Guides/NetSuite/Sign_in_with_SSO/
+      - title: "Set Preferences: Show Internal IDs"
+        path: /docs/Guides/NetSuite/set-preferences/
   - sectiontitle: ZOHO Services
     section:
       - title: "ZOHO: Vault Share Passwords"
