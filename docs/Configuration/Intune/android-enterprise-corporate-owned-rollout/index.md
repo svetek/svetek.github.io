@@ -99,6 +99,8 @@ Use dedicated enrollment for kiosk, shared, userless, or single-purpose Android 
 
 Dedicated devices usually need a device configuration profile or Managed Home Screen policy to lock the device into the intended app experience.
 
+For a company-owned smart display, digital sign, or other userless Android screen, use [Configure Android Enterprise Dedicated Smart Displays](/docs/Configuration/Intune/android-enterprise-dedicated-smart-display/) for the complete kiosk, network, update, and support procedure.
+
 ## Create a Corporate-Owned Work Profile Enrollment Profile
 
 Use corporate-owned work profile enrollment when the company owns the phone but allows personal use.

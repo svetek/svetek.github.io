@@ -24,3 +24,4 @@ Use these guides for Microsoft Intune tenant configuration, endpoint rollout pla
 | [Windows Autopatch Design for Small Business Tenants](windows-autopatch-small-business-design/) | Design Autopatch groups, rings, cadence, and per-tenant records for SMB customers. |
 | [Roll Out Android Enterprise Work Profiles](android-enterprise-work-profile-rollout/) | Configure personally owned Android work profile enrollment for BYOD users. |
 | [Roll Out Corporate-Owned Android Enterprise Devices](android-enterprise-corporate-owned-rollout/) | Configure fully managed, dedicated, and corporate-owned work profile Android devices. |
+| [Configure Android Enterprise Dedicated Smart Displays](android-enterprise-dedicated-smart-display/) | Enroll, lock down, and maintain company-owned Android smart displays and digital signs. |
