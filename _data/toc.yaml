@@ -153,6 +153,10 @@ configuration:
     section:
       - title: "Fix Google Drive external sharing blocked by stale tenant"
         path: /docs/Configuration/Google/google-drive-external-share-stale-tenant/
+  - sectiontitle: Microsoft 365
+    section:
+      - title: "Report suspicious email from Exchange Message Trace"
+        path: /docs/Configuration/Microsoft_365/report-message-from-exchange-trace/
   - sectiontitle: UniFi Access
     section:
       - title: "Manage tenants and visitor access"
