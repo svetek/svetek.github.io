@@ -163,6 +163,10 @@ configuration:
     section:
       - title: "Manage tenants and visitor access"
         path: /docs/Configuration/UniFi/Access/tenant-enrollment-management/
+  - sectiontitle: UniFi Protect
+    section:
+      - title: "Understand the non-Network console Auto-Recovery notice"
+        path: /docs/Configuration/UniFi/Protect/non-network-console-auto-recovery-notice/
   - sectiontitle: Cloudflare
     section:
       - title: "Invite a user and assign administrator access"
