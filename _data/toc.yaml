@@ -118,6 +118,8 @@ configuration:
         path: /docs/Configuration/Intune/android-enterprise-corporate-owned-rollout/
       - title: "Configure Android Enterprise dedicated smart displays"
         path: /docs/Configuration/Intune/android-enterprise-dedicated-smart-display/
+      - title: "Resolve MDM Terms of Use errors during Windows Entra join"
+        path: /docs/Configuration/Intune/windows-entra-join-mdm-terms-mfa/
   - sectiontitle: Azure
     section:
       - title: "Add another Global Administrator in Entra ID"

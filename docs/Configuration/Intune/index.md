@@ -25,3 +25,4 @@ Use these guides for Microsoft Intune tenant configuration, endpoint rollout pla
 | [Roll Out Android Enterprise Work Profiles](android-enterprise-work-profile-rollout/) | Configure personally owned Android work profile enrollment for BYOD users. |
 | [Roll Out Corporate-Owned Android Enterprise Devices](android-enterprise-corporate-owned-rollout/) | Configure fully managed, dedicated, and corporate-owned work profile Android devices. |
 | [Configure Android Enterprise Dedicated Smart Displays](android-enterprise-dedicated-smart-display/) | Enroll, lock down, and maintain company-owned Android smart displays and digital signs. |
+| [Resolve MDM Terms of Use Errors During Windows Entra Join](windows-entra-join-mdm-terms-mfa/) | Diagnose MFA, Conditional Access, licensing, and MDM URL failures during Windows Entra join. |
