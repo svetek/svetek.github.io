@@ -219,6 +219,10 @@ configuration:
     section:
       - title: "Voice Integrity to Remediate Spam Labels"
         path: /docs/Configuration/Twilio/Voice_Integrity/
+  - sectiontitle: Sage 100 Contractor
+    section:
+      - title: "Restore license server information"
+        path: /docs/Configuration/Sage_100_Contractor/restore-license-information/
 
 Service_disclaimers:
 - title: Service Disclaimers
