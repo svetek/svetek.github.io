@@ -21,6 +21,7 @@ Use these guides for Microsoft Intune tenant configuration, endpoint rollout pla
 | Guide | Use |
 | --- | --- |
 | [Microsoft Intune Setup](microsoft-intune-setup/) | Configure Intune MDM/MAM enrollment basics and tenant branding. |
+| [Configure Automatic Windows Device Enrollment for Microsoft 365 Business Premium](windows-automatic-device-enrollment-business-premium/) | Enable Windows automatic Intune enrollment and validate Defender for Business onboarding. |
 | [Windows Autopatch Design for Small Business Tenants](windows-autopatch-small-business-design/) | Design Autopatch groups, rings, cadence, and per-tenant records for SMB customers. |
 | [Roll Out Android Enterprise Work Profiles](android-enterprise-work-profile-rollout/) | Configure personally owned Android work profile enrollment for BYOD users. |
 | [Roll Out Corporate-Owned Android Enterprise Devices](android-enterprise-corporate-owned-rollout/) | Configure fully managed, dedicated, and corporate-owned work profile Android devices. |

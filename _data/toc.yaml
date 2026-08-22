@@ -110,6 +110,8 @@ configuration:
     section:
       - title: "Microsoft Intune Setup"
         path: /docs/Configuration/Intune/microsoft-intune-setup/
+      - title: "Configure automatic Windows device enrollment"
+        path: /docs/Configuration/Intune/windows-automatic-device-enrollment-business-premium/
       - title: "Windows Autopatch design for small business tenants"
         path: /docs/Configuration/Intune/windows-autopatch-small-business-design/
       - title: "Roll out Android Enterprise work profiles"
