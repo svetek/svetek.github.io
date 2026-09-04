@@ -92,6 +92,8 @@ guides:
         path: /docs/Guides/ZOHO/Vault/
   - sectiontitle: Other User Guides
     section:
+      - title: "Connect to Cloudflare Zero Trust with WARP"
+        path: /docs/Guides/Cloudflare/connect-cloudflare-zero-trust-warp/
       - title: "NCR Passport Remote Deposit Web Client for macOS"
         path: /docs/Guides/OtherGuides/ncr-passport-remote-deposit-macos/
       - title: "Connecting to Wi-Fi"
@@ -163,6 +165,8 @@ configuration:
     section:
       - title: "Report suspicious email from Exchange Message Trace"
         path: /docs/Configuration/Microsoft_365/report-message-from-exchange-trace/
+      - title: "Configure HVE SMTP with Security Defaults and Conditional Access"
+        path: /docs/Configuration/Microsoft_365/hve-security-defaults-conditional-access/
   - sectiontitle: UniFi Access
     section:
       - title: "Manage tenants and visitor access"
@@ -173,6 +177,10 @@ configuration:
         path: /docs/Configuration/UniFi/Protect/migrate-protect-to-dedicated-unvr/
   - sectiontitle: Cloudflare
     section:
+      - title: "Configure Zero Trust WARP enrollment with email policies"
+        path: /docs/Configuration/Cloudflare/cloudflare-zero-trust-warp-email-enrollment/
+      - title: "Verify DMARC, SPF, DKIM, TLS-RPT, and MTA-STS"
+        path: /docs/Configuration/Cloudflare/email-authentication-dmarc-mta-sts/
       - title: "Invite a user and assign administrator access"
         path: /docs/Configuration/Cloudflare/invite-user-administrator/
   - sectiontitle: 3CX
@@ -225,6 +233,10 @@ configuration:
     section:
       - title: "Restore license server information"
         path: /docs/Configuration/Sage_100_Contractor/restore-license-information/
+  - sectiontitle: Telephony
+    section:
+      - title: "CNAM, LIDB, STIR/SHAKEN, and Branded Calling"
+        path: /docs/Configuration/Telephony/caller-identity-glossary/
 
 Service_disclaimers:
 - title: Service Disclaimers
