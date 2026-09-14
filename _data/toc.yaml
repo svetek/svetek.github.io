@@ -92,6 +92,8 @@ guides:
         path: /docs/Guides/ZOHO/Vault/
   - sectiontitle: Other User Guides
     section:
+      - title: "Connect Claude to Microsoft 365"
+        path: /docs/Guides/OtherGuides/connect-claude-microsoft-365/
       - title: "Connect to Cloudflare Zero Trust with WARP"
         path: /docs/Guides/Cloudflare/connect-cloudflare-zero-trust-warp/
       - title: "NCR Passport Remote Deposit Web Client for macOS"
@@ -124,6 +126,8 @@ configuration:
         path: /docs/Configuration/Intune/android-enterprise-dedicated-smart-display/
       - title: "Resolve MDM Terms of Use errors during Windows Entra join"
         path: /docs/Configuration/Intune/windows-entra-join-mdm-terms-mfa/
+      - title: "Configure the macOS Application Firewall with Intune"
+        path: /docs/Configuration/Intune/macos-application-firewall-settings-catalog/
   - sectiontitle: Azure
     section:
       - title: "Add another Global Administrator in Entra ID"
@@ -167,6 +171,8 @@ configuration:
         path: /docs/Configuration/Microsoft_365/report-message-from-exchange-trace/
       - title: "Configure HVE SMTP with Security Defaults and Conditional Access"
         path: /docs/Configuration/Microsoft_365/hve-security-defaults-conditional-access/
+      - title: "Configure the Claude Microsoft 365 connector"
+        path: /docs/Configuration/Microsoft_365/claude-microsoft-365-connector/
   - sectiontitle: UniFi Access
     section:
       - title: "Manage tenants and visitor access"
