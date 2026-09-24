@@ -158,6 +158,10 @@ body.night {
             color: $primary-links-night;
         }
     }
+    .documentation-index__group {
+        background-color: $bg-component-night;
+        border-color: #374656;
+    }
     .transparent-btn {
         background-color: rgb(0, 135, 200);
         box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1);

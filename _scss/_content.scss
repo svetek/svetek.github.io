@@ -122,6 +122,61 @@ a.accept-eula {
   font-weight: bold;
 }
 
+.documentation-index {
+  margin-top: 2rem;
+
+  &__group {
+    margin: 0 0 2.5rem;
+    padding: 1.5rem 2rem;
+    border: 1px solid $grey-20;
+    border-radius: 4px;
+    background-color: $bg-sidebar;
+  }
+
+  &__group > h2 {
+    margin-top: 0;
+  }
+
+  &__articles,
+  &__articles ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__articles > li + li {
+    border-top: 1px solid $grey-20;
+  }
+
+  &__articles li {
+    margin: 0;
+    padding: 0.85rem 0;
+  }
+
+  &__articles a {
+    display: block;
+    font-weight: 600;
+  }
+
+  &__articles span {
+    display: block;
+    margin-top: 0.25rem;
+  }
+
+  &__subgroup {
+    padding-top: 1.25rem !important;
+  }
+
+  &__subgroup h3 {
+    font-size: 1rem;
+    margin: 0 0 0.25rem;
+  }
+
+  &__subgroup ul {
+    margin-left: 1rem;
+  }
+}
+
 .article-contact-footer {
   margin-top: 2.5rem;
   padding: 1.5rem 2rem;
@@ -186,6 +241,12 @@ a.accept-eula {
 }
 
 @media (max-width: 767px) {
+  .documentation-index {
+    &__group {
+      padding: 1.25rem;
+    }
+  }
+
   .article-contact-footer {
     padding: 1.25rem;
 

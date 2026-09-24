@@ -1,11 +1,27 @@
 {% unless page.hide_article_contact_footer == true %}
+{% assign is_configuration_article = false %}
+{% if page.url contains '/docs/Configuration/' %}
+{% assign is_configuration_article = true %}
+{% endif %}
 <div class="article-contact-footer" role="complementary" aria-label="Contact support">
   <div class="article-contact-footer__inner">
-    <h2 class="article-contact-footer__heading">Need help with this topic?</h2>
+    <h2 class="article-contact-footer__heading">{% if is_configuration_article %}Prefer to have this handled?{% else %}Need help with this topic?{% endif %}</h2>
     <p class="article-contact-footer__body">
+      {% if is_configuration_article %}
+      Svetek provides managed IT, cybersecurity, cloud, and project support for businesses in Vancouver, WA and the surrounding region. Start with a 15-minute consultation so we can scope the work and provide clear pricing before work begins.
+      {% else %}
       Our support team is ready to assist you. Reach out through any of the channels below.
+      {% endif %}
     </p>
     <ul class="article-contact-footer__links">
+      {% if is_configuration_article %}
+      <li>
+        <a href="https://svetek.com/contact/" aria-label="Request a consultation with Svetek">
+          <i class="fa fa-calendar" aria-hidden="true"></i>
+          Request a 15-minute consultation
+        </a>
+      </li>
+      {% endif %}
       <li>
         <a href="mailto:help@svetek.com" aria-label="Email support">
           <i class="fa fa-envelope" aria-hidden="true"></i>
@@ -19,9 +35,9 @@
         </a>
       </li>
       <li>
-        <a href="https://support.svetek.com/" aria-label="Open the support portal">
+        <a href="https://support.svetek.com/" aria-label="Open the support portal for existing clients">
           <i class="fa fa-ticket" aria-hidden="true"></i>
-          Open the support portal
+          Existing client? Open the support portal
         </a>
       </li>
     </ul>

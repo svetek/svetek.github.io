@@ -1,0 +1,35 @@
+{%- assign documentation_section = site.data.toc[include.node] -%}
+<div class="documentation-index">
+  {%- for group in documentation_section -%}
+    {%- if group.sectiontitle -%}
+      {%- assign group_id = group.sectiontitle | slugify -%}
+      <section class="documentation-index__group" id="{{ group_id }}">
+        <h2>{{ group.sectiontitle }}</h2>
+        <ul class="documentation-index__articles">
+          {%- for article in group.section -%}
+            {%- if article.sectiontitle -%}
+              <li class="documentation-index__subgroup">
+                <h3>{{ article.sectiontitle }}</h3>
+                <ul>
+                  {%- for nested_article in article.section -%}
+                    {%- assign nested_page = site.pages | where: "url", nested_article.path | first -%}
+                    <li>
+                      <a href="{{ nested_article.path }}">{{ nested_article.title }}</a>
+                      {%- if nested_page.description -%}<span>{{ nested_page.description }}</span>{%- endif -%}
+                    </li>
+                  {%- endfor -%}
+                </ul>
+              </li>
+            {%- else -%}
+              {%- assign article_page = site.pages | where: "url", article.path | first -%}
+              <li>
+                <a href="{{ article.path }}">{{ article.title }}</a>
+                {%- if article_page.description -%}<span>{{ article_page.description }}</span>{%- endif -%}
+              </li>
+            {%- endif -%}
+          {%- endfor -%}
+        </ul>
+      </section>
+    {%- endif -%}
+  {%- endfor -%}
+</div>

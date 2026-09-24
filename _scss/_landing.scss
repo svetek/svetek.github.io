@@ -3,7 +3,7 @@ $dark-blue: #161e20;
 body.landing {
   background-color: $bg-body-landing;
 
-  h2, h5, h6 {
+  h1, h2, h5, h6 {
     font-family: $headings-landing;
   }
 
@@ -68,9 +68,13 @@ body.landing {
   .hero {
     padding-top: 20px;
 
-    h2 {
+    h1 {
       font-size: 32px;
       line-height: 32px;
+      margin: 0 0 14px;
+    }
+
+    p {
       margin-bottom: 14px;
     }
 
