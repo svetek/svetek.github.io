@@ -128,6 +128,8 @@ configuration:
         path: /docs/Configuration/Intune/windows-entra-join-mdm-terms-mfa/
       - title: "Configure the macOS Application Firewall with Intune"
         path: /docs/Configuration/Intune/macos-application-firewall-settings-catalog/
+      - title: "Block Microsoft Edge notification scams with Intune"
+        path: /docs/Configuration/Intune/edge-notification-scam-remediation/
   - sectiontitle: Azure
     section:
       - title: "Add another Global Administrator in Entra ID"
@@ -183,6 +185,8 @@ configuration:
         path: /docs/Configuration/UniFi/Protect/migrate-protect-to-dedicated-unvr/
   - sectiontitle: Cloudflare
     section:
+      - title: "Authorize Wrangler for GitHub website deployments"
+        path: /docs/Configuration/Cloudflare/authorize-wrangler-github-website-deployments/
       - title: "Configure Zero Trust WARP enrollment with email policies"
         path: /docs/Configuration/Cloudflare/cloudflare-zero-trust-warp-email-enrollment/
       - title: "Verify DMARC, SPF, DKIM, TLS-RPT, and MTA-STS"
