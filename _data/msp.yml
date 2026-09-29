@@ -1,0 +1,29 @@
+discovery_url: https://zfrmz.com/Mbrqne1h9PiKB2RuVPQY
+phone: 360-718-3891
+phone_url: tel:+13607183891
+default:
+  title: Prefer to have this handled?
+  description: Get help planning, configuring, and maintaining the systems your business relies on.
+  service_url: https://svetek.com/services/it-support-services/
+  service_label: Explore IT support services
+topics:
+  Intune:
+    title: Need help managing your business devices?
+    description: Talk with us about endpoint security, Intune configuration, and ongoing device management.
+    service_url: https://svetek.com/services/it-support-services/
+    service_label: Explore IT support services
+  Azure:
+    title: Need help with Microsoft cloud and identity?
+    description: Plan your Microsoft cloud setup, review access, and get support with configuration changes.
+    service_url: https://svetek.com/services/cloud-solutions/
+    service_label: Explore cloud services
+  Microsoft_365:
+    title: Need help with Microsoft 365?
+    description: Get support with Microsoft 365 administration, email security, and cloud integrations.
+    service_url: https://svetek.com/services/cloud-solutions/
+    service_label: Explore cloud services
+  Cloudflare:
+    title: Need help securing access to your systems?
+    description: Talk with us about secure access, email authentication, and Cloudflare configuration.
+    service_url: https://svetek.com/services/cybersecurity-services/
+    service_label: Explore cybersecurity services

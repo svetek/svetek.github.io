@@ -1,0 +1,24 @@
+.msp-cta {
+  margin-top: 2.5rem;
+  padding: 1.5rem 2rem;
+  border: 1px solid $svetek-border;
+  border-left: 4px solid $svetek-red;
+  border-radius: 4px;
+  background: $svetek-bg-secondary;
+  h2 { margin-top: 0; font-size: 1.5rem; }
+  p { max-width: 52rem; }
+  &__actions { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem 1.5rem; margin: 1.25rem 0; }
+  &__actions a { font-weight: 600; }
+  a.msp-cta__primary { padding: 0.75rem 1rem; border-radius: 4px; color: white; background: $svetek-red-dark; text-decoration: none; }
+  &__client { margin-bottom: 0; font-size: 0.9em; }
+}
+
+body.night .msp-cta {
+  background: $bg-component-night;
+  border-color: #374656;
+  border-left-color: $svetek-orange;
+}
+
+@media (max-width: 640px) {
+  .msp-cta { padding: 1.25rem; }
+}

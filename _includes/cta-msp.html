@@ -1,0 +1,14 @@
+{%- assign cta_topic = page.url | split: '/' -%}
+{%- assign cta_topic_key = cta_topic[3] -%}
+{%- assign cta = site.data.msp.topics[cta_topic_key] | default: site.data.msp.default -%}
+<aside class="msp-cta" aria-label="Get help from Svetek">
+  <h2>{{ page.cta_title | default: cta.title | escape }}</h2>
+  <p>{{ page.cta_description | default: cta.description | escape }} Svetek is a managed IT services provider based in Vancouver, WA.</p>
+  <p>Start with a 15-minute consultation to discuss the scope and request pricing for your business.</p>
+  <div class="msp-cta__actions">
+    <a class="msp-cta__primary" href="{{ site.data.msp.discovery_url }}">Tell us what you need</a>
+    <a href="{{ site.data.msp.phone_url }}">Call {{ site.data.msp.phone }}</a>
+    <a href="{{ cta.service_url }}">{{ cta.service_label }}</a>
+  </div>
+  <p class="msp-cta__client">Already a Svetek client? <a href="https://support.svetek.com/">Open the support portal</a>.</p>
+</aside>
