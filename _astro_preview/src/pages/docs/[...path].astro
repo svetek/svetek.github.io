@@ -1,0 +1,18 @@
+---
+import DocsLayout from '../../layouts/DocsLayout.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { pages, manifest, canonicalUrl } from '../../lib/docs.mjs';
+
+export function getStaticPaths() {
+  return [
+    ...pages.map((page) => ({ params: { path: page.url.slice('/docs/'.length).replace(/\/$/, '') || undefined }, props: { page } })),
+    ...Object.entries(manifest.redirects).filter(([url]) => url.startsWith('/docs/')).map(([url, target]) => ({
+      params: { path: url.slice('/docs/'.length).replace(/\/$/, '') }, props: { target },
+    })),
+  ];
+}
+const { page, target } = Astro.props;
+---
+{page ? <DocsLayout page={page} /> : <BaseLayout title="Article moved | Svetek Documentation" description="This article has moved." canonical={canonicalUrl(target)} redirect={target}>
+  <main class="container"><h1>Article moved</h1><p><a href={target}>Continue to the current article</a>.</p></main>
+</BaseLayout>}

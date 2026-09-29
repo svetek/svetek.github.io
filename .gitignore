@@ -8,6 +8,7 @@ ehthumbs.db
 
 # Jekyll build output
 _site/
+_site_preview/
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata

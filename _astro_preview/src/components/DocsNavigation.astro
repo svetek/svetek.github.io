@@ -1,0 +1,18 @@
+---
+import { publicSections, sidebarItems } from '../lib/docs.mjs';
+
+const { page } = Astro.props;
+const branch = `/${page.url.split('/').filter(Boolean).slice(0, 2).join('/')}/`;
+const topics = sidebarItems(branch, page.url);
+---
+<nav aria-label="Documentation sections">
+  <a class="docs-home-link" href="/docs/">← Documentation home</a>
+  {publicSections.map((section) =>
+    <a class="docs-section-link" href={section.url} aria-current={section.url === page.url ? 'page' : undefined}>{section.title}</a>)}
+  {topics.length > 0 && <div class="docs-topics">
+    <p>{publicSections.find((section) => section.url === branch)?.title}</p>
+    <ul>{topics.map((topic) => <li style={`--nav-depth:${topic.depth}`}>
+      <a href={topic.url} aria-current={topic.url === page.url ? 'page' : undefined}>{topic.title}</a>
+    </li>)}</ul>
+  </div>}
+</nav>

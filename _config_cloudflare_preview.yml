@@ -1,0 +1,26 @@
+url: https://help.svetek.com
+baseurl: ""
+incremental: false
+noindex: true
+google_analytics: ""
+polldaddy_id: ""
+include:
+  - _preview
+exclude:
+  - vendor
+  - gemfiles
+  - node_modules
+  - _scripts
+  - _migration
+  - _site
+  - _site_preview
+  - CNAME
+  - robots.txt
+  - 404.html
+  - 404.md
+  - fonts/geomanist/demo.html
+  - Dockerfile
+  - docker-compose.yml
+  - Makefile
+  - Readme.md
+  - SEO_GUIDELINES.md

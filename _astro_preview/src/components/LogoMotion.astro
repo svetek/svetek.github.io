@@ -1,0 +1,26 @@
+---
+import mark from '../assets/svetek-mark.svg?raw';
+const artwork = mark.replace(/<\?xml[^>]*\?>/, '').replaceAll('fill: rgb(255, 255, 255);', 'fill: currentColor;');
+---
+<div class="logo-art">
+  <div class="logo-art__stage">
+    <div class="logo-art__orbit logo-art__orbit--outer" aria-hidden="true"></div>
+    <div class="logo-art__orbit logo-art__orbit--inner" aria-hidden="true"></div>
+    <svg class="logo-art__satellites" viewBox="0 0 520 520" aria-hidden="true">
+      <g class="logo-art__satellite logo-art__satellite--one"><circle cx="260" cy="15.6" r="6" /></g>
+      <g class="logo-art__satellite logo-art__satellite--two"><circle cx="471.657" cy="382.2" r="6" /></g>
+      <g class="logo-art__satellite logo-art__satellite--three"><circle cx="48.343" cy="382.2" r="6" /></g>
+    </svg>
+    <div class="logo-art__symbol" aria-hidden="true" set:html={artwork} />
+    <svg class="logo-art__words" viewBox="0 0 520 520" role="img" aria-label="Productive teams. Protected business. Room to grow.">
+      <defs>
+        <path id="people-arc" d="M 49 183 A 225 225 0 0 1 221 38" />
+        <path id="process-arc" d="M 299 38 A 225 225 0 0 1 471 183" />
+        <path id="technology-arc" d="M 65 373 A 225 225 0 0 0 455 373" />
+      </defs>
+      <text><textPath href="#people-arc" startOffset="50%" text-anchor="middle">PRODUCTIVE TEAMS</textPath></text>
+      <text><textPath href="#process-arc" startOffset="50%" text-anchor="middle">PROTECTED BUSINESS</textPath></text>
+      <text><textPath href="#technology-arc" startOffset="50%" text-anchor="middle">ROOM TO GROW</textPath></text>
+    </svg>
+  </div>
+</div>

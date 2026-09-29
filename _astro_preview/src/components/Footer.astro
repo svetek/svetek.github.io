@@ -1,0 +1,19 @@
+---
+import Brand from './Brand.astro';
+const { homePath = '' } = Astro.props;
+---
+<footer class="site-footer">
+  <div class="container site-footer__grid">
+    <div>
+      <a class="site-logo" href={`${homePath}#top`} aria-label="Svetek IT Experts home"><Brand /></a>
+      <p>Business IT support based in Vancouver, Washington.</p>
+    </div>
+    <nav aria-label="Footer navigation">
+      <a href={`${homePath}#services`}>Services</a>
+      <a href={`${homePath}#ai-readiness`}>AI readiness</a>
+      <a href="/docs/">Documentation</a>
+      <a href="https://support.svetek.com/">Client support</a>
+    </nav>
+    <p class="site-footer__legal">© {new Date().getFullYear()} Svetek IT Experts.</p>
+  </div>
+</footer>

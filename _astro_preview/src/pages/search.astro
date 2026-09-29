@@ -1,0 +1,77 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import DocsHeader from '../components/DocsHeader.astro';
+import DocsSearch from '../components/DocsSearch.astro';
+import Footer from '../components/Footer.astro';
+import { docs } from '../lib/docs.mjs';
+import '../styles/docs.css';
+---
+<BaseLayout title="Search | Svetek Documentation" description="Search Svetek IT configuration guides, user guides, and troubleshooting procedures.">
+  <div class="docs-site"><DocsHeader />
+    <main id="main-content" class="docs-search-page">
+      <a href="/docs/">← Documentation home</a>
+      <h1>Find your next step.</h1>
+      <DocsSearch />
+      <p id="search-status" role="status" aria-live="polite">Search by product, task, or error message.</p>
+      <ol id="search-results" class="docs-search-results"></ol>
+      <details id="all-articles"><summary>Browse all articles</summary><ul>{docs.filter((page) => page.searchable).map((page) => <li><a href={page.url}>{page.title}</a></li>)}</ul></details>
+      <noscript><p>Search requires JavaScript. Browse the articles listed below instead.</p></noscript>
+    </main>
+    <Footer homePath="/logo/" />
+  </div>
+</BaseLayout>
+<script>
+  type Entry = { title: string; url: string; description: string; keywords: string; text: string };
+  const input = document.querySelector<HTMLInputElement>('#documentation-search')!;
+  const form = input.form!;
+  const results = document.querySelector<HTMLOListElement>('#search-results')!;
+  const status = document.querySelector<HTMLElement>('#search-status')!;
+  let entries: Entry[] | undefined;
+  let searchNumber = 0;
+  async function search(query: string) {
+    const currentSearch = ++searchNumber;
+    results.replaceChildren();
+    if (!query.trim()) { status.textContent = 'Search by product, task, or error message.'; return; }
+    status.textContent = 'Searching…';
+    try {
+      if (!entries) {
+        const response = await fetch('/docs-search.json');
+        if (!response.ok) throw new Error('Search index unavailable');
+        entries = await response.json();
+      }
+      if (currentSearch !== searchNumber) return;
+      const terms = query.toLocaleLowerCase().trim().split(/\s+/);
+      const matches = entries!.map((entry) => {
+        const title = entry.title.toLocaleLowerCase();
+        const summary = `${entry.description} ${entry.keywords}`.toLocaleLowerCase();
+        const fullText = `${title} ${summary} ${entry.text}`.toLocaleLowerCase();
+        return { entry, score: terms.every((term) => fullText.includes(term))
+          ? terms.reduce((score, term) => score + (title.includes(term) ? 10 : summary.includes(term) ? 5 : 1), 0) : 0 };
+      }).filter((match) => match.score > 0).sort((left, right) => right.score - left.score);
+      status.textContent = `${matches.length} ${matches.length === 1 ? 'result' : 'results'} for “${query}”.`;
+      for (const { entry } of matches) {
+        const item = document.createElement('li');
+        const heading = document.createElement('h2');
+        const link = document.createElement('a');
+        link.href = entry.url;
+        link.textContent = entry.title;
+        heading.append(link);
+        const description = document.createElement('p');
+        description.textContent = entry.description;
+        item.append(heading, description);
+        results.append(item);
+      }
+    } catch {
+      status.textContent = 'Search is temporarily unavailable. Browse all articles below.';
+      document.querySelector<HTMLDetailsElement>('#all-articles')!.open = true;
+    }
+  }
+  input.value = new URLSearchParams(location.search).get('q') || '';
+  search(input.value);
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    const query = input.value.trim();
+    history.replaceState(null, '', `/search/${query ? `?q=${encodeURIComponent(query)}` : ''}`);
+    search(query);
+  });
+</script>

@@ -1,0 +1,38 @@
+---
+import Brand from './Brand.astro';
+const discoveryUrl = 'https://zfrmz.com/Mbrqne1h9PiKB2RuVPQY';
+const { variant = 'photo' } = Astro.props;
+---
+
+<nav class="concept-switch" aria-label="Compare homepage designs">
+  <span>Explore the designs</span>
+  <a href="/" aria-current={variant === 'photo' ? 'page' : undefined}>A · Photography</a>
+  <a href="/logo/" aria-current={variant === 'logo' ? 'page' : undefined}>B · Logo in motion</a>
+</nav>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="site-logo" href="#top" aria-label="Svetek IT Experts home">
+      <Brand />
+    </a>
+    <nav class="site-nav" id="site-navigation" aria-label="Main navigation">
+      <a href="#services">Services</a>
+      <a href="#ai-readiness">AI readiness</a>
+      <a href="#approach">Our approach</a>
+      <a href="/docs/">Documentation</a>
+    </nav>
+    <details class="site-mobile-menu">
+      <summary>
+        <span class="site-mobile-menu__icon" aria-hidden="true"></span>
+        <span class="site-mobile-menu__label">Menu</span>
+      </summary>
+      <nav class="site-mobile-nav" aria-label="Mobile navigation">
+        <a href="#services">Services</a>
+        <a href="#ai-readiness">AI readiness</a>
+        <a href="#approach">Our approach</a>
+        <a href="/docs/">Documentation</a>
+      </nav>
+    </details>
+    <a class="button button--small" href={discoveryUrl}>Let’s talk</a>
+  </div>
+</header>

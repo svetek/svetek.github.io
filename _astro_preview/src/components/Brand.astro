@@ -1,0 +1,8 @@
+---
+import mark from '../assets/svetek-mark.svg?raw';
+const artwork = mark.replace(/<\?xml[^>]*\?>/, '').replaceAll('fill: rgb(255, 255, 255);', 'fill: currentColor;');
+---
+<span class="brand-lockup">
+  <span class="brand-lockup__mark" aria-hidden="true" set:html={artwork} />
+  <span class="brand-lockup__name">svetek<span>IT EXPERTS</span></span>
+</span>

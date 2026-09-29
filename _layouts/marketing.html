@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+<body class="marketing">
+  <a class="marketing-skip" href="#main">Skip to content</a>
+  <header class="marketing-header">
+    <a href="https://svetek.com/" aria-label="Svetek home"><img src="/images/logo_horizontal_whitetext.svg" alt="Svetek IT Experts" width="160" height="28"></a>
+    <nav aria-label="Main navigation">
+      <a href="{% if page.preview_comparison %}#services{% else %}https://svetek.com/services/{% endif %}">Services</a>
+      <a href="https://svetek.com/about/">About</a>
+      <a href="/docs/Guides/">Documentation</a>
+      <a href="{{ site.data.msp.discovery_url }}">Let's talk</a>
+    </nav>
+  </header>
+  <main id="main" class="marketing-main">
+    {% if page.preview_comparison %}
+    <nav class="marketing-variant-switcher" aria-label="Hero concept comparison">
+      <strong>Compare hero concepts:</strong>
+      <a{% if page.hero_variant == 'split' %} aria-current="page"{% endif %} href="/marketing-preview/split/">A · Split image</a>
+      <a{% if page.hero_variant == 'overlay' %} aria-current="page"{% endif %} href="/marketing-preview/">B · Image overlay</a>
+    </nav>
+    {% endif %}
+    <section class="marketing-hero marketing-hero--{{ page.hero_variant | default: 'graphic' }}"{% if page.hero_variant == 'overlay' and page.hero_image %} style="--marketing-hero-image: url('{{ page.hero_image | relative_url }}')"{% endif %}>
+      <div class="marketing-hero__copy">
+        <p class="marketing-tagline"><span>Business IT.</span> <strong>Solved.</strong></p>
+        <p class="marketing-eyebrow">{{ page.eyebrow | default: 'Svetek IT Experts · Vancouver, Washington' | escape }}</p>
+        <h1>{{ page.heading | default: page.title | escape }}</h1>
+        <p class="marketing-intro">{{ page.intro | default: page.description | escape }}</p>
+        <div class="marketing-actions">
+          <a class="marketing-button" href="{{ site.data.msp.discovery_url }}">Tell us about your business</a>
+          <a href="{{ site.data.msp.phone_url }}">{{ site.data.msp.phone }}</a>
+        </div>
+      </div>
+      {% if page.hero_variant == 'split' and page.hero_image %}
+      <div class="marketing-hero__media">
+        <img src="{{ page.hero_image | relative_url }}" alt="{{ page.hero_image_alt | escape }}" width="1942" height="809">
+      </div>
+      {% endif %}
+    </section>
+    <div class="marketing-content">{{ content }}</div>
+    {% include cta-msp.html %}
+  </main>
+  <footer class="marketing-footer">
+    <div><strong>Svetek IT Experts</strong><p>Business IT support based in Vancouver, WA.</p></div>
+    <nav aria-label="Footer navigation">
+      <a href="https://svetek.com/areas-we-serve/">Service areas</a>
+      <a href="https://svetek.com/privacy-policy/">Privacy policy</a>
+      <a href="/docs/Legal/">Service agreements</a>
+      <a href="https://support.svetek.com/">Client support</a>
+    </nav>
+    <p>&copy; {{ site.time | date: '%Y' }} Svetek IT Experts.</p>
+  </footer>
+</body>
+</html>
