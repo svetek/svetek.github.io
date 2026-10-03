@@ -9,7 +9,7 @@ export const contactSections = [
     title: 'About you',
     fields: [
       { name: 'Name_First', label: 'First name', type: 'text', required: true, autocomplete: 'given-name', half: true },
-      { name: 'Name_Last', label: 'Last name', type: 'text', autocomplete: 'family-name', half: true },
+      { name: 'Name_Last', label: 'Last name', type: 'text', required: true, autocomplete: 'family-name', half: true },
       { name: 'Email', label: 'Work email', type: 'email', required: true, autocomplete: 'email' },
       { name: 'SingleLine', label: 'Company', type: 'text', required: true, autocomplete: 'organization' },
       { name: 'Dropdown1', label: 'Your role', type: 'select', required: true, half: true,
