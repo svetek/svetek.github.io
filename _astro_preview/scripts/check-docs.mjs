@@ -4,6 +4,7 @@ import { createHash } from 'node:crypto';
 import { parse, walkSync, ELEMENT_NODE } from 'ultrahtml';
 import { unescape } from 'html-escaper';
 import { docs, pages, manifest, textContent, canonicalUrl, localUrl } from '../src/lib/docs.mjs';
+import { contactFields, zohoAction } from '../src/lib/contact.mjs';
 
 const dist = new URL('../dist/', import.meta.url);
 const read = (path) => readFileSync(new URL(path.replace(/^\//, ''), dist), 'utf8');
@@ -100,6 +101,14 @@ const logoTree = parse(logo);
 const mobileMenuLinks = nodes(logoTree, (node) => node.name === 'nav' && node.attributes.class === 'site-mobile-nav')
   .flatMap((node) => nodes(node, (item) => item.name === 'a').map((item) => item.attributes.href));
 check(JSON.stringify(mobileMenuLinks) === JSON.stringify(['#services', '#ai-readiness', '#approach', '/docs/']), 'Mobile homepage menu is incomplete');
+const contactForm = nodes(read('/contact/index.html'), (node) => node.name === 'form' && 'data-contact-form' in node.attributes)[0];
+check(contactForm?.attributes.action === zohoAction && contactForm?.attributes.enctype === 'multipart/form-data', 'Contact form does not post to Zoho');
+if (contactForm) {
+  const posted = new Set(nodes(contactForm, (node) => ['input', 'select', 'textarea'].includes(node.name)).map((node) => node.attributes.name));
+  for (const name of [...contactFields.map((field) => field.name), 'zf_redirect_url']) check(posted.has(name), `Contact form missing Zoho field: ${name}`);
+}
+check(exists('/contact/thanks/index.html'), 'Missing contact thank-you page');
+for (const path of htmlFiles) check(!read(path).includes('zfrmz.com'), `Hosted Zoho form link still used: ${path}`);
 writeFileSync(new URL('../.generated/parity-report.json', import.meta.url), JSON.stringify({
   sourcePages: manifest.sources.length, renderedArticles: docs.length, routes: pages.length,
   redirects: Object.keys(manifest.redirects).length, assets: manifest.assets.length,

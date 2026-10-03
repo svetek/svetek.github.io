@@ -1,5 +1,6 @@
 ---
 import Brand from './Brand.astro';
+import { contactPath } from '../lib/contact.mjs';
 ---
 <a class="skip-link" href="#main-content">Skip to content</a>
 <div class="docs-preview">Documentation preview · Existing article paths preserved · Not indexed by search engines</div>
@@ -11,6 +12,6 @@ import Brand from './Brand.astro';
       <a href="/docs/">Documentation</a>
       <a href="https://support.svetek.com/">Client support</a>
     </nav>
-    <a class="button button--small" href="https://zfrmz.com/Mbrqne1h9PiKB2RuVPQY">Let’s talk</a>
+    <a class="button button--small" href={contactPath}>Let’s talk</a>
   </div>
 </header>
