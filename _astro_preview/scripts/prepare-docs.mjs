@@ -12,5 +12,5 @@ execFileSync('bundle', ['exec', 'ruby', `${preview}scripts/export-docs.rb`], {
 const { redirects } = JSON.parse(readFileSync(`${preview}.generated/docs.json`, 'utf8'));
 writeFileSync(`${preview}public/_headers`, '/*\n  X-Robots-Tag: noindex, nofollow\n');
 writeFileSync(`${preview}public/robots.txt`, 'User-agent: *\nAllow: /\n');
-writeFileSync(`${preview}public/_redirects`, Object.entries(redirects)
+writeFileSync(`${preview}public/_redirects`, Object.entries({ ...redirects, '/logo/': '/' })
   .map(([from, to]) => `${from} ${to} 301`).join('\n') + '\n');

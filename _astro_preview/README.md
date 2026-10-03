@@ -25,9 +25,30 @@ npm run preview
 
 The generated static site is written to `dist/`. Build and development startup freshly export documentation from the repository, not a previous `_site` build. After editing a source article while the development server is running, run `npm run prepare:docs` to refresh the export.
 
+## Cloudflare Pages preview
+
+`wrangler.toml` configures the Cloudflare Pages project `svetek-astro-preview` with `dist/` as the output directory. The site is static: there are no Functions, bindings, or secrets in the file. Its `[env.preview]` section applies to every deployment on a branch other than the project's production branch.
+
+Test the build locally exactly as Pages serves it, including `_headers` (noindex), `_redirects` (301s), and the real 404 page:
+
+```sh
+npm run build
+npm run pages:dev
+```
+
+Open `http://localhost:8788`. `npm run preview` (Astro) does not apply `_headers` or `_redirects`, so use `pages:dev` to check status codes and redirects.
+
+To publish a shareable preview at `https://migration-preview.svetek-astro-preview.pages.dev`:
+
+1. In Cloudflare, create a **Direct Upload** Pages project named `svetek-astro-preview` with no custom domains. Keep the production branch as `main`.
+2. Either run `npx wrangler login` and then `npm run deploy:preview` (builds, runs `check:docs`, and uploads to branch `migration-preview`), or
+3. In GitHub, run **Build Astro website preview** manually with **deploy_preview** checked. It uses the `cloudflare-preview` environment secrets `CLOUDFLARE_API_TOKEN` (Pages Write) and `CLOUDFLARE_ACCOUNT_ID`, and refuses to upload if the project has a custom domain.
+
+Every page and response stays `noindex`. Noindex is not access control: add Cloudflare Access to the project if the preview must be private. Contact-form submissions from the preview reach the live Zoho form and CRM.
+
 ## Current scope
 
-Compare the photography concept at `/` with the image-free animated logo concept at `/logo/`. Both use the vehicle tagline. The logo concept uses brighter yellow and orange with charcoal, with the outcomes “Productive teams,” “Protected business,” and “Room to grow” surrounding the mark. People, process, and technology explain the approach farther down the page. The comparison navigation is for this prototype only. Headline and logo entrances run automatically once as each comes into view; the three dots move independently and settle within five seconds. Reduced-motion preferences show the finished composition without animation. No interaction is required, and the content remains visible without JavaScript.
+The homepage at `/` is the approved design B: the image-free animated logo concept. Design A (photography hero) was not selected and has been removed, including its photo; the old `/logo/` preview URL redirects to `/`. The design uses brighter yellow and orange with charcoal, with the outcomes “Productive teams,” “Protected business,” and “Room to grow” surrounding the mark. People, process, and technology explain the approach farther down the page. Headline and logo entrances run automatically once as each comes into view; the three dots move independently and settle within five seconds. Reduced-motion preferences show the finished composition without animation. No interaction is required, and the content remains visible without JavaScript.
 
 - Marketing homepage design
 - Responsive navigation and hero
@@ -57,9 +78,10 @@ Generated `.generated/`, `public/docs/`, `public/images/`, and `public/favicons/
 - Decide whether to retain the build-time Jekyll bridge for the first release or replace it after parser/anchor parity is independently verified.
 - Complete the WordPress service/page/post/media migration, form verification, analytics, and deployment workflow.
 - Capture Search Console baselines and verify the host properties; current search performance has not been audited here.
-- Choose the production homepage, remove comparison UI, and align production canonicals, social URLs, schema, internal links, sitemap, and indexing settings in one release.
+- Align production canonicals, social URLs, schema, internal links, sitemap, and indexing settings in one release.
 - Configure and test one-hop server-side hostname redirects, mapping the old documentation homepage to `/docs/` and merging renamed-path redirects without chains. Keep the old host and TLS active.
-- Add production verification for HTTP status codes, a real 404, responsive/accessibility checks, and a rollback path.
+- Add production verification for HTTP status codes, responsive/accessibility checks, and a rollback path. A real 404 page exists; `pages:dev` shows unknown paths return 404.
+- Add `[env.production]` to `wrangler.toml` only at cutover, after the noindex headers and preview banner are removed.
 
 No production deployment, indexing switch, domain migration, or Git push is performed by these preview commands.
 

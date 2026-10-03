@@ -17,7 +17,7 @@ import '../styles/docs.css';
       <details id="all-articles"><summary>Browse all articles</summary><ul>{docs.filter((page) => page.searchable).map((page) => <li><a href={page.url}>{page.title}</a></li>)}</ul></details>
       <noscript><p>Search requires JavaScript. Browse the articles listed below instead.</p></noscript>
     </main>
-    <Footer homePath="/logo/" />
+    <Footer homePath="/" />
   </div>
 </BaseLayout>
 <script>

@@ -1,0 +1,20 @@
+# Cloudflare Pages configuration for the Astro migration preview.
+# Static output only: no Functions, bindings, or secrets. Credentials come from
+# `wrangler login` locally or CLOUDFLARE_API_TOKEN / CLOUDFLARE_ACCOUNT_ID in CI,
+# never from this file.
+#
+# This project must be a dedicated preview project with no custom domains.
+# Do not point it at svetek.com or help.svetek.com until the production cutover.
+name = "svetek-astro-preview"
+pages_build_output_dir = "./dist"
+compatibility_date = "2026-09-01"
+
+# Preview environment: every deployment to a branch other than the project's
+# production branch (for example `--branch=migration-preview`). Pages applies
+# this section to those deployments only.
+[env.preview]
+vars = { SITE_ENV = "preview" }
+
+# Add [env.production] at cutover, after the noindex headers and preview
+# banner are removed from the build. Until then, production deployments of
+# this project also serve the noindex preview build.

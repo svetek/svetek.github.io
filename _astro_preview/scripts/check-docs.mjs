@@ -94,7 +94,7 @@ const landingLinks = nodes(docsLanding, (node) => node.name === 'a' && node.attr
   .map((node) => node.attributes.href);
 check(JSON.stringify(landingLinks) === JSON.stringify(['/docs/Guides/', '/docs/Configuration/', '/docs/Service_disclaimers/', '/docs/Templates/']),
   `Documentation landing order or visibility changed: ${landingLinks.join(', ')}`);
-const logo = read('/logo/index.html');
+const logo = read('/index.html');
 check(logo.includes('PRODUCTIVE TEAMS') && logo.includes('PROTECTED BUSINESS') && logo.includes('ROOM TO GROW'), 'Missing hero outcomes');
 check(logo.includes('People, process, and technology—working together'), 'Missing approach explanation');
 const logoTree = parse(logo);
@@ -108,7 +108,13 @@ if (contactForm) {
   for (const name of [...contactFields.map((field) => field.name), 'zf_redirect_url']) check(posted.has(name), `Contact form missing Zoho field: ${name}`);
 }
 check(exists('/contact/thanks/index.html'), 'Missing contact thank-you page');
+// Without 404.html, Cloudflare Pages serves the homepage with 200 for unknown paths.
+check(exists('/404.html'), 'Missing 404.html: unknown paths would return 200');
 for (const path of htmlFiles) check(!read(path).includes('zfrmz.com'), `Hosted Zoho form link still used: ${path}`);
+// Only design B ships: no photo hero, no design switcher.
+check(!readdirSync(dist, { recursive: true }).some((path) => path.includes('managed-it-hero')), 'Design A hero photo is in the build');
+for (const path of htmlFiles) check(!read(path).includes('concept-switch'), `Design switcher still rendered: ${path}`);
+check(rules.includes('/logo/ / 301'), 'Missing /logo/ redirect to the homepage');
 writeFileSync(new URL('../.generated/parity-report.json', import.meta.url), JSON.stringify({
   sourcePages: manifest.sources.length, renderedArticles: docs.length, routes: pages.length,
   redirects: Object.keys(manifest.redirects).length, assets: manifest.assets.length,

@@ -1,15 +1,8 @@
 ---
 import Brand from './Brand.astro';
 import { contactPath } from '../lib/contact.mjs';
-const { variant = 'photo', homePath = '' } = Astro.props;
-const isHome = variant === 'photo' || variant === 'logo';
+const { current = '', homePath = '' } = Astro.props;
 ---
-
-{isHome && <nav class="concept-switch" aria-label="Compare homepage designs">
-  <span>Explore the designs</span>
-  <a href="/" aria-current={variant === 'photo' ? 'page' : undefined}>A · Photography</a>
-  <a href="/logo/" aria-current={variant === 'logo' ? 'page' : undefined}>B · Logo in motion</a>
-</nav>}
 
 <header class="site-header">
   <div class="container site-header__inner">
@@ -34,6 +27,6 @@ const isHome = variant === 'photo' || variant === 'logo';
         <a href="/docs/">Documentation</a>
       </nav>
     </details>
-    <a class="button button--small" href={contactPath} aria-current={variant === 'contact' ? 'page' : undefined}>Let’s talk</a>
+    <a class="button button--small" href={contactPath} aria-current={current === 'contact' ? 'page' : undefined}>Let’s talk</a>
   </div>
 </header>

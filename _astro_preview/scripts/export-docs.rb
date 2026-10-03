@@ -33,6 +33,8 @@ records = pages.reject { |page| redirects.key?(page.url) }.map do |page|
   { "url" => page.url, "source" => page.path, "data" => metadata, "html" => html }
 end
 assets = site.static_files.select { |file| file.relative_path.match?(%r{\A/(docs|images|favicons)/}) }
+# Start from empty copies so files deleted from the repository are not deployed.
+%w[docs images favicons].each { |dir| FileUtils.rm_rf(File.join(preview, "public", dir)) }
 asset_records = assets.map do |file|
   path = file.relative_path.delete_prefix("/")
   target = File.join(preview, "public", path)

@@ -1,36 +1,20 @@
 ---
-import { Image } from 'astro:assets';
-import heroImage from '../assets/managed-it-hero.jpg';
 import LogoMotion from './LogoMotion.astro';
-
 import { contactPath as discoveryUrl } from '../lib/contact.mjs';
-const { variant = 'photo' } = Astro.props;
 ---
 
-<section class:list={['hero', 'hero--' + variant]} id="top">
-  {variant === 'photo' && <Image
-    class="hero__image"
-    src={heroImage}
-    alt="A business team reviewing network and security information with an IT professional"
-    widths={[960, 1440, 1942]}
-    sizes="100vw"
-    loading="eager"
-    fetchpriority="high"
-  />}
-  {variant === 'photo' && <div class="hero__shade"></div>}
+<section class="hero hero--logo" id="top">
   <div class="container hero__content">
     <div class="hero__copy">
     <p class="eyebrow eyebrow--light">Managed IT &amp; security · Vancouver, Washington</p>
     <h1><span class="hero__business">Business IT.</span><br /><span class="hero__solved">Solved.</span></h1>
-    <p class="hero__intro">{variant === 'logo'
-      ? 'Keep your team productive, your business protected, and work moving—with IT that supports where you want to go next.'
-      : 'Practical support for the people, devices, cloud services, and security controls your business depends on.'}</p>
+    <p class="hero__intro">Keep your team productive, your business protected, and work moving—with IT that supports where you want to go next.</p>
     <div class="hero__actions">
       <a class="button" href={discoveryUrl}>Tell us what you need</a>
       <a class="text-link text-link--light" href="tel:+13607183891">Call 360-718-3891 <span aria-hidden="true">→</span></a>
     </div>
     </div>
-    {variant === 'logo' && <LogoMotion />}
+    <LogoMotion />
   </div>
   <div class="hero__facts">
     <div class="container hero__facts-grid">

@@ -69,8 +69,6 @@ h3 { font-size: 1.5rem; }
 .site-mobile-nav a { padding: .55rem; color: var(--ink); font-size: .88rem; font-weight: 650; text-decoration: none; }
 
 .hero { position: relative; min-height: 880px; display: flex; align-items: center; overflow: hidden; color: var(--white); background: var(--ink-deep); }
-.hero__image { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 65% center; }
-.hero__shade { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(13,19,20,.99) 0%, rgba(13,19,20,.93) 36%, rgba(13,19,20,.55) 62%, rgba(13,19,20,.12) 100%); }
 .hero::after { content: ""; position: absolute; inset: 0; opacity: .12; background-image: linear-gradient(rgba(255,255,255,.14) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.14) 1px, transparent 1px); background-size: 64px 64px; mask-image: linear-gradient(90deg, #000, transparent 65%); }
 .hero__content { position: relative; z-index: 2; padding-top: 8rem; padding-bottom: 10rem; }
 .hero h1 { max-width: 850px; margin-bottom: 1.75rem; color: var(--white); }
@@ -146,7 +144,6 @@ h3 { font-size: 1.5rem; }
   .site-mobile-menu { display: block; }
   .site-nav { display: none; }
   .hero { min-height: 820px; }
-  .hero__shade { background: linear-gradient(90deg, rgba(13,19,20,.98), rgba(13,19,20,.72)); }
   .section-heading, .ai-readiness__grid, .approach__grid, .contact-cta__inner { grid-template-columns: 1fr; gap: 2.5rem; }
   .service-card { min-height: auto; }
   .approach__intro { position: static; }
@@ -163,8 +160,6 @@ h3 { font-size: 1.5rem; }
   .site-mobile-menu summary { padding: .5rem; }
   .site-mobile-menu__label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
   .hero { min-height: 900px; }
-  .hero__image { object-position: 70% center; }
-  .hero__shade { background: linear-gradient(180deg, rgba(13,19,20,.92), rgba(13,19,20,.78)); }
   .hero__content { padding-top: 7.5rem; padding-bottom: 13rem; }
   .hero__facts-grid { min-height: 11rem; grid-template-columns: 1fr; padding: 1rem 0; }
   .hero__facts p { padding: .35rem 0; border-left: 0; }
@@ -181,10 +176,6 @@ h3 { font-size: 1.5rem; }
   *, *::before, *::after { transition: none !important; animation: none !important; }
 }
 
-.concept-switch { display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: .5rem 1.5rem; padding: .65rem 1rem; background: #eae7df; color: var(--ink); font-size: .78rem; }
-.concept-switch > span { color: #61655f; }
-.concept-switch a { padding: .25rem .5rem; text-decoration: none; border-bottom: 2px solid transparent; }
-.concept-switch a[aria-current] { border-color: var(--orange); font-weight: 750; }
 .site-header { position: relative; top: auto; background: var(--paper); color: var(--ink); border-bottom: 1px solid var(--line); }
 .site-header__inner { min-height: 6rem; }
 .site-nav a { color: var(--ink); }
@@ -200,7 +191,6 @@ h3 { font-size: 1.5rem; }
 .hero__content { padding-top: 5.5rem; padding-bottom: 12rem; }
 .hero h1 { font-size: clamp(4.5rem, 8.5vw, 7.8rem); letter-spacing: -.065em; line-height: .98; margin-bottom: 2rem; }
 .hero__intro { max-width: 530px; font-size: 1.2rem; }
-.hero__shade { background: linear-gradient(90deg, rgba(18,25,25,.98) 0%, rgba(18,25,25,.88) 36%, rgba(18,25,25,.36) 68%, rgba(18,25,25,.05) 100%); }
 .hero--logo { color: var(--ink); background: var(--paper); }
 .hero--logo::after { display: none; }
 .hero--logo .hero__content { display: grid; grid-template-columns: 1.1fr 1fr; align-items: center; gap: 2rem; }
@@ -264,8 +254,6 @@ a:focus-visible, button:focus-visible { outline: 3px solid #98701e; outline-offs
   .hero--logo h1 { font-size: clamp(4rem, 8.5vw, 7rem); }
 }
 @media (max-width: 680px) {
-  .concept-switch { gap: .25rem .6rem; }
-  .concept-switch > span { display: none; }
   .site-header { top: auto; }
   .site-header__inner { min-height: 5rem; gap: 1rem; }
   .brand-lockup__name { font-size: 1.7rem; }
@@ -273,7 +261,6 @@ a:focus-visible, button:focus-visible { outline: 3px solid #98701e; outline-offs
   .hero { min-height: auto; display: block; }
   .hero__content { padding-top: 4rem; padding-bottom: 4rem; }
   .hero h1 { font-size: clamp(3.8rem, 15vw, 6rem); }
-  .hero__shade { background: rgba(18,25,25,.8); }
   .hero__facts { position: relative; }
   .hero--logo .hero__content { grid-template-columns: 1fr; gap: 2rem; }
   .logo-art { width: min(100%, 360px); margin-inline: auto; }

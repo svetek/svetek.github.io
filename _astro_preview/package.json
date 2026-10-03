@@ -13,6 +13,8 @@
     "build": "astro build",
     "check:docs": "node scripts/check-docs.mjs",
     "preview": "astro preview",
+    "pages:dev": "wrangler pages dev --port 8788",
+    "deploy:preview": "npm run build && npm run check:docs && wrangler pages deploy --branch=migration-preview",
     "astro": "astro"
   },
   "dependencies": {
@@ -22,5 +24,8 @@
   },
   "allowScripts": {
     "esbuild": true
+  },
+  "devDependencies": {
+    "wrangler": "^4.147.0"
   }
 }

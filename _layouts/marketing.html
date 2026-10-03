@@ -13,13 +13,6 @@
     </nav>
   </header>
   <main id="main" class="marketing-main">
-    {% if page.preview_comparison %}
-    <nav class="marketing-variant-switcher" aria-label="Hero concept comparison">
-      <strong>Compare hero concepts:</strong>
-      <a{% if page.hero_variant == 'split' %} aria-current="page"{% endif %} href="/marketing-preview/split/">A · Split image</a>
-      <a{% if page.hero_variant == 'overlay' %} aria-current="page"{% endif %} href="/marketing-preview/">B · Image overlay</a>
-    </nav>
-    {% endif %}
     <section class="marketing-hero marketing-hero--{{ page.hero_variant | default: 'graphic' }}"{% if page.hero_variant == 'overlay' and page.hero_image %} style="--marketing-hero-image: url('{{ page.hero_image | relative_url }}')"{% endif %}>
       <div class="marketing-hero__copy">
         <p class="marketing-tagline"><span>Business IT.</span> <strong>Solved.</strong></p>

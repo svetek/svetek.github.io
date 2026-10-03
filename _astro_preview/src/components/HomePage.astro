@@ -10,14 +10,13 @@ import Footer from '../components/Footer.astro';
 
 const title = 'Business IT Support in Vancouver, WA | Svetek IT Experts';
 const description = 'Managed IT, cybersecurity, backup, cloud, and AI readiness services for growing businesses in Vancouver, Washington.';
-const { variant = 'photo' } = Astro.props;
 ---
 
 <BaseLayout title={title} description={description}>
-  <div class:list={['home', 'home--' + variant]}>
-  <Header variant={variant} />
+  <div class="home home--logo">
+  <Header current="home" />
   <main>
-    <Hero variant={variant} />
+    <Hero />
     <Services />
     <AIReadiness />
     <Approach />
