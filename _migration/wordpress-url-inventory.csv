@@ -1,0 +1,27 @@
+source_path,type,proposed_path,decision
+/,page,/,rewrite marketing home
+/thank-you/,page,/thank-you/,preserve or map after forms audit
+/privacy-policy/,page,/privacy-policy/,preserve approved policy
+/home-2/,page,/,review duplicate then redirect
+/areas-we-serve/,page,/areas-we-serve/,preserve and rewrite
+/services/,page,/services/,preserve service index
+/contact/,page,/contact/,preserve contact route
+/about/,page,/about/,preserve and rewrite
+/request-call/,page,/request-call/,preserve or map callback flow
+/services/it-support-services/,service,/services/it-support-services/,preserve and rewrite
+/services/cybersecurity-services/,service,/services/cybersecurity-services/,preserve and rewrite
+/services/data-backup-and-recovery-service/,service,/services/data-backup-and-recovery-service/,preserve and rewrite
+/services/cloud-solutions/,service,/services/cloud-solutions/,preserve and rewrite
+/blog/,archive,/blog/,retain archive pending content review
+/mastering-digital-privacy/,post,/mastering-digital-privacy/,review and preserve explicit permalink
+/services-for-nonprofits/,post,/services-for-nonprofits/,review and preserve explicit permalink
+/what-is-in-cybersecurity-audit/,post,/what-is-in-cybersecurity-audit/,review and preserve explicit permalink
+/the-five-steps-for-building-a-business-continuity-plan/,post,/the-five-steps-for-building-a-business-continuity-plan/,review and preserve explicit permalink
+/the-seven-mistakes/,post,/the-seven-mistakes/,review and preserve explicit permalink
+/voip-security-tips/,post,/voip-security-tips/,review and preserve explicit permalink
+/passwordless-future/,post,/passwordless-future/,review and preserve explicit permalink
+/upgrading-your-business-communication/,post,/upgrading-your-business-communication/,review and preserve explicit permalink
+/navigating-the-competitive-i-5-corridor-how-dealerships-are-upgrading-their-phone-systems/,post,/navigating-the-competitive-i-5-corridor-how-dealerships-are-upgrading-their-phone-systems/,review and preserve explicit permalink
+/nationwide-outreach-for-nonprofits/,post,/nationwide-outreach-for-nonprofits/,review and preserve explicit permalink
+/how-to-strengthen-identity-security-for-accounting-firms/,post,/how-to-strengthen-identity-security-for-accounting-firms/,review and preserve explicit permalink
+/unified-communications-to-drive-business-productivity/,post,/unified-communications-to-drive-business-productivity/,review and preserve explicit permalink

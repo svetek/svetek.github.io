@@ -16,7 +16,7 @@ incremental: true
 permalink: pretty
 safe: false
 lsi: false
-exclude: ["Readme.md", "SEO_GUIDELINES.md"]
+exclude: ["Readme.md", "SEO_GUIDELINES.md", "vendor", "gemfiles", "node_modules", "_scripts", "_migration", "_preview", "_site_preview"]
 
 # Component versions -- address like site.docker_ce_version
 # You can't have - characters in these for non-YAML reasons

@@ -34,6 +34,13 @@ Before adding or renaming documentation pages, review the
 [SEO guidelines](SEO_GUIDELINES.md) for front matter, canonical URLs, redirects,
 images, and pre-publish checks.
 
+## Marketing and hosting migration preview
+
+The Jekyll 4 and Cloudflare Pages starter is described in
+[_migration/README.md](_migration/README.md), including the WordPress URL inventory,
+local preview commands, workflow secrets, and the proposed cutover sequence.
+The current production GitHub Pages configuration remains active.
+
 ## Copyright and license
 
 Copyright 2025 Svetek IT Experts, released under the Apache 2.0 license.

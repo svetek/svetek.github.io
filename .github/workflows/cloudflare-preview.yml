@@ -1,0 +1,92 @@
+name: Build Jekyll 4 migration preview
+
+on:
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      deploy_preview:
+        description: Upload to the configured Cloudflare Pages preview project
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: cloudflare-preview-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      BUNDLE_GEMFILE: gemfiles/cloudflare.gemfile
+      JEKYLL_ENV: production
+    steps:
+      - uses: actions/checkout@v6
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3'
+          bundler-cache: true
+      - name: Build preview
+        run: bundle exec jekyll build --config _config.yml,_config_production.yml,_config_cloudflare_preview.yml --destination _site_preview
+      - name: Validate preview
+        run: bundle exec ruby _scripts/check-migration-preview.rb _site_preview
+      - uses: actions/upload-artifact@v4
+        with:
+          name: jekyll-migration-preview
+          path: _site_preview/
+          retention-days: 7
+          if-no-files-found: error
+
+  deploy:
+    if: github.event_name == 'workflow_dispatch' && inputs.deploy_preview
+    needs: build
+    runs-on: ubuntu-latest
+    environment: cloudflare-preview
+    concurrency:
+      group: cloudflare-migration-upload
+      cancel-in-progress: false
+    env:
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_PAGES_PROJECT: ${{ vars.CLOUDFLARE_PAGES_PROJECT }}
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: jekyll-migration-preview
+          path: _site_preview
+      - name: Confirm preview target
+        run: |
+          python3 - <<'PY'
+          import json
+          import os
+          import re
+          import urllib.request
+
+          account = os.environ["CLOUDFLARE_ACCOUNT_ID"]
+          project = os.environ["CLOUDFLARE_PAGES_PROJECT"]
+          token = os.environ["CLOUDFLARE_API_TOKEN"]
+          if not re.fullmatch(r"[a-fA-F0-9]{32}", account):
+              raise SystemExit("Configure CLOUDFLARE_ACCOUNT_ID in the cloudflare-preview environment.")
+          if not re.fullmatch(r"[a-z0-9][a-z0-9-]{0,57}", project) or not token:
+              raise SystemExit("Configure CLOUDFLARE_PAGES_PROJECT and CLOUDFLARE_API_TOKEN.")
+          request = urllib.request.Request(
+              f"https://api.cloudflare.com/client/v4/accounts/{account}/pages/projects/{project}",
+              headers={"Authorization": f"Bearer {token}"},
+          )
+          with urllib.request.urlopen(request, timeout=30) as response:
+              payload = json.load(response)
+          if not payload.get("success"):
+              raise SystemExit("Could not verify the Cloudflare Pages project.")
+          target = payload["result"]
+          if target.get("production_branch") != "main":
+              raise SystemExit("Set the preview project's production branch to main; uploads use migration-preview.")
+          if any(not domain.endswith(".pages.dev") for domain in target.get("domains", [])):
+              raise SystemExit("Use a preview project without custom domains for this starter workflow.")
+          PY
+      - uses: cloudflare/wrangler-action@v4
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy _site_preview --project-name=${{ vars.CLOUDFLARE_PAGES_PROJECT }} --branch=migration-preview
