@@ -4,7 +4,7 @@ Status: review and preview only. The live site still uses GitHub Pages from `mai
 
 ## Recommendation
 
-The selected design direction is now the Astro logo concept in `_astro_preview/`. Its documentation preview keeps the source Markdown and existing paths intact, using the existing Jekyll/Kramdown renderer as a temporary build-time bridge while Astro supplies layouts, indexes, navigation, and search. See `_astro_preview/README.md` for commands and the parity report. Production is unchanged. The Jekyll-only starter described below is retained as earlier migration work, not the current chosen presentation layer.
+The new site lives in its own repository, [svetek/svetek-astro](https://github.com/svetek/svetek-astro): the approved Astro logo design (B) plus the documentation, rendered by Astro with no Jekyll or Ruby dependency and built by Cloudflare Pages. Until cutover, articles are still edited here and imported with `npm run import:jekyll` in that repository; its README describes the import, the frozen Jekyll baseline, and the parity checks. Production is unchanged. The Jekyll-only starter described below is retained as earlier migration work, not the current chosen presentation layer.
 
 One repository is an operating choice, not a Google ranking factor. A move can improve navigation, consistency, and maintenance, but it does not guarantee rankings or leads. Compare technical-documentation traffic separately from service-page enquiries, calls, and qualified leads. Export Search Console and analytics baselines for both hosts before judging either site's value; the claim that documentation supplies all useful traffic has not been verified.
 
